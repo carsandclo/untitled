@@ -58,14 +58,14 @@
         },
         {
           "id": "hSQBkSnUA7tC",
-          "name": "NewPage",
+          "name": "Details",
           "type": "managed",
           "projectId": "c4FCQiVEmUqfPef3MjSmg8",
-          "renderModuleFilePath": "plasmic/blank_website_mobile_first/PlasmicNewPage.tsx",
+          "renderModuleFilePath": "plasmic/blank_website_mobile_first/PlasmicDetails.tsx",
           "importSpec": {
             "modulePath": "../pages/details.tsx"
           },
-          "cssFilePath": "plasmic/blank_website_mobile_first/PlasmicNewPage.module.css",
+          "cssFilePath": "plasmic/blank_website_mobile_first/PlasmicDetails.module.css",
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/details"

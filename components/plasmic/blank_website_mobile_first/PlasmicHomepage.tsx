@@ -100,6 +100,7 @@ export type PlasmicHomepage__OverridesType = {
   rizqyMotorsport?: Flex__<"div">;
   semenMerahPutih?: Flex__<"div">;
   siloMaritime?: Flex__<"div">;
+  footer?: Flex__<"div">;
   logo?: Flex__<"div">;
   social?: Flex__<"div">;
   social2?: Flex__<"div">;
@@ -842,8 +843,10 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
               <Stack__
                 as={"div"}
+                data-plasmic-name={"footer"}
+                data-plasmic-override={overrides.footer}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__kycjr)}
+                className={classNames(projectcss.all, sty.footer)}
               >
                 <Stack__
                   as={"div"}
@@ -1058,6 +1061,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     data-plasmic-override={overrides.button}
                     className={classNames("__wab_instance", sty.button)}
                     link={"mailto:cloandcars@gmail.com"}
+                    shape={"sharp"}
                     showEndIcon={true}
                     target={true}
                   >
@@ -1107,6 +1111,7 @@ const PlasmicDescendants = {
     "rizqyMotorsport",
     "semenMerahPutih",
     "siloMaritime",
+    "footer",
     "logo",
     "social",
     "social2",
@@ -1128,6 +1133,7 @@ const PlasmicDescendants = {
     "rizqyMotorsport",
     "semenMerahPutih",
     "siloMaritime",
+    "footer",
     "logo",
     "social",
     "social2",
@@ -1148,6 +1154,7 @@ const PlasmicDescendants = {
     "rizqyMotorsport",
     "semenMerahPutih",
     "siloMaritime",
+    "footer",
     "logo",
     "social",
     "social2",
@@ -1163,6 +1170,7 @@ const PlasmicDescendants = {
   rizqyMotorsport: ["rizqyMotorsport"],
   semenMerahPutih: ["semenMerahPutih"],
   siloMaritime: ["siloMaritime"],
+  footer: ["footer", "logo", "social", "social2", "social3", "button"],
   logo: ["logo"],
   social: ["social"],
   social2: ["social2"],
@@ -1188,6 +1196,7 @@ type NodeDefaultElementType = {
   rizqyMotorsport: "div";
   semenMerahPutih: "div";
   siloMaritime: "div";
+  footer: "div";
   logo: "div";
   social: "div";
   social2: "div";
@@ -1269,6 +1278,7 @@ export const PlasmicHomepage = Object.assign(
     rizqyMotorsport: makeNodeComponent("rizqyMotorsport"),
     semenMerahPutih: makeNodeComponent("semenMerahPutih"),
     siloMaritime: makeNodeComponent("siloMaritime"),
+    footer: makeNodeComponent("footer"),
     logo: makeNodeComponent("logo"),
     social: makeNodeComponent("social"),
     social2: makeNodeComponent("social2"),

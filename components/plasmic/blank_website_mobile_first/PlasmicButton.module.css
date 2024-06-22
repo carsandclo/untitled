@@ -71,6 +71,7 @@
 }
 .rootcolor_white {
   background: #ffffff;
+  border: 1px solid #000000;
 }
 .rootcolor_softBlue {
   background: #edf6ff;

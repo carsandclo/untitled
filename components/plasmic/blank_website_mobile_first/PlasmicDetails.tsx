@@ -344,12 +344,9 @@ function PlasmicDetails__RenderFunc(props: {
               }
               id={"main_image"}
               loading={"lazy"}
-              src={{
-                src: "/plasmic/blank_website_mobile_first/images/frontViewpng.png",
-                fullWidth: 1000,
-                fullHeight: 1000,
-                aspectRatio: undefined
-              }}
+              src={
+                "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Front_View_Apriwa_white.png"
+              }
             />
 
             {(() => {
@@ -440,12 +437,9 @@ function PlasmicDetails__RenderFunc(props: {
                         displayMinWidth={"0"}
                         displayWidth={"auto"}
                         id={"image1"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/fontAPriwapng.png",
-                          fullWidth: 1000,
-                          fullHeight: 1000,
-                          aspectRatio: undefined
-                        }}
+                        src={
+                          "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Apriwa_white.png"
+                        }
                       />
                     </PlasmicLink__>
                   </div>
@@ -498,12 +492,9 @@ function PlasmicDetails__RenderFunc(props: {
                         displayMinWidth={"0"}
                         displayWidth={"auto"}
                         id={"image1"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/fontAPriwapng.png",
-                          fullWidth: 1000,
-                          fullHeight: 1000,
-                          aspectRatio: undefined
-                        }}
+                        src={
+                          "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Apriwa_black.png"
+                        }
                       />
                     </PlasmicLink__>
                   </div>
@@ -556,12 +547,9 @@ function PlasmicDetails__RenderFunc(props: {
                         displayMinWidth={"0"}
                         displayWidth={"auto"}
                         id={"image1"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/fontAPriwapng.png",
-                          fullWidth: 1000,
-                          fullHeight: 1000,
-                          aspectRatio: undefined
-                        }}
+                        src={
+                          "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Circuit_Apriwa_white.png"
+                        }
                       />
                     </PlasmicLink__>
                   </div>
@@ -614,12 +602,9 @@ function PlasmicDetails__RenderFunc(props: {
                         displayMinWidth={"0"}
                         displayWidth={"auto"}
                         id={"image1"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/fontAPriwapng.png",
-                          fullWidth: 1000,
-                          fullHeight: 1000,
-                          aspectRatio: undefined
-                        }}
+                        src={
+                          "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Circuit_Apriwa_black.png"
+                        }
                       />
                     </PlasmicLink__>
                   </div>

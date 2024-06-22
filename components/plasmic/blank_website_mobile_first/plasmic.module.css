@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700&display=swap");
+
+.plasmic_tokens {
+  --token-6ueT3CAy3bDH: Roboto;
+  --plasmic-token-unnamed-style-token: var(--token-6ueT3CAy3bDH);
+}
 
 .plasmic_tokens {
   --plsmc-standard-width: 800px;
@@ -11,7 +16,7 @@
 }
 
 .plasmic_default_styles {
-  --mixin-CCD6s0u_PpkS_font-family: "Inter", sans-serif;
+  --mixin-CCD6s0u_PpkS_font-family: "DIN_Alternate_Bold";
   --mixin-CCD6s0u_PpkS_font-size: 16px;
   --mixin-CCD6s0u_PpkS_font-weight: 400;
   --mixin-CCD6s0u_PpkS_font-style: normal;

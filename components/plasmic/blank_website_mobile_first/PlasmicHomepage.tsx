@@ -329,6 +329,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 data-plasmic-override={overrides.apriwa}
                 className={classNames(projectcss.all, projectcss.a, sty.apriwa)}
                 component={Link}
+                href={`/details`}
                 platform={"nextjs"}
               >
                 <Stack__
@@ -1056,6 +1057,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     data-plasmic-name={"button"}
                     data-plasmic-override={overrides.button}
                     className={classNames("__wab_instance", sty.button)}
+                    link={"mailto:cloandcars@gmail.com"}
+                    showEndIcon={true}
+                    target={true}
                   >
                     <div
                       className={classNames(

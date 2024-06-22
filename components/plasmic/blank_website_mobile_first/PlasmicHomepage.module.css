@@ -67,7 +67,7 @@
   z-index: 1;
   right: 0;
   background: #ffffff;
-  padding: 16px;
+  padding: 16px 20px;
   border-bottom: 1px solid #ebebeb;
 }
 .link__ugMcO {
@@ -1186,6 +1186,7 @@
   max-width: 100%;
   color: #f4f4f4;
   font-size: 12px;
+  font-weight: 300;
   min-width: 0;
 }
 .social {

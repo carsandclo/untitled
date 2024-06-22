@@ -1,5 +1,16 @@
 {
-  "props": [],
+  "props": [
+    {
+      "name": "Unnamed Style Token",
+      "type": "fontfamily",
+      "value": "Roboto",
+      "category": "fontfamily",
+      "meta": {
+        "projectId": "c4FCQiVEmUqfPef3MjSmg8",
+        "id": "6ueT3CAy3bDH"
+      }
+    }
+  ],
   "global": {
     "meta": {
       "source": "plasmic.app"

@@ -55,6 +55,20 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "hSQBkSnUA7tC",
+          "name": "NewPage",
+          "type": "managed",
+          "projectId": "c4FCQiVEmUqfPef3MjSmg8",
+          "renderModuleFilePath": "plasmic/blank_website_mobile_first/PlasmicNewPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/details.tsx"
+          },
+          "cssFilePath": "plasmic/blank_website_mobile_first/PlasmicNewPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/details"
         }
       ],
       "icons": [
@@ -184,10 +198,20 @@
           "id": "GSPRNpkDE7dc",
           "name": "Bigcarte.svg 2",
           "filePath": "../public/plasmic/blank_website_mobile_first/images/bigcartesvg2.svg"
+        },
+        {
+          "id": "xxHwBVDnbj6U",
+          "name": "Front View.png",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/frontViewpng.png"
+        },
+        {
+          "id": "ItqZRqGoeKeg",
+          "name": "Font APriwa.png",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/fontAPriwapng.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/blank_website_mobile_first/PlasmicGlobalContextsProvider.tsx",
       "splitsProviderFilePath": "",
       "codeComponents": [
         {
@@ -227,6 +251,54 @@
       ],
       "customFunctions": [],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_slick/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "SliderWrapper",
+          "displayName": "hostless-slider",
+          "componentImportPath": "@plasmicpkgs/react-slick",
+          "helper": {
+            "name": "sliderHelpers",
+            "importPath": "@plasmicpkgs/react-slick"
+          }
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "projectApiToken": "34o5R5KswluuZ4sD83F88oQrcLWsNNeUpCptQ8Okf4hYqgjnHnX2idGAlhtB7WWQQelNAInf5XFazR1cGw",
+      "projectName": "plasmic-embed-css",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_embed_css/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_embed_css/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "qF0uJxFztB",
+          "name": "EmbedCss",
+          "displayName": "global-embed-css",
+          "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
+        }
+      ],
+      "customFunctions": []
     }
   ],
   "globalVariants": {

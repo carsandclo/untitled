@@ -73,6 +73,8 @@ import sty from "./PlasmicDetails.module.css"; // plasmic-import: hSQBkSnUA7tC/c
 
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
+import Shopeesvg2Icon from "./icons/PlasmicIcon__Shopeesvg2"; // plasmic-import: jkqfVWSlYrIo/icon
+import WorldsvgIcon from "./icons/PlasmicIcon__Worldsvg"; // plasmic-import: VOYVMBHHCe1x/icon
 
 createPlasmicElementProxy;
 
@@ -625,7 +627,7 @@ function PlasmicDetails__RenderFunc(props: {
                   sty.text__dBbPt
                 )}
               >
-                {"Get ready to rev up your style"}
+                {"911 GT3 Cup - Front View"}
               </div>
               <div
                 className={classNames(
@@ -651,7 +653,7 @@ function PlasmicDetails__RenderFunc(props: {
                   sty.text__sNlVw
                 )}
               >
-                {"Available Size"}
+                {"Size"}
               </div>
               <div
                 className={classNames(
@@ -668,11 +670,19 @@ function PlasmicDetails__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__t6Xh3)}
             >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__ywIkW
+                )}
+              >
+                {"Available on"}
+              </div>
               <Button
                 className={classNames("__wab_instance", sty.button__t212C)}
                 color={"white"}
                 shape={"sharp"}
-                showStartIcon={true}
               >
                 <div
                   className={classNames(
@@ -688,7 +698,12 @@ function PlasmicDetails__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.button__r5Ani)}
                 color={"white"}
                 shape={"sharp"}
-                showStartIcon={true}
+                startIcon={
+                  <Shopeesvg2Icon
+                    className={classNames(projectcss.all, sty.svg__mzHw3)}
+                    role={"img"}
+                  />
+                }
               >
                 <div
                   className={classNames(
@@ -704,7 +719,12 @@ function PlasmicDetails__RenderFunc(props: {
                 className={classNames("__wab_instance", sty.button___70Xg)}
                 color={"white"}
                 shape={"sharp"}
-                showStartIcon={true}
+                startIcon={
+                  <WorldsvgIcon
+                    className={classNames(projectcss.all, sty.svg__c3Tg7)}
+                    role={"img"}
+                  />
+                }
               >
                 <div
                   className={classNames(

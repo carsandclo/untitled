@@ -86,6 +86,16 @@
           "id": "YmZHPP8Bqtaf",
           "name": "ArrowRightsvgIcon",
           "moduleFilePath": "plasmic/blank_website_mobile_first/icons/PlasmicIcon__ArrowRightsvg.tsx"
+        },
+        {
+          "id": "jkqfVWSlYrIo",
+          "name": "Shopeesvg2Icon",
+          "moduleFilePath": "plasmic/blank_website_mobile_first/icons/PlasmicIcon__Shopeesvg2.tsx"
+        },
+        {
+          "id": "VOYVMBHHCe1x",
+          "name": "WorldsvgIcon",
+          "moduleFilePath": "plasmic/blank_website_mobile_first/icons/PlasmicIcon__Worldsvg.tsx"
         }
       ],
       "images": [

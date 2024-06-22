@@ -26,7 +26,7 @@ export default function GlobalContextsProvider(
       css={
         embedCssProps && "css" in embedCssProps
           ? embedCssProps.css!
-          : "/* CSS snippet */\n\n@font-face {\n  font-family: 'DIN_Alternate_Bold';\n  src: url('https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/sign/Font/DIN_Alternate_Bold.ttf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJGb250L0RJTl9BbHRlcm5hdGVfQm9sZC50dGYiLCJpYXQiOjE3MTkwNzc1NTIsImV4cCI6MTc1MDYxMzU1Mn0.IWZeSTSbTs6h_CTCBM8r1wZYXef0nw2F2q2tv0v6d6o&t=2024-06-22T17%3A32%3A32.327Z');\n}"
+          : "/* CSS snippet */\n\n@font-face {\n  font-family: 'DIN_Alternate_Bold';\n  src: url('https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/sign/Font/DIN_Alternate_Bold.ttf?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJGb250L0RJTl9BbHRlcm5hdGVfQm9sZC50dGYiLCJpYXQiOjE3MTkwNzg1ODYsImV4cCI6MTc1MDYxNDU4Nn0.PDZc42X2QUqfHKPbz5SiLmU0COe2pNoAQ0tLjTLftS4&t=2024-06-22T17%3A49%3A46.060Z');\n}\n\n"
       }
     >
       {children}

@@ -144,6 +144,46 @@
           "id": "3QienHzw9R7d",
           "name": "BTPN@2x@2x.png",
           "filePath": "../public/plasmic/blank_website_mobile_first/images/btpn2X2Xpng.png"
+        },
+        {
+          "id": "g613dAaDmF0v",
+          "name": "CNC x PSCI 1 Inverted.svg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg"
+        },
+        {
+          "id": "L-8EOxG_Cs71",
+          "name": "Instagram.svg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/instagramsvg.svg"
+        },
+        {
+          "id": "uLq-2BhzNHrf",
+          "name": "Tiktok.svg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/tiktoksvg.svg"
+        },
+        {
+          "id": "4Bhbs5L9zzXg",
+          "name": "Tokped.svg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/tokpedsvg.svg"
+        },
+        {
+          "id": "ymzbagzE2ks6",
+          "name": "TShop.svg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/tShopsvg.svg"
+        },
+        {
+          "id": "aNqCzpLFk9ca",
+          "name": "Shopee.svg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/shopeesvg.svg"
+        },
+        {
+          "id": "BVRvjCvLUZwO",
+          "name": "Bigcarte.svg",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/bigcartesvg.svg"
+        },
+        {
+          "id": "GSPRNpkDE7dc",
+          "name": "Bigcarte.svg 2",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/bigcartesvg2.svg"
         }
       ],
       "indirect": false,
@@ -185,7 +225,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

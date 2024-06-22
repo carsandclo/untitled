@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+import Button from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
 
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
 
@@ -69,6 +70,8 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: c4FCQiVEmUqfPe
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: SDagfCRh-2CQ/css
 
 import ArrowRightsvgIcon from "./icons/PlasmicIcon__ArrowRightsvg"; // plasmic-import: YmZHPP8Bqtaf/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
 
 createPlasmicElementProxy;
 
@@ -82,13 +85,13 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: Flex__<"div">;
+  landingPage?: Flex__<"div">;
   section?: Flex__<"section">;
   navigationBar?: Flex__<typeof NavigationBar>;
   hero?: Flex__<typeof PlasmicImg__>;
   heading?: Flex__<"div">;
   container?: Flex__<"div">;
-  apriwa?: Flex__<"div">;
+  apriwa?: Flex__<"a"> & Partial<LinkProps>;
   asc?: Flex__<"div">;
   citadel?: Flex__<"div">;
   enginePlus?: Flex__<"div">;
@@ -97,6 +100,11 @@ export type PlasmicHomepage__OverridesType = {
   rizqyMotorsport?: Flex__<"div">;
   semenMerahPutih?: Flex__<"div">;
   siloMaritime?: Flex__<"div">;
+  logo?: Flex__<"div">;
+  social?: Flex__<"div">;
+  social2?: Flex__<"div">;
+  social3?: Flex__<"div">;
+  button?: Flex__<typeof Button>;
 };
 
 export interface DefaultHomepageProps {}
@@ -146,8 +154,8 @@ function PlasmicHomepage__RenderFunc(props: {
 
       <div className={projectcss.plasmic_page_wrapper}>
         <div
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
+          data-plasmic-name={"landingPage"}
+          data-plasmic-override={overrides.landingPage}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           className={classNames(
@@ -156,7 +164,7 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            sty.root
+            sty.landingPage
           )}
         >
           <section
@@ -283,7 +291,7 @@ function PlasmicHomepage__RenderFunc(props: {
               displayWidth={
                 hasVariant(globalVariants, "screen", "desktopOnly")
                   ? "100%"
-                  : "510px"
+                  : "100%"
               }
               loading={"lazy"}
               src={{
@@ -312,10 +320,12 @@ function PlasmicHomepage__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.container)}
             >
-              <div
+              <PlasmicLink__
                 data-plasmic-name={"apriwa"}
                 data-plasmic-override={overrides.apriwa}
-                className={classNames(projectcss.all, sty.apriwa)}
+                className={classNames(projectcss.all, projectcss.a, sty.apriwa)}
+                component={Link}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -368,7 +378,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
+              </PlasmicLink__>
               <div
                 data-plasmic-name={"asc"}
                 data-plasmic-override={overrides.asc}
@@ -825,6 +835,245 @@ function PlasmicHomepage__RenderFunc(props: {
                   }}
                 />
               </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__kycjr)}
+              >
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"logo"}
+                  data-plasmic-override={overrides.logo}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.logo)}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__pGtHc)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"178px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg",
+                      fullWidth: 178,
+                      fullHeight: 40,
+                      aspectRatio: 4.45
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__eGg8
+                    )}
+                  >
+                    {"Official Apparels Partner"}
+                  </div>
+                </Stack__>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"social"}
+                  data-plasmic-override={overrides.social}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.social)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bEAxg
+                    )}
+                  >
+                    {"Connect with Cars and Clo"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__kiaQh)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___1Fhnw)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"32px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/instagramsvg.svg",
+                        fullWidth: 32,
+                        fullHeight: 32,
+                        aspectRatio: 1
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__xYraU)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"32px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/tiktoksvg.svg",
+                        fullWidth: 32,
+                        fullHeight: 32,
+                        aspectRatio: 1
+                      }}
+                    />
+                  </Stack__>
+                </Stack__>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"social2"}
+                  data-plasmic-override={overrides.social2}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.social2)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bPuBd
+                    )}
+                  >
+                    {"Marketplace"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__nsA0T)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__mpOg2)}
+                      displayHeight={"32px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/shopeesvg.svg",
+                        fullWidth: 84,
+                        fullHeight: 32,
+                        aspectRatio: 2.625
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__nmSqO)}
+                      displayHeight={"32px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/tokpedsvg.svg",
+                        fullWidth: 99,
+                        fullHeight: 32,
+                        aspectRatio: 3.09375
+                      }}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__qGjza)}
+                      displayHeight={"32px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/tShopsvg.svg",
+                        fullWidth: 114,
+                        fullHeight: 32,
+                        aspectRatio: 3.5625
+                      }}
+                    />
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox___16749)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__vWnc4)}
+                      displayHeight={"32px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/bigcartesvg2.svg",
+                        fullWidth: 89,
+                        fullHeight: 32,
+                        aspectRatio: 2.78125
+                      }}
+                    />
+                  </Stack__>
+                </Stack__>
+                <Stack__
+                  as={"div"}
+                  data-plasmic-name={"social3"}
+                  data-plasmic-override={overrides.social3}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.social3)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__dsaHs
+                    )}
+                  >
+                    {"Any question?"}
+                  </div>
+                  <Button
+                    data-plasmic-name={"button"}
+                    data-plasmic-override={overrides.button}
+                    className={classNames("__wab_instance", sty.button)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__lcKq
+                      )}
+                    >
+                      {"Contact Us"}
+                    </div>
+                  </Button>
+                </Stack__>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__aU1Ez
+                  )}
+                >
+                  {"\u00a9 2024 Cars and Clo"}
+                </div>
+              </Stack__>
             </Stack__>
           </section>
         </div>
@@ -834,8 +1083,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
+  landingPage: [
+    "landingPage",
     "section",
     "navigationBar",
     "hero",
@@ -849,7 +1098,12 @@ const PlasmicDescendants = {
     "porsche",
     "rizqyMotorsport",
     "semenMerahPutih",
-    "siloMaritime"
+    "siloMaritime",
+    "logo",
+    "social",
+    "social2",
+    "social3",
+    "button"
   ],
   section: [
     "section",
@@ -865,7 +1119,12 @@ const PlasmicDescendants = {
     "porsche",
     "rizqyMotorsport",
     "semenMerahPutih",
-    "siloMaritime"
+    "siloMaritime",
+    "logo",
+    "social",
+    "social2",
+    "social3",
+    "button"
   ],
   navigationBar: ["navigationBar"],
   hero: ["hero"],
@@ -880,7 +1139,12 @@ const PlasmicDescendants = {
     "porsche",
     "rizqyMotorsport",
     "semenMerahPutih",
-    "siloMaritime"
+    "siloMaritime",
+    "logo",
+    "social",
+    "social2",
+    "social3",
+    "button"
   ],
   apriwa: ["apriwa"],
   asc: ["asc"],
@@ -890,19 +1154,24 @@ const PlasmicDescendants = {
   porsche: ["porsche"],
   rizqyMotorsport: ["rizqyMotorsport"],
   semenMerahPutih: ["semenMerahPutih"],
-  siloMaritime: ["siloMaritime"]
+  siloMaritime: ["siloMaritime"],
+  logo: ["logo"],
+  social: ["social"],
+  social2: ["social2"],
+  social3: ["social3", "button"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  landingPage: "div";
   section: "section";
   navigationBar: typeof NavigationBar;
   hero: typeof PlasmicImg__;
   heading: "div";
   container: "div";
-  apriwa: "div";
+  apriwa: "a";
   asc: "div";
   citadel: "div";
   enginePlus: "div";
@@ -911,6 +1180,11 @@ type NodeDefaultElementType = {
   rizqyMotorsport: "div";
   semenMerahPutih: "div";
   siloMaritime: "div";
+  logo: "div";
+  social: "div";
+  social2: "div";
+  social3: "div";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -960,7 +1234,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "landingPage") {
     func.displayName = "PlasmicHomepage";
   } else {
     func.displayName = `PlasmicHomepage.${nodeName}`;
@@ -970,7 +1244,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicHomepage = Object.assign(
   // Top-level PlasmicHomepage renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("landingPage"),
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
@@ -987,6 +1261,11 @@ export const PlasmicHomepage = Object.assign(
     rizqyMotorsport: makeNodeComponent("rizqyMotorsport"),
     semenMerahPutih: makeNodeComponent("semenMerahPutih"),
     siloMaritime: makeNodeComponent("siloMaritime"),
+    logo: makeNodeComponent("logo"),
+    social: makeNodeComponent("social"),
+    social2: makeNodeComponent("social2"),
+    social3: makeNodeComponent("social3"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

@@ -59,10 +59,16 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
+
+import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: c4FCQiVEmUqfPef3MjSmg8/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: SDagfCRh-2CQ/css
+
+import ArrowRightsvgIcon from "./icons/PlasmicIcon__ArrowRightsvg"; // plasmic-import: YmZHPP8Bqtaf/icon
 
 createPlasmicElementProxy;
 
@@ -78,10 +84,19 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   section?: Flex__<"section">;
-  h1?: Flex__<"h1">;
-  h2?: Flex__<"h2">;
-  h3?: Flex__<"h3">;
-  text?: Flex__<"div">;
+  navigationBar?: Flex__<typeof NavigationBar>;
+  hero?: Flex__<typeof PlasmicImg__>;
+  heading?: Flex__<"div">;
+  container?: Flex__<"div">;
+  apriwa?: Flex__<"div">;
+  asc?: Flex__<"div">;
+  citadel?: Flex__<"div">;
+  enginePlus?: Flex__<"div">;
+  jvs?: Flex__<"div">;
+  porsche?: Flex__<"div">;
+  rizqyMotorsport?: Flex__<"div">;
+  semenMerahPutih?: Flex__<"div">;
+  siloMaritime?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -115,6 +130,10 @@ function PlasmicHomepage__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsqExrow76Zrl()
+  });
+
   return (
     <React.Fragment>
       <Head></Head>
@@ -145,70 +164,668 @@ function PlasmicHomepage__RenderFunc(props: {
             data-plasmic-override={overrides.section}
             className={classNames(projectcss.all, sty.section)}
           >
-            <h1
-              data-plasmic-name={"h1"}
-              data-plasmic-override={overrides.h1}
-              className={classNames(
-                projectcss.all,
-                projectcss.h1,
-                projectcss.__wab_text,
-                sty.h1
-              )}
-            >
-              {"Welcome to your first page."}
-            </h1>
-            <h2
-              data-plasmic-name={"h2"}
-              data-plasmic-override={overrides.h2}
-              className={classNames(
-                projectcss.all,
-                projectcss.h2,
-                projectcss.__wab_text,
-                sty.h2
-              )}
-            >
-              {"Welcome to your first page."}
-            </h2>
-            <h3
-              data-plasmic-name={"h3"}
-              data-plasmic-override={overrides.h3}
-              className={classNames(
-                projectcss.all,
-                projectcss.h3,
-                projectcss.__wab_text,
-                sty.h3
-              )}
-            >
-              {"Welcome to your first page."}
-            </h3>
-            <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text
-              )}
-            >
-              <React.Fragment>
-                <React.Fragment>
-                  {
-                    "If you haven't already done so, go back and learn the basics by going through the Plasmic Levels tutorial.\n\nIt's always easier to start from examples! Add a new page using a template\u2014do this from the list of pages in the top toolbar.\n\nOr press the big blue + button to start inserting items into this page.\n\nIntegrate this project into your codebase\u2014press the "
-                  }
-                </React.Fragment>
-                <span
-                  className={"plasmic_default__all plasmic_default__span"}
-                  style={{ fontWeight: 700 }}
+            <NavigationBar
+              data-plasmic-name={"navigationBar"}
+              data-plasmic-override={overrides.navigationBar}
+              brand={
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__ugMcO
+                  )}
+                  component={Link}
+                  href={"#"}
+                  platform={"nextjs"}
                 >
-                  {"Code"}
-                </span>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___5Sik0)}
+                    displayHeight={"40px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={{
+                      src: "/plasmic/blank_website_mobile_first/images/cncXPscIsvg.svg",
+                      fullWidth: 449.49,
+                      fullHeight: 98.63,
+                      aspectRatio: 4.557335
+                    }}
+                  />
+                </PlasmicLink__>
+              }
+              className={classNames("__wab_instance", sty.navigationBar)}
+              closeButton={
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__yh6Fr)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={"https://static1.plasmic.app/close.svg"}
+                />
+              }
+              itemsGap={8}
+              menuItems={
                 <React.Fragment>
-                  {
-                    " button in the top right and follow the quickstart instructions.\n\nJoin our Slack community (icon in bottom left) for help any time."
-                  }
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__yNWnR
+                    )}
+                    component={Link}
+                    href={"/"}
+                    platform={"nextjs"}
+                  >
+                    {"Home"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__h3JzT
+                    )}
+                    component={Link}
+                    href={"/"}
+                    platform={"nextjs"}
+                  >
+                    {"About"}
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      sty.link__omr0V
+                    )}
+                    component={Link}
+                    href={"/"}
+                    platform={"nextjs"}
+                  >
+                    {"Contact"}
+                  </PlasmicLink__>
                 </React.Fragment>
-              </React.Fragment>
+              }
+              openButton={
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__i4GIy)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"none"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  src={"https://static1.plasmic.app/menu.svg"}
+                />
+              }
+              responsiveBreakpoint={768}
+            />
+
+            <PlasmicImg__
+              data-plasmic-name={"hero"}
+              data-plasmic-override={overrides.hero}
+              alt={""}
+              className={classNames(sty.hero)}
+              displayHeight={"320px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "desktopOnly")
+                  ? "100%"
+                  : "510px"
+              }
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/blank_website_mobile_first/images/heroImagepng.png",
+                fullWidth: 750,
+                fullHeight: 660,
+                aspectRatio: undefined
+              }}
+            />
+
+            <div
+              data-plasmic-name={"heading"}
+              data-plasmic-override={overrides.heading}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.heading
+              )}
+            >
+              {"Collections"}
             </div>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"container"}
+              data-plasmic-override={overrides.container}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.container)}
+            >
+              <div
+                data-plasmic-name={"apriwa"}
+                data-plasmic-override={overrides.apriwa}
+                className={classNames(projectcss.all, sty.apriwa)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___6Pbwl)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__g74J
+                    )}
+                  >
+                    {"Apriwa\nMotorsport"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__ad4B5)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ztio2
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__pzbGr)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__fJzD6)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"auto"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/apriwa2Xpng2.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"asc"}
+                data-plasmic-override={overrides.asc}
+                className={classNames(projectcss.all, sty.asc)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__iRRoD)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__xCnpo
+                    )}
+                  >
+                    {"ASC"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__nlsgv)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___8WXHq
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__uaRbc)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___5X3V4)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/asc2X2Xpng2.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"citadel"}
+                data-plasmic-override={overrides.citadel}
+                className={classNames(projectcss.all, sty.citadel)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__yaHgl)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lbdIp
+                    )}
+                  >
+                    {"Citadel \nRacing Team"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__jQzzP)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ydcdg
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__jDDg)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__tLfKi)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"auto"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/citadel2Xpng.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"enginePlus"}
+                data-plasmic-override={overrides.enginePlus}
+                className={classNames(projectcss.all, sty.enginePlus)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__o6HuT)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gxmbg
+                    )}
+                  >
+                    {"Engine Plus \nMotorsport"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox___564Ls)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__xZgF
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__goR9K)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__bud4E)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/enginePlus2X2X2Xpng.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"jvs"}
+                data-plasmic-override={overrides.jvs}
+                className={classNames(projectcss.all, sty.jvs)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__mi6Lc)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pMtFg
+                    )}
+                  >
+                    {"JVS\nMotosport"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__fWYwL)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___1Jwcx
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__qzBo)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__prFrd)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"auto"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/jvs2X1Png.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"porsche"}
+                data-plasmic-override={overrides.porsche}
+                className={classNames(projectcss.all, sty.porsche)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__ynkes)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__waQOf
+                    )}
+                  >
+                    {"Porsche\nMotorsport"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__nmk3R)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___7IuCi
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__lUuSf)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__jpCLs)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/baseBlue2Xpng.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"rizqyMotorsport"}
+                data-plasmic-override={overrides.rizqyMotorsport}
+                className={classNames(projectcss.all, sty.rizqyMotorsport)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__hC2Bz)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__npVUo
+                    )}
+                  >
+                    {"Rizqy \nMotorsport"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__zZld2)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__fa31T
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__i38E8)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__icsh)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"auto"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/rizqyMotorsport2Xpng.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"semenMerahPutih"}
+                data-plasmic-override={overrides.semenMerahPutih}
+                className={classNames(projectcss.all, sty.semenMerahPutih)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___4OyYv)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__kqgdo
+                    )}
+                  >
+                    {"Semen Merah \nPutih "}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__sTzDv)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__vfKqb
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__oxkNy)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__kv8Y2)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/semenMerahPutih2X2Xpng.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div
+                data-plasmic-name={"siloMaritime"}
+                data-plasmic-override={overrides.siloMaritime}
+                className={classNames(projectcss.all, sty.siloMaritime)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___8SuB)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__lsnF
+                    )}
+                  >
+                    {"Silo Maritime\nRacing Team"}
+                  </div>
+                  <Stack__
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__krpRa)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ollRf
+                      )}
+                    >
+                      {"Shop Now"}
+                    </div>
+                    <ArrowRightsvgIcon
+                      className={classNames(projectcss.all, sty.svg__mPKvO)}
+                      role={"img"}
+                    />
+                  </Stack__>
+                </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__fr51O)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"auto"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"160px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/btpn2X2Xpng.png",
+                    fullWidth: 420,
+                    fullHeight: 480,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </Stack__>
           </section>
         </div>
       </div>
@@ -217,12 +834,63 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "h2", "h3", "text"],
-  section: ["section", "h1", "h2", "h3", "text"],
-  h1: ["h1"],
-  h2: ["h2"],
-  h3: ["h3"],
-  text: ["text"]
+  root: [
+    "root",
+    "section",
+    "navigationBar",
+    "hero",
+    "heading",
+    "container",
+    "apriwa",
+    "asc",
+    "citadel",
+    "enginePlus",
+    "jvs",
+    "porsche",
+    "rizqyMotorsport",
+    "semenMerahPutih",
+    "siloMaritime"
+  ],
+  section: [
+    "section",
+    "navigationBar",
+    "hero",
+    "heading",
+    "container",
+    "apriwa",
+    "asc",
+    "citadel",
+    "enginePlus",
+    "jvs",
+    "porsche",
+    "rizqyMotorsport",
+    "semenMerahPutih",
+    "siloMaritime"
+  ],
+  navigationBar: ["navigationBar"],
+  hero: ["hero"],
+  heading: ["heading"],
+  container: [
+    "container",
+    "apriwa",
+    "asc",
+    "citadel",
+    "enginePlus",
+    "jvs",
+    "porsche",
+    "rizqyMotorsport",
+    "semenMerahPutih",
+    "siloMaritime"
+  ],
+  apriwa: ["apriwa"],
+  asc: ["asc"],
+  citadel: ["citadel"],
+  enginePlus: ["enginePlus"],
+  jvs: ["jvs"],
+  porsche: ["porsche"],
+  rizqyMotorsport: ["rizqyMotorsport"],
+  semenMerahPutih: ["semenMerahPutih"],
+  siloMaritime: ["siloMaritime"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -230,10 +898,19 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   section: "section";
-  h1: "h1";
-  h2: "h2";
-  h3: "h3";
-  text: "div";
+  navigationBar: typeof NavigationBar;
+  hero: typeof PlasmicImg__;
+  heading: "div";
+  container: "div";
+  apriwa: "div";
+  asc: "div";
+  citadel: "div";
+  enginePlus: "div";
+  jvs: "div";
+  porsche: "div";
+  rizqyMotorsport: "div";
+  semenMerahPutih: "div";
+  siloMaritime: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -297,10 +974,19 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
-    h1: makeNodeComponent("h1"),
-    h2: makeNodeComponent("h2"),
-    h3: makeNodeComponent("h3"),
-    text: makeNodeComponent("text"),
+    navigationBar: makeNodeComponent("navigationBar"),
+    hero: makeNodeComponent("hero"),
+    heading: makeNodeComponent("heading"),
+    container: makeNodeComponent("container"),
+    apriwa: makeNodeComponent("apriwa"),
+    asc: makeNodeComponent("asc"),
+    citadel: makeNodeComponent("citadel"),
+    enginePlus: makeNodeComponent("enginePlus"),
+    jvs: makeNodeComponent("jvs"),
+    porsche: makeNodeComponent("porsche"),
+    rizqyMotorsport: makeNodeComponent("rizqyMotorsport"),
+    semenMerahPutih: makeNodeComponent("semenMerahPutih"),
+    siloMaritime: makeNodeComponent("siloMaritime"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

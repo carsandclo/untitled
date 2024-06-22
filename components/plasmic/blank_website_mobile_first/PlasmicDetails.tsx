@@ -197,22 +197,33 @@ function PlasmicDetails__RenderFunc(props: {
                 href={"#"}
                 platform={"nextjs"}
               >
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__dkqhs)}
-                  displayHeight={"40px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  src={{
-                    src: "/plasmic/blank_website_mobile_first/images/cncXPscIsvg.svg",
-                    fullWidth: 449.49,
-                    fullHeight: 98.63,
-                    aspectRatio: 4.557335
-                  }}
-                />
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__tzKr
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__dkqhs)}
+                    displayHeight={"40px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"none"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={{
+                      src: "/plasmic/blank_website_mobile_first/images/cncXPscIsvg.svg",
+                      fullWidth: 449.49,
+                      fullHeight: 98.63,
+                      aspectRatio: 4.557335
+                    }}
+                  />
+                </PlasmicLink__>
               </PlasmicLink__>
             }
             className={classNames("__wab_instance", sty.navigationBar)}
@@ -306,7 +317,7 @@ function PlasmicDetails__RenderFunc(props: {
                 href={`/`}
                 platform={"nextjs"}
               >
-                {"Back to Collection /"}
+                {"Back to Collections /"}
               </PlasmicLink__>
               <div
                 className={classNames(
@@ -752,24 +763,34 @@ function PlasmicDetails__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.logo2)}
             >
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__nM4Td)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"178px"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg",
-                  fullWidth: 178,
-                  fullHeight: 40,
-                  aspectRatio: 4.45
-                }}
-              />
-
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link___0EzO
+                )}
+                component={Link}
+                href={`/`}
+                platform={"nextjs"}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__nM4Td)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"178px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg",
+                    fullWidth: 178,
+                    fullHeight: 40,
+                    aspectRatio: 4.45
+                  }}
+                />
+              </PlasmicLink__>
               <div
                 className={classNames(
                   projectcss.all,

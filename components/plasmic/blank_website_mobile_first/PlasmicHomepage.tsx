@@ -184,7 +184,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.link__ugMcO
                   )}
                   component={Link}
-                  href={"#"}
+                  href={`/`}
                   platform={"nextjs"}
                 >
                   <PlasmicImg__
@@ -855,24 +855,34 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.logo)}
                 >
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__pGtHc)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"178px"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg",
-                      fullWidth: 178,
-                      fullHeight: 40,
-                      aspectRatio: 4.45
-                    }}
-                  />
-
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__dssr6
+                    )}
+                    component={Link}
+                    href={`/`}
+                    platform={"nextjs"}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__pGtHc)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"178px"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg",
+                        fullWidth: 178,
+                        fullHeight: 40,
+                        aspectRatio: 4.45
+                      }}
+                    />
+                  </PlasmicLink__>
                   <div
                     className={classNames(
                       projectcss.all,

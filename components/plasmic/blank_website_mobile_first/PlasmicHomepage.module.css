@@ -1265,6 +1265,9 @@
   > img {
   margin-left: 8px;
 }
+.link__egJhG {
+  display: flex;
+}
 .img___1Fhnw {
   object-fit: cover;
   max-width: 100%;
@@ -1274,8 +1277,11 @@
 .img___1Fhnw > picture > img {
   object-fit: cover;
 }
-.img__xYraU {
+.link__ocLrT {
   position: relative;
+  display: flex;
+}
+.img__xYraU {
   object-fit: cover;
   max-width: 100%;
   width: 32px;
@@ -1351,6 +1357,9 @@
   > img {
   margin-left: 8px;
 }
+.link__gtDi3 {
+  display: flex;
+}
 .img__mpOg2 {
   object-fit: cover;
   max-width: 100%;
@@ -1358,6 +1367,9 @@
 }
 .img__mpOg2 > picture > img {
   object-fit: cover;
+}
+.link__fI9Rt {
+  display: flex;
 }
 .img__nmSqO {
   object-fit: cover;
@@ -1448,6 +1460,7 @@
   color: #f4f4f4;
   font-size: 16px;
   font-weight: 500;
+  padding-bottom: 0px;
   min-width: 0;
 }
 .button:global(.__wab_instance) {

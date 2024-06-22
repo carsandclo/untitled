@@ -573,7 +573,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__pMtFg
                     )}
                   >
-                    {"JVS\nMotosport"}
+                    {"JVS\nMotorsport"}
                   </div>
                   <Stack__
                     as={"div"}
@@ -904,41 +904,64 @@ function PlasmicHomepage__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__kiaQh)}
                   >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img___1Fhnw)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"32px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blank_website_mobile_first/images/instagramsvg.svg",
-                        fullWidth: 32,
-                        fullHeight: 32,
-                        aspectRatio: 1
-                      }}
-                    />
-
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__xYraU)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"32px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blank_website_mobile_first/images/tiktoksvg.svg",
-                        fullWidth: 32,
-                        fullHeight: 32,
-                        aspectRatio: 1
-                      }}
-                    />
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__egJhG
+                      )}
+                      component={Link}
+                      href={"https://www.instagram.com/carsandclo/"}
+                      platform={"nextjs"}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img___1Fhnw)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"32px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website_mobile_first/images/instagramsvg.svg",
+                          fullWidth: 32,
+                          fullHeight: 32,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__ocLrT
+                      )}
+                      component={Link}
+                      href={
+                        "https://www.tiktok.com/@carsandclo?_t=8nQ5PnLKxmq&_r=1"
+                      }
+                      platform={"nextjs"}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__xYraU)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"32px"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website_mobile_first/images/tiktoksvg.svg",
+                          fullWidth: 32,
+                          fullHeight: 32,
+                          aspectRatio: 1
+                        }}
+                      />
+                    </PlasmicLink__>
                   </Stack__>
                 </Stack__>
                 <Stack__
@@ -962,42 +985,62 @@ function PlasmicHomepage__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__nsA0T)}
                   >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__mpOg2)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blank_website_mobile_first/images/shopeesvg.svg",
-                        fullWidth: 84,
-                        fullHeight: 32,
-                        aspectRatio: 2.625
-                      }}
-                    />
-
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__nmSqO)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blank_website_mobile_first/images/tokpedsvg.svg",
-                        fullWidth: 99,
-                        fullHeight: 32,
-                        aspectRatio: 3.09375
-                      }}
-                    />
-
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__gtDi3
+                      )}
+                      component={Link}
+                      href={"https://shopee.co.id/carsandcloofficial"}
+                      platform={"nextjs"}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__mpOg2)}
+                        displayHeight={"32px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website_mobile_first/images/shopeesvg.svg",
+                          fullWidth: 84,
+                          fullHeight: 32,
+                          aspectRatio: 2.625
+                        }}
+                      />
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link__fI9Rt
+                      )}
+                      component={Link}
+                      href={"https://www.tokopedia.com/carsandcloofficial"}
+                      platform={"nextjs"}
+                    >
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__nmSqO)}
+                        displayHeight={"32px"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        loading={"lazy"}
+                        src={{
+                          src: "/plasmic/blank_website_mobile_first/images/tokpedsvg.svg",
+                          fullWidth: 99,
+                          fullHeight: 32,
+                          aspectRatio: 3.09375
+                        }}
+                      />
+                    </PlasmicLink__>
                     <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__qGjza)}
@@ -1054,7 +1097,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__dsaHs
                     )}
                   >
-                    {"Any question?"}
+                    {"Want to collaborate?"}
                   </div>
                   <Button
                     data-plasmic-name={"button"}
@@ -1072,7 +1115,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         sty.text__lcKq
                       )}
                     >
-                      {"Contact Us"}
+                      {"Get in touch with us"}
                     </div>
                   </Button>
                 </Stack__>

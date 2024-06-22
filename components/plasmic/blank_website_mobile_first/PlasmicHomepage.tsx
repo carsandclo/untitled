@@ -285,7 +285,11 @@ function PlasmicHomepage__RenderFunc(props: {
               className={classNames(sty.hero)}
               displayHeight={"320px"}
               displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
+              displayMaxWidth={
+                hasVariant(globalVariants, "screen", "desktopOnly")
+                  ? "800px"
+                  : "100%"
+              }
               displayMinHeight={"0"}
               displayMinWidth={"0"}
               displayWidth={

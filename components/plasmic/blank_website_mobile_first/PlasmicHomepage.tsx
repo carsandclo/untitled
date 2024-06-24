@@ -104,7 +104,7 @@ export type PlasmicHomepage__OverridesType = {
   logo?: Flex__<"div">;
   social?: Flex__<"div">;
   social2?: Flex__<"div">;
-  social3?: Flex__<"div">;
+  social4?: Flex__<"div">;
   button?: Flex__<typeof Button>;
 };
 
@@ -1095,16 +1095,16 @@ function PlasmicHomepage__RenderFunc(props: {
                 </Stack__>
                 <Stack__
                   as={"div"}
-                  data-plasmic-name={"social3"}
-                  data-plasmic-override={overrides.social3}
+                  data-plasmic-name={"social4"}
+                  data-plasmic-override={overrides.social4}
                   hasGap={true}
-                  className={classNames(projectcss.all, sty.social3)}
+                  className={classNames(projectcss.all, sty.social4)}
                 >
                   <div
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.text__dsaHs
+                      sty.text__qjixm
                     )}
                   >
                     {"Want to collaborate?"}
@@ -1122,7 +1122,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__lcKq
+                        sty.text__eFEjL
                       )}
                     >
                       {"Get in touch with us"}
@@ -1168,7 +1168,7 @@ const PlasmicDescendants = {
     "logo",
     "social",
     "social2",
-    "social3",
+    "social4",
     "button"
   ],
   section: [
@@ -1190,7 +1190,7 @@ const PlasmicDescendants = {
     "logo",
     "social",
     "social2",
-    "social3",
+    "social4",
     "button"
   ],
   navigationBar: ["navigationBar"],
@@ -1211,7 +1211,7 @@ const PlasmicDescendants = {
     "logo",
     "social",
     "social2",
-    "social3",
+    "social4",
     "button"
   ],
   apriwa: ["apriwa"],
@@ -1223,11 +1223,11 @@ const PlasmicDescendants = {
   rizqyMotorsport: ["rizqyMotorsport"],
   semenMerahPutih: ["semenMerahPutih"],
   siloMaritime: ["siloMaritime"],
-  footer: ["footer", "logo", "social", "social2", "social3", "button"],
+  footer: ["footer", "logo", "social", "social2", "social4", "button"],
   logo: ["logo"],
   social: ["social"],
   social2: ["social2"],
-  social3: ["social3", "button"],
+  social4: ["social4", "button"],
   button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -1253,7 +1253,7 @@ type NodeDefaultElementType = {
   logo: "div";
   social: "div";
   social2: "div";
-  social3: "div";
+  social4: "div";
   button: typeof Button;
 };
 
@@ -1335,7 +1335,7 @@ export const PlasmicHomepage = Object.assign(
     logo: makeNodeComponent("logo"),
     social: makeNodeComponent("social"),
     social2: makeNodeComponent("social2"),
-    social3: makeNodeComponent("social3"),
+    social4: makeNodeComponent("social4"),
     button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicHomepage

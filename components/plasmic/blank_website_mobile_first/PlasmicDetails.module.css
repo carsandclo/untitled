@@ -586,6 +586,11 @@
   > img {
   margin-top: 20px;
 }
+@media (min-width: 768px) {
+  .footer2 {
+    width: 800px;
+  }
+}
 .logo2 {
   display: flex;
   position: relative;

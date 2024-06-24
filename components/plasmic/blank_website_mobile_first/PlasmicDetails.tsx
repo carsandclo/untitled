@@ -358,6 +358,7 @@ function PlasmicDetails__RenderFunc(props: {
                   SliderWrapper_Helpers
                 ),
                 className: classNames("__wab_instance", sty.sliderCarousel),
+                dots: false,
                 initialSlide: generateStateValueProp($state, [
                   "sliderCarousel",
                   "currentSlide"

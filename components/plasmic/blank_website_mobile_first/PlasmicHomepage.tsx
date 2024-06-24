@@ -59,8 +59,15 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import {
+  executePlasmicDataOp,
+  usePlasmicDataOp,
+  usePlasmicInvalidate
+} from "@plasmicapp/react-web/lib/data-sources";
+
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import Button from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
+import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
 
@@ -138,6 +145,28 @@ function PlasmicHomepage__RenderFunc(props: {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+
+  let [$queries, setDollarQueries] = React.useState<
+    Record<string, ReturnType<typeof usePlasmicDataOp>>
+  >({});
+
+  const new$Queries: Record<string, ReturnType<typeof usePlasmicDataOp>> = {
+    query: usePlasmicDataOp(() => {
+      return {
+        sourceId: "eA7ZA8G1r1sNAkLZ6fF4gN",
+        opId: "dd53357a-e00e-4feb-963c-ea28429b31e8",
+        userArgs: {},
+        cacheKey: `plasmic.$.dd53357a-e00e-4feb-963c-ea28429b31e8.$.`,
+        invalidatedKeys: null,
+        roleId: null
+      };
+    })
+  };
+  if (Object.keys(new$Queries).some(k => new$Queries[k] !== $queries[k])) {
+    setDollarQueries(new$Queries);
+
+    $queries = new$Queries;
+  }
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsqExrow76Zrl()
@@ -330,7 +359,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 data-plasmic-override={overrides.apriwa}
                 className={classNames(projectcss.all, projectcss.a, sty.apriwa)}
                 component={Link}
-                href={`/details`}
+                href={`/[slug]`}
                 platform={"nextjs"}
               >
                 <Stack__

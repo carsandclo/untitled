@@ -66,14 +66,10 @@ import {
 } from "@plasmicapp/react-web/lib/data-sources";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import { TabsContainer } from "@plasmicpkgs/plasmic-tabs";
-import { TabButton } from "@plasmicpkgs/plasmic-tabs";
-import Button from "../../Button"; // plasmic-import: lBHNzts6tFyj/component
-import { TabUnderline } from "@plasmicpkgs/plasmic-tabs";
 import { TabContent } from "@plasmicpkgs/plasmic-tabs";
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
-import Button2 from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
+import Button from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
@@ -83,10 +79,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: c4FCQiVEmUqfPef3MjSmg8/projectcss
 import sty from "./PlasmicDetails.module.css"; // plasmic-import: hSQBkSnUA7tC/css
 
-import ChecksvgIcon from "../plasmic_tabs/icons/PlasmicIcon__Checksvg"; // plasmic-import: zq2s7N0xWucT/icon
-import IconIcon from "../plasmic_tabs/icons/PlasmicIcon__Icon"; // plasmic-import: 8K40faRNhuCj/icon
-import ChecksvgIcon2 from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
-import IconIcon2 from "./icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
 import Shopeesvg2Icon from "./icons/PlasmicIcon__Shopeesvg2"; // plasmic-import: jkqfVWSlYrIo/icon
 import WorldsvgIcon from "./icons/PlasmicIcon__Worldsvg"; // plasmic-import: VOYVMBHHCe1x/icon
 
@@ -104,18 +98,14 @@ export const PlasmicDetails__ArgProps = new Array<ArgPropType>();
 export type PlasmicDetails__OverridesType = {
   details?: Flex__<"div">;
   navigationBar?: Flex__<typeof NavigationBar>;
-  tabsContainer?: Flex__<typeof TabsContainer>;
-  tShirt?: Flex__<typeof TabButton>;
-  hoodie?: Flex__<typeof TabButton>;
-  sweater?: Flex__<typeof TabButton>;
-  tabUnderline?: Flex__<typeof TabUnderline>;
+  tabContent?: Flex__<typeof TabContent>;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
   img1?: Flex__<"div">;
   img2?: Flex__<"div">;
   img3?: Flex__<"div">;
   img4?: Flex__<"div">;
-  size?: Flex__<"div">;
   desc?: Flex__<"div">;
+  size?: Flex__<"div">;
   link?: Flex__<"div">;
   footer2?: Flex__<"div">;
   logo2?: Flex__<"div">;
@@ -388,772 +378,583 @@ function PlasmicDetails__RenderFunc(props: {
                 </React.Fragment>
               </div>
             </div>
-            <TabsContainer
-              data-plasmic-name={"tabsContainer"}
-              data-plasmic-override={overrides.tabsContainer}
-              className={classNames("__wab_instance", sty.tabsContainer)}
-              initialKey={"tab1"}
-            >
-              <DataCtxReader__>
-                {$ctx => (
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__hYFkL)}
+            <div className={classNames(projectcss.all, sty.freeBox__vZ66I)}>
+              <TabContent
+                data-plasmic-name={"tabContent"}
+                data-plasmic-override={overrides.tabContent}
+                className={classNames("__wab_instance", sty.tabContent)}
+                tabKey={"tab1"}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__b56Ml)}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__x7Ohs)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "desktopOnly")
+                        ? "800px"
+                        : "auto"
+                    }
+                    id={"main_image"}
+                    loading={"lazy"}
+                    src={(() => {
+                      try {
+                        return $queries.query2.data[0].image1;
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Front_View_Apriwa_white.png";
+                        }
+                        throw e;
+                      }
+                    })()}
+                  />
+
+                  {(() => {
+                    const child$Props = {
+                      beforeChange: generateStateOnChangePropForCodeComponents(
+                        $state,
+                        "currentSlide",
+                        ["sliderCarousel", "currentSlide"],
+                        SliderWrapper_Helpers
+                      ),
+                      className: classNames(
+                        "__wab_instance",
+                        sty.sliderCarousel
+                      ),
+                      dots: false,
+                      initialSlide: generateStateValueProp($state, [
+                        "sliderCarousel",
+                        "currentSlide"
+                      ]),
+                      ref: ref => {
+                        $refs["sliderCarousel"] = ref;
+                      },
+                      rows: 1,
+                      sliderScopeClassName: sty["sliderCarousel__slider"],
+                      slidesPerRow: 4
+                    };
+                    initializeCodeComponentStates(
+                      $state,
+                      [
+                        {
+                          name: "currentSlide",
+                          plasmicStateName: "sliderCarousel.currentSlide"
+                        }
+                      ],
+                      [],
+                      SliderWrapper_Helpers ?? {},
+                      child$Props
+                    );
+
+                    return (
+                      <SliderWrapper
+                        data-plasmic-name={"sliderCarousel"}
+                        data-plasmic-override={overrides.sliderCarousel}
+                        {...child$Props}
+                      >
+                        <div
+                          data-plasmic-name={"img1"}
+                          data-plasmic-override={overrides.img1}
+                          className={classNames(projectcss.all, sty.img1)}
+                        >
+                          <PlasmicLink__
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              sty.link__kQyAa
+                            )}
+                            component={Link}
+                            onClick={async event => {
+                              const $steps = {};
+
+                              $steps["runCode"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      customFunction: async () => {
+                                        return (() => {
+                                          return ($state.main_image =
+                                            $queries.query2.data.find(
+                                              item => item.id === "1"
+                                            )["image1"]);
+                                        })();
+                                      }
+                                    };
+                                    return (({ customFunction }) => {
+                                      return customFunction();
+                                    })?.apply(null, [actionArgs]);
+                                  })()
+                                : undefined;
+                              if (
+                                $steps["runCode"] != null &&
+                                typeof $steps["runCode"] === "object" &&
+                                typeof $steps["runCode"].then === "function"
+                              ) {
+                                $steps["runCode"] = await $steps["runCode"];
+                              }
+                            }}
+                            platform={"nextjs"}
+                          >
+                            <PlasmicImg__
+                              alt={""}
+                              className={classNames(sty.img___5Njkl)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"auto"}
+                              id={"image1"}
+                              src={(() => {
+                                try {
+                                  return $queries.query2.data[0].image1;
+                                } catch (e) {
+                                  if (
+                                    e instanceof TypeError ||
+                                    e?.plasmicType ===
+                                      "PlasmicUndefinedDataError"
+                                  ) {
+                                    return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Apriwa_white.png";
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            />
+                          </PlasmicLink__>
+                        </div>
+                        <div
+                          data-plasmic-name={"img2"}
+                          data-plasmic-override={overrides.img2}
+                          className={classNames(projectcss.all, sty.img2)}
+                        >
+                          <PlasmicLink__
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              sty.link__nm1Gg
+                            )}
+                            component={Link}
+                            onClick={async event => {
+                              const $steps = {};
+
+                              $steps["runCode"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      customFunction: async () => {
+                                        return (() => {
+                                          return ($state.main_image =
+                                            $queries.query2.data.find(
+                                              item => item.id === "1"
+                                            )["image2"]);
+                                        })();
+                                      }
+                                    };
+                                    return (({ customFunction }) => {
+                                      return customFunction();
+                                    })?.apply(null, [actionArgs]);
+                                  })()
+                                : undefined;
+                              if (
+                                $steps["runCode"] != null &&
+                                typeof $steps["runCode"] === "object" &&
+                                typeof $steps["runCode"].then === "function"
+                              ) {
+                                $steps["runCode"] = await $steps["runCode"];
+                              }
+                            }}
+                            platform={"nextjs"}
+                          >
+                            <PlasmicImg__
+                              alt={""}
+                              className={classNames(sty.img__fCtO)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"auto"}
+                              id={"image2"}
+                              src={(() => {
+                                try {
+                                  return $queries.query2.data[0].image2;
+                                } catch (e) {
+                                  if (
+                                    e instanceof TypeError ||
+                                    e?.plasmicType ===
+                                      "PlasmicUndefinedDataError"
+                                  ) {
+                                    return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Apriwa_black.png";
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            />
+                          </PlasmicLink__>
+                        </div>
+                        <div
+                          data-plasmic-name={"img3"}
+                          data-plasmic-override={overrides.img3}
+                          className={classNames(projectcss.all, sty.img3)}
+                        >
+                          <PlasmicLink__
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              sty.link__wQMeK
+                            )}
+                            component={Link}
+                            onClick={async event => {
+                              const $steps = {};
+
+                              $steps["runCode"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      customFunction: async () => {
+                                        return (() => {
+                                          return ($state.main_image = "image1");
+                                        })();
+                                      }
+                                    };
+                                    return (({ customFunction }) => {
+                                      return customFunction();
+                                    })?.apply(null, [actionArgs]);
+                                  })()
+                                : undefined;
+                              if (
+                                $steps["runCode"] != null &&
+                                typeof $steps["runCode"] === "object" &&
+                                typeof $steps["runCode"].then === "function"
+                              ) {
+                                $steps["runCode"] = await $steps["runCode"];
+                              }
+                            }}
+                            platform={"nextjs"}
+                          >
+                            <PlasmicImg__
+                              alt={""}
+                              className={classNames(sty.img__snfax)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"auto"}
+                              id={"image3"}
+                              src={(() => {
+                                try {
+                                  return $queries.query2.data[0].image3;
+                                } catch (e) {
+                                  if (
+                                    e instanceof TypeError ||
+                                    e?.plasmicType ===
+                                      "PlasmicUndefinedDataError"
+                                  ) {
+                                    return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Circuit_Apriwa_white.png";
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            />
+                          </PlasmicLink__>
+                        </div>
+                        <div
+                          data-plasmic-name={"img4"}
+                          data-plasmic-override={overrides.img4}
+                          className={classNames(projectcss.all, sty.img4)}
+                        >
+                          <PlasmicLink__
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              sty.link__g6I4E
+                            )}
+                            component={Link}
+                            onClick={async event => {
+                              const $steps = {};
+
+                              $steps["runCode"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      customFunction: async () => {
+                                        return (() => {
+                                          return ($state.main_image = "image1");
+                                        })();
+                                      }
+                                    };
+                                    return (({ customFunction }) => {
+                                      return customFunction();
+                                    })?.apply(null, [actionArgs]);
+                                  })()
+                                : undefined;
+                              if (
+                                $steps["runCode"] != null &&
+                                typeof $steps["runCode"] === "object" &&
+                                typeof $steps["runCode"].then === "function"
+                              ) {
+                                $steps["runCode"] = await $steps["runCode"];
+                              }
+                            }}
+                            platform={"nextjs"}
+                          >
+                            <PlasmicImg__
+                              alt={""}
+                              className={classNames(sty.img__rIldp)}
+                              displayHeight={"auto"}
+                              displayMaxHeight={"none"}
+                              displayMaxWidth={"100%"}
+                              displayMinHeight={"0"}
+                              displayMinWidth={"0"}
+                              displayWidth={"100%"}
+                              id={"image4"}
+                              src={(() => {
+                                try {
+                                  return $queries.query2.data[0].image4;
+                                } catch (e) {
+                                  if (
+                                    e instanceof TypeError ||
+                                    e?.plasmicType ===
+                                      "PlasmicUndefinedDataError"
+                                  ) {
+                                    return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Circuit_Apriwa_black.png";
+                                  }
+                                  throw e;
+                                }
+                              })()}
+                            />
+                          </PlasmicLink__>
+                        </div>
+                      </SliderWrapper>
+                    );
+                  })()}
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"desc"}
+                    data-plasmic-override={overrides.desc}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.desc)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__ojeFv)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dBbPt
+                      )}
                     >
-                      <TabButton
-                        data-plasmic-name={"tShirt"}
-                        data-plasmic-override={overrides.tShirt}
-                        className={classNames("__wab_instance", sty.tShirt)}
-                        tabKey={"tab1"}
-                      >
-                        <Button>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__kGjeD
-                            )}
-                          >
-                            {"T Shirts"}
-                          </div>
-                        </Button>
-                        <Button>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__eOerG
-                            )}
-                          >
-                            {"T Shirts"}
-                          </div>
-                        </Button>
-                      </TabButton>
-                      <TabButton
-                        data-plasmic-name={"hoodie"}
-                        data-plasmic-override={overrides.hoodie}
-                        className={classNames("__wab_instance", sty.hoodie)}
-                        tabKey={"tab2"}
-                      >
-                        <Button>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__n1Zmi
-                            )}
-                          >
-                            {"Hoodie"}
-                          </div>
-                        </Button>
-                      </TabButton>
-                      <TabButton
-                        data-plasmic-name={"sweater"}
-                        data-plasmic-override={overrides.sweater}
-                        className={classNames("__wab_instance", sty.sweater)}
-                        tabKey={"tab3"}
-                      >
-                        <Button>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___4Mcl
-                            )}
-                          >
-                            {"Sweater"}
-                          </div>
-                        </Button>
-                      </TabButton>
-                      <TabUnderline
-                        data-plasmic-name={"tabUnderline"}
-                        data-plasmic-override={overrides.tabUnderline}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.tabUnderline
-                        )}
-                      />
+                      <React.Fragment>
+                        {(() => {
+                          try {
+                            return $queries.query2.data[0].name;
+                          } catch (e) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
+                              return "911 GT3 Cup - Front View";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </React.Fragment>
                     </div>
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__vZ66I)}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__dElHt
+                      )}
                     >
-                      <TabContent
-                        className={classNames(
-                          "__wab_instance",
-                          sty.tabContent__i9EMj
-                        )}
-                        tabKey={"tab1"}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__b56Ml
-                          )}
-                        >
-                          <PlasmicImg__
-                            alt={""}
-                            className={classNames(sty.img__x7Ohs)}
-                            displayHeight={"auto"}
-                            displayMaxHeight={"none"}
-                            displayMaxWidth={"100%"}
-                            displayMinHeight={"0"}
-                            displayMinWidth={"0"}
-                            displayWidth={
-                              hasVariant(
-                                globalVariants,
-                                "screen",
-                                "desktopOnly"
-                              )
-                                ? "800px"
-                                : "auto"
+                      <React.Fragment>
+                        {(() => {
+                          try {
+                            return $queries.query2.data[0].description;
+                          } catch (e) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
+                              return "A special highlight for Porsche fans are our limited Porsche T-shirts with collector's themes. The tasteful and sometimes colorful prints on these T-shirts show different Porsche themes such as cars, model logos or historical themes.";
                             }
-                            id={"main_image"}
-                            loading={"lazy"}
-                            src={(() => {
-                              try {
-                                return $queries.query2.data[0].image1;
-                              } catch (e) {
-                                if (
-                                  e instanceof TypeError ||
-                                  e?.plasmicType === "PlasmicUndefinedDataError"
-                                ) {
-                                  return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Front_View_Apriwa_white.png";
-                                }
-                                throw e;
-                              }
-                            })()}
-                          />
-
-                          {(() => {
-                            const child$Props = {
-                              beforeChange:
-                                generateStateOnChangePropForCodeComponents(
-                                  $state,
-                                  "currentSlide",
-                                  ["sliderCarousel", "currentSlide"],
-                                  SliderWrapper_Helpers
-                                ),
-                              className: classNames(
-                                "__wab_instance",
-                                sty.sliderCarousel
-                              ),
-                              dots: false,
-                              initialSlide: generateStateValueProp($state, [
-                                "sliderCarousel",
-                                "currentSlide"
-                              ]),
-                              ref: ref => {
-                                $refs["sliderCarousel"] = ref;
-                              },
-                              rows: 1,
-                              sliderScopeClassName:
-                                sty["sliderCarousel__slider"],
-                              slidesPerRow: 4
-                            };
-                            initializeCodeComponentStates(
-                              $state,
-                              [
-                                {
-                                  name: "currentSlide",
-                                  plasmicStateName:
-                                    "sliderCarousel.currentSlide"
-                                }
-                              ],
-                              [],
-                              SliderWrapper_Helpers ?? {},
-                              child$Props
-                            );
-
-                            return (
-                              <SliderWrapper
-                                data-plasmic-name={"sliderCarousel"}
-                                data-plasmic-override={overrides.sliderCarousel}
-                                {...child$Props}
-                              >
-                                <div
-                                  data-plasmic-name={"img1"}
-                                  data-plasmic-override={overrides.img1}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.img1
-                                  )}
-                                >
-                                  <PlasmicLink__
-                                    className={classNames(
-                                      projectcss.all,
-                                      projectcss.a,
-                                      sty.link__kQyAa
-                                    )}
-                                    component={Link}
-                                    onClick={async event => {
-                                      const $steps = {};
-
-                                      $steps["runCode"] = true
-                                        ? (() => {
-                                            const actionArgs = {
-                                              customFunction: async () => {
-                                                return (() => {
-                                                  return ($state.main_image =
-                                                    $queries.query2.data.find(
-                                                      item => item.id === "1"
-                                                    )["image1"]);
-                                                })();
-                                              }
-                                            };
-                                            return (({ customFunction }) => {
-                                              return customFunction();
-                                            })?.apply(null, [actionArgs]);
-                                          })()
-                                        : undefined;
-                                      if (
-                                        $steps["runCode"] != null &&
-                                        typeof $steps["runCode"] === "object" &&
-                                        typeof $steps["runCode"].then ===
-                                          "function"
-                                      ) {
-                                        $steps["runCode"] = await $steps[
-                                          "runCode"
-                                        ];
-                                      }
-                                    }}
-                                    platform={"nextjs"}
-                                  >
-                                    <PlasmicImg__
-                                      alt={""}
-                                      className={classNames(sty.img___5Njkl)}
-                                      displayHeight={"auto"}
-                                      displayMaxHeight={"none"}
-                                      displayMaxWidth={"100%"}
-                                      displayMinHeight={"0"}
-                                      displayMinWidth={"0"}
-                                      displayWidth={"auto"}
-                                      id={"image1"}
-                                      src={(() => {
-                                        try {
-                                          return $queries.query2.data[0].image1;
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Apriwa_white.png";
-                                          }
-                                          throw e;
-                                        }
-                                      })()}
-                                    />
-                                  </PlasmicLink__>
-                                </div>
-                                <div
-                                  data-plasmic-name={"img2"}
-                                  data-plasmic-override={overrides.img2}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.img2
-                                  )}
-                                >
-                                  <PlasmicLink__
-                                    className={classNames(
-                                      projectcss.all,
-                                      projectcss.a,
-                                      sty.link__nm1Gg
-                                    )}
-                                    component={Link}
-                                    onClick={async event => {
-                                      const $steps = {};
-
-                                      $steps["runCode"] = true
-                                        ? (() => {
-                                            const actionArgs = {
-                                              customFunction: async () => {
-                                                return (() => {
-                                                  return ($state.main_image =
-                                                    $queries.query2.data.find(
-                                                      item => item.id === "1"
-                                                    )["image2"]);
-                                                })();
-                                              }
-                                            };
-                                            return (({ customFunction }) => {
-                                              return customFunction();
-                                            })?.apply(null, [actionArgs]);
-                                          })()
-                                        : undefined;
-                                      if (
-                                        $steps["runCode"] != null &&
-                                        typeof $steps["runCode"] === "object" &&
-                                        typeof $steps["runCode"].then ===
-                                          "function"
-                                      ) {
-                                        $steps["runCode"] = await $steps[
-                                          "runCode"
-                                        ];
-                                      }
-                                    }}
-                                    platform={"nextjs"}
-                                  >
-                                    <PlasmicImg__
-                                      alt={""}
-                                      className={classNames(sty.img__fCtO)}
-                                      displayHeight={"auto"}
-                                      displayMaxHeight={"none"}
-                                      displayMaxWidth={"100%"}
-                                      displayMinHeight={"0"}
-                                      displayMinWidth={"0"}
-                                      displayWidth={"auto"}
-                                      id={"image2"}
-                                      src={(() => {
-                                        try {
-                                          return $queries.query2.data[0].image2;
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Apriwa_black.png";
-                                          }
-                                          throw e;
-                                        }
-                                      })()}
-                                    />
-                                  </PlasmicLink__>
-                                </div>
-                                <div
-                                  data-plasmic-name={"img3"}
-                                  data-plasmic-override={overrides.img3}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.img3
-                                  )}
-                                >
-                                  <PlasmicLink__
-                                    className={classNames(
-                                      projectcss.all,
-                                      projectcss.a,
-                                      sty.link__wQMeK
-                                    )}
-                                    component={Link}
-                                    onClick={async event => {
-                                      const $steps = {};
-
-                                      $steps["runCode"] = true
-                                        ? (() => {
-                                            const actionArgs = {
-                                              customFunction: async () => {
-                                                return (() => {
-                                                  return ($state.main_image =
-                                                    "image1");
-                                                })();
-                                              }
-                                            };
-                                            return (({ customFunction }) => {
-                                              return customFunction();
-                                            })?.apply(null, [actionArgs]);
-                                          })()
-                                        : undefined;
-                                      if (
-                                        $steps["runCode"] != null &&
-                                        typeof $steps["runCode"] === "object" &&
-                                        typeof $steps["runCode"].then ===
-                                          "function"
-                                      ) {
-                                        $steps["runCode"] = await $steps[
-                                          "runCode"
-                                        ];
-                                      }
-                                    }}
-                                    platform={"nextjs"}
-                                  >
-                                    <PlasmicImg__
-                                      alt={""}
-                                      className={classNames(sty.img__snfax)}
-                                      displayHeight={"auto"}
-                                      displayMaxHeight={"none"}
-                                      displayMaxWidth={"100%"}
-                                      displayMinHeight={"0"}
-                                      displayMinWidth={"0"}
-                                      displayWidth={"auto"}
-                                      id={"image3"}
-                                      src={(() => {
-                                        try {
-                                          return $queries.query2.data[0].image3;
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Circuit_Apriwa_white.png";
-                                          }
-                                          throw e;
-                                        }
-                                      })()}
-                                    />
-                                  </PlasmicLink__>
-                                </div>
-                                <div
-                                  data-plasmic-name={"img4"}
-                                  data-plasmic-override={overrides.img4}
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.img4
-                                  )}
-                                >
-                                  <PlasmicLink__
-                                    className={classNames(
-                                      projectcss.all,
-                                      projectcss.a,
-                                      sty.link__g6I4E
-                                    )}
-                                    component={Link}
-                                    onClick={async event => {
-                                      const $steps = {};
-
-                                      $steps["runCode"] = true
-                                        ? (() => {
-                                            const actionArgs = {
-                                              customFunction: async () => {
-                                                return (() => {
-                                                  return ($state.main_image =
-                                                    "image1");
-                                                })();
-                                              }
-                                            };
-                                            return (({ customFunction }) => {
-                                              return customFunction();
-                                            })?.apply(null, [actionArgs]);
-                                          })()
-                                        : undefined;
-                                      if (
-                                        $steps["runCode"] != null &&
-                                        typeof $steps["runCode"] === "object" &&
-                                        typeof $steps["runCode"].then ===
-                                          "function"
-                                      ) {
-                                        $steps["runCode"] = await $steps[
-                                          "runCode"
-                                        ];
-                                      }
-                                    }}
-                                    platform={"nextjs"}
-                                  >
-                                    <PlasmicImg__
-                                      alt={""}
-                                      className={classNames(sty.img__rIldp)}
-                                      displayHeight={"auto"}
-                                      displayMaxHeight={"none"}
-                                      displayMaxWidth={"100%"}
-                                      displayMinHeight={"0"}
-                                      displayMinWidth={"0"}
-                                      displayWidth={"100%"}
-                                      id={"image4"}
-                                      src={(() => {
-                                        try {
-                                          return $queries.query2.data[0].image4;
-                                        } catch (e) {
-                                          if (
-                                            e instanceof TypeError ||
-                                            e?.plasmicType ===
-                                              "PlasmicUndefinedDataError"
-                                          ) {
-                                            return "https://cdcbjwnnxdsbwekkxdah.supabase.co/storage/v1/object/public/product_image/Apriwa%20Motorsport/T-shirt_Side_View_Circuit_Apriwa_black.png";
-                                          }
-                                          throw e;
-                                        }
-                                      })()}
-                                    />
-                                  </PlasmicLink__>
-                                </div>
-                              </SliderWrapper>
-                            );
-                          })()}
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"size"}
-                            data-plasmic-override={overrides.size}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.size)}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__sNlVw
-                              )}
-                            >
-                              {"Size"}
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___8YaiT
-                              )}
-                            >
-                              <React.Fragment>
-                                {(() => {
-                                  try {
-                                    return $queries.query2.data[0].size;
-                                  } catch (e) {
-                                    if (
-                                      e instanceof TypeError ||
-                                      e?.plasmicType ===
-                                        "PlasmicUndefinedDataError"
-                                    ) {
-                                      return "S, M, L, XL, XXL";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </React.Fragment>
-                            </div>
-                          </Stack__>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"desc"}
-                            data-plasmic-override={overrides.desc}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.desc)}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__dBbPt
-                              )}
-                            >
-                              <React.Fragment>
-                                {(() => {
-                                  try {
-                                    return $queries.query2.data[0].name;
-                                  } catch (e) {
-                                    if (
-                                      e instanceof TypeError ||
-                                      e?.plasmicType ===
-                                        "PlasmicUndefinedDataError"
-                                    ) {
-                                      return "911 GT3 Cup - Front View";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </React.Fragment>
-                            </div>
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__dElHt
-                              )}
-                            >
-                              <React.Fragment>
-                                {(() => {
-                                  try {
-                                    return $queries.query2.data[0].description;
-                                  } catch (e) {
-                                    if (
-                                      e instanceof TypeError ||
-                                      e?.plasmicType ===
-                                        "PlasmicUndefinedDataError"
-                                    ) {
-                                      return "A special highlight for Porsche fans are our limited Porsche T-shirts with collector's themes. The tasteful and sometimes colorful prints on these T-shirts show different Porsche themes such as cars, model logos or historical themes.";
-                                    }
-                                    throw e;
-                                  }
-                                })()}
-                              </React.Fragment>
-                            </div>
-                          </Stack__>
-                          <Stack__
-                            as={"div"}
-                            data-plasmic-name={"link"}
-                            data-plasmic-override={overrides.link}
-                            hasGap={true}
-                            className={classNames(projectcss.all, sty.link)}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__ywIkW
-                              )}
-                            >
-                              {"Available on"}
-                            </div>
-                            <Button2
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button__t212C
-                              )}
-                              color={"white"}
-                              link={(() => {
-                                try {
-                                  return $queries.query2.data[0].tokopedia_link;
-                                } catch (e) {
-                                  if (
-                                    e instanceof TypeError ||
-                                    e?.plasmicType ===
-                                      "PlasmicUndefinedDataError"
-                                  ) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                              shape={"sharp"}
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__vRqBm
-                                )}
-                              >
-                                {"Tokopedia"}
-                              </div>
-                            </Button2>
-                            <Button2
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button__r5Ani
-                              )}
-                              color={"white"}
-                              link={(() => {
-                                try {
-                                  return $queries.query2.data[0].shopee_link;
-                                } catch (e) {
-                                  if (
-                                    e instanceof TypeError ||
-                                    e?.plasmicType ===
-                                      "PlasmicUndefinedDataError"
-                                  ) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                              shape={"sharp"}
-                              startIcon={
-                                <Shopeesvg2Icon
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.svg__mzHw3
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__nCel8
-                                )}
-                              >
-                                {"Shopee"}
-                              </div>
-                            </Button2>
-                            <Button2
-                              className={classNames(
-                                "__wab_instance",
-                                sty.button___70Xg
-                              )}
-                              color={"white"}
-                              link={(() => {
-                                try {
-                                  return $queries.query2.data[0].bigcartel_link;
-                                } catch (e) {
-                                  if (
-                                    e instanceof TypeError ||
-                                    e?.plasmicType ===
-                                      "PlasmicUndefinedDataError"
-                                  ) {
-                                    return undefined;
-                                  }
-                                  throw e;
-                                }
-                              })()}
-                              shape={"sharp"}
-                              startIcon={
-                                <WorldsvgIcon
-                                  className={classNames(
-                                    projectcss.all,
-                                    sty.svg__c3Tg7
-                                  )}
-                                  role={"img"}
-                                />
-                              }
-                            >
-                              <div
-                                className={classNames(
-                                  projectcss.all,
-                                  projectcss.__wab_text,
-                                  sty.text__h3Wcp
-                                )}
-                              >
-                                {"International Order"}
-                              </div>
-                            </Button2>
-                          </Stack__>
-                        </div>
-                      </TabContent>
-                      <TabContent
-                        className={classNames(
-                          "__wab_instance",
-                          sty.tabContent___34Tf8
-                        )}
-                        tabKey={"tab2"}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox___31Jba
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__wTa9R
-                            )}
-                          >
-                            {"Some content for tab 2"}
-                          </div>
-                        </div>
-                      </TabContent>
-                      <TabContent
-                        className={classNames(
-                          "__wab_instance",
-                          sty.tabContent__siju9
-                        )}
-                        tabKey={"tab3"}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__xRuk8
-                          )}
-                        >
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text___0UkH3
-                            )}
-                          >
-                            {"Some content for tab 2"}
-                          </div>
-                        </div>
-                      </TabContent>
+                            throw e;
+                          }
+                        })()}
+                      </React.Fragment>
                     </div>
-                  </div>
-                )}
-              </DataCtxReader__>
-            </TabsContainer>
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"size"}
+                    data-plasmic-override={overrides.size}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.size)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__sNlVw
+                      )}
+                    >
+                      {"Size"}
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text___8YaiT
+                      )}
+                    >
+                      <React.Fragment>
+                        {(() => {
+                          try {
+                            return $queries.query2.data[0].size;
+                          } catch (e) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
+                              return "S, M, L, XL, XXL";
+                            }
+                            throw e;
+                          }
+                        })()}
+                      </React.Fragment>
+                    </div>
+                  </Stack__>
+                  <Stack__
+                    as={"div"}
+                    data-plasmic-name={"link"}
+                    data-plasmic-override={overrides.link}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.link)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ywIkW
+                      )}
+                    >
+                      {"Available on"}
+                    </div>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__t212C
+                      )}
+                      color={"white"}
+                      link={(() => {
+                        try {
+                          return $queries.query2.data[0].tokopedia_link;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return undefined;
+                          }
+                          throw e;
+                        }
+                      })()}
+                      shape={"sharp"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vRqBm
+                        )}
+                      >
+                        {"Tokopedia"}
+                      </div>
+                    </Button>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__r5Ani
+                      )}
+                      color={"white"}
+                      link={(() => {
+                        try {
+                          return $queries.query2.data[0].shopee_link;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return undefined;
+                          }
+                          throw e;
+                        }
+                      })()}
+                      shape={"sharp"}
+                      startIcon={
+                        <Shopeesvg2Icon
+                          className={classNames(projectcss.all, sty.svg__mzHw3)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__nCel8
+                        )}
+                      >
+                        {"Shopee"}
+                      </div>
+                    </Button>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button___70Xg
+                      )}
+                      color={"white"}
+                      link={(() => {
+                        try {
+                          return $queries.query2.data[0].bigcartel_link;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return undefined;
+                          }
+                          throw e;
+                        }
+                      })()}
+                      shape={"sharp"}
+                      startIcon={
+                        <WorldsvgIcon
+                          className={classNames(projectcss.all, sty.svg__c3Tg7)}
+                          role={"img"}
+                        />
+                      }
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__h3Wcp
+                        )}
+                      >
+                        {"International Order"}
+                      </div>
+                    </Button>
+                  </Stack__>
+                </Stack__>
+              </TabContent>
+            </div>
           </Stack__>
           <Stack__
             as={"div"}
@@ -1423,7 +1224,7 @@ function PlasmicDetails__RenderFunc(props: {
               >
                 {"Want to collaborate?"}
               </div>
-              <Button2
+              <Button
                 className={classNames("__wab_instance", sty.button___3Y6D)}
                 link={"mailto:cloandcars@gmail.com"}
                 shape={"sharp"}
@@ -1439,7 +1240,7 @@ function PlasmicDetails__RenderFunc(props: {
                 >
                   {"Get in touch with us"}
                 </div>
-              </Button2>
+              </Button>
             </Stack__>
             <div
               className={classNames(
@@ -1461,18 +1262,14 @@ const PlasmicDescendants = {
   details: [
     "details",
     "navigationBar",
-    "tabsContainer",
-    "tShirt",
-    "hoodie",
-    "sweater",
-    "tabUnderline",
+    "tabContent",
     "sliderCarousel",
     "img1",
     "img2",
     "img3",
     "img4",
-    "size",
     "desc",
+    "size",
     "link",
     "footer2",
     "logo2",
@@ -1481,32 +1278,24 @@ const PlasmicDescendants = {
     "social6"
   ],
   navigationBar: ["navigationBar"],
-  tabsContainer: [
-    "tabsContainer",
-    "tShirt",
-    "hoodie",
-    "sweater",
-    "tabUnderline",
+  tabContent: [
+    "tabContent",
     "sliderCarousel",
     "img1",
     "img2",
     "img3",
     "img4",
-    "size",
     "desc",
+    "size",
     "link"
   ],
-  tShirt: ["tShirt"],
-  hoodie: ["hoodie"],
-  sweater: ["sweater"],
-  tabUnderline: ["tabUnderline"],
   sliderCarousel: ["sliderCarousel", "img1", "img2", "img3", "img4"],
   img1: ["img1"],
   img2: ["img2"],
   img3: ["img3"],
   img4: ["img4"],
-  size: ["size"],
   desc: ["desc"],
+  size: ["size"],
   link: ["link"],
   footer2: ["footer2", "logo2", "social4", "social5", "social6"],
   logo2: ["logo2"],
@@ -1520,18 +1309,14 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   details: "div";
   navigationBar: typeof NavigationBar;
-  tabsContainer: typeof TabsContainer;
-  tShirt: typeof TabButton;
-  hoodie: typeof TabButton;
-  sweater: typeof TabButton;
-  tabUnderline: typeof TabUnderline;
+  tabContent: typeof TabContent;
   sliderCarousel: typeof SliderWrapper;
   img1: "div";
   img2: "div";
   img3: "div";
   img4: "div";
-  size: "div";
   desc: "div";
+  size: "div";
   link: "div";
   footer2: "div";
   logo2: "div";
@@ -1601,18 +1386,14 @@ export const PlasmicDetails = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
-    tabsContainer: makeNodeComponent("tabsContainer"),
-    tShirt: makeNodeComponent("tShirt"),
-    hoodie: makeNodeComponent("hoodie"),
-    sweater: makeNodeComponent("sweater"),
-    tabUnderline: makeNodeComponent("tabUnderline"),
+    tabContent: makeNodeComponent("tabContent"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
     img1: makeNodeComponent("img1"),
     img2: makeNodeComponent("img2"),
     img3: makeNodeComponent("img3"),
     img4: makeNodeComponent("img4"),
-    size: makeNodeComponent("size"),
     desc: makeNodeComponent("desc"),
+    size: makeNodeComponent("size"),
     link: makeNodeComponent("link"),
     footer2: makeNodeComponent("footer2"),
     logo2: makeNodeComponent("logo2"),

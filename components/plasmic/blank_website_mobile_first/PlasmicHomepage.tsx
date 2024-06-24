@@ -99,7 +99,7 @@ export type PlasmicHomepage__OverridesType = {
   heading?: Flex__<"div">;
   container?: Flex__<"div">;
   apriwa?: Flex__<"a"> & Partial<LinkProps>;
-  asc?: Flex__<"div">;
+  asc?: Flex__<"a"> & Partial<LinkProps>;
   citadel?: Flex__<"div">;
   enginePlus?: Flex__<"div">;
   jvs?: Flex__<"div">;
@@ -414,10 +414,13 @@ function PlasmicHomepage__RenderFunc(props: {
                   }}
                 />
               </PlasmicLink__>
-              <div
+              <PlasmicLink__
                 data-plasmic-name={"asc"}
                 data-plasmic-override={overrides.asc}
-                className={classNames(projectcss.all, sty.asc)}
+                className={classNames(projectcss.all, projectcss.a, sty.asc)}
+                component={Link}
+                href={`/${"asc"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -470,7 +473,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
+              </PlasmicLink__>
               <div
                 data-plasmic-name={"citadel"}
                 data-plasmic-override={overrides.citadel}
@@ -1270,7 +1273,7 @@ type NodeDefaultElementType = {
   heading: "div";
   container: "div";
   apriwa: "a";
-  asc: "div";
+  asc: "a";
   citadel: "div";
   enginePlus: "div";
   jvs: "div";

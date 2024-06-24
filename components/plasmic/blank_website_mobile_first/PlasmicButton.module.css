@@ -70,7 +70,7 @@
   background: #717069;
 }
 .rootcolor_white {
-  background: #000000;
+  background: #ffffff;
   border: 1px solid #000000;
 }
 .rootcolor_softBlue {
@@ -278,7 +278,7 @@
   color: #ffffff;
 }
 .slotTargetChildrencolor_white {
-  color: #ffffff;
+  color: #000000;
 }
 .slotTargetChildrencolor_softBlue {
   color: #006adc;

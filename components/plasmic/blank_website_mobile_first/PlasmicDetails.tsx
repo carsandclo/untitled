@@ -81,8 +81,6 @@ import sty from "./PlasmicDetails.module.css"; // plasmic-import: hSQBkSnUA7tC/c
 
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
-import Shopeesvg2Icon from "./icons/PlasmicIcon__Shopeesvg2"; // plasmic-import: jkqfVWSlYrIo/icon
-import WorldsvgIcon from "./icons/PlasmicIcon__Worldsvg"; // plasmic-import: VOYVMBHHCe1x/icon
 
 createPlasmicElementProxy;
 
@@ -849,107 +847,32 @@ function PlasmicDetails__RenderFunc(props: {
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__t212C
+                        sty.button___3Bqu
                       )}
                       color={"white"}
-                      link={(() => {
-                        try {
-                          return $queries.query2.data[0].tokopedia_link;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
                       shape={"sharp"}
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__vRqBm
-                        )}
-                      >
-                        {"Tokopedia"}
-                      </div>
+                      {"Tokopedia"}
                     </Button>
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button__r5Ani
+                        sty.button__as0Gj
                       )}
                       color={"white"}
-                      link={(() => {
-                        try {
-                          return $queries.query2.data[0].shopee_link;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
                       shape={"sharp"}
-                      startIcon={
-                        <Shopeesvg2Icon
-                          className={classNames(projectcss.all, sty.svg__mzHw3)}
-                          role={"img"}
-                        />
-                      }
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__nCel8
-                        )}
-                      >
-                        {"Shopee"}
-                      </div>
+                      {"Shopee"}
                     </Button>
                     <Button
                       className={classNames(
                         "__wab_instance",
-                        sty.button___70Xg
+                        sty.button__ogbYm
                       )}
                       color={"white"}
-                      link={(() => {
-                        try {
-                          return $queries.query2.data[0].bigcartel_link;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return undefined;
-                          }
-                          throw e;
-                        }
-                      })()}
                       shape={"sharp"}
-                      startIcon={
-                        <WorldsvgIcon
-                          className={classNames(projectcss.all, sty.svg__c3Tg7)}
-                          role={"img"}
-                        />
-                      }
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__h3Wcp
-                        )}
-                      >
-                        {"International Order"}
-                      </div>
+                      {"International Order"}
                     </Button>
                   </Stack__>
                 </Stack__>

@@ -329,9 +329,9 @@ function PlasmicHomepage__RenderFunc(props: {
               }
               loading={"lazy"}
               src={{
-                src: "/plasmic/blank_website_mobile_first/images/heroImagepng.png",
-                fullWidth: 750,
-                fullHeight: 660,
+                src: "/plasmic/blank_website_mobile_first/images/mainImagepng2.png",
+                fullWidth: 6034,
+                fullHeight: 4023,
                 aspectRatio: undefined
               }}
             />

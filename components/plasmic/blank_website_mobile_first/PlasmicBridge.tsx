@@ -264,6 +264,44 @@ function PlasmicBridge__RenderFunc(props: {
             responsiveBreakpoint={768}
           />
 
+          <div className={classNames(projectcss.all, sty.freeBox__ibCIj)}>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link___96Jxl
+              )}
+              component={Link}
+              href={`/`}
+              platform={"nextjs"}
+            >
+              {"Back to Collections /"}
+            </PlasmicLink__>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__yvYpS
+              )}
+            >
+              <React.Fragment>
+                {(() => {
+                  try {
+                    return $queries.query2.data[0].category;
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return "Apriwa Motorsport";
+                    }
+                    throw e;
+                  }
+                })()}
+              </React.Fragment>
+            </div>
+          </div>
           <div className={classNames(projectcss.all, sty.freeBox__rIlEk)}>
             <PlasmicLink__
               data-plasmic-name={"tShirt"}

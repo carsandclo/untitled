@@ -232,6 +232,21 @@
           "id": "ItqZRqGoeKeg",
           "name": "Font APriwa.png",
           "filePath": "../public/plasmic/blank_website_mobile_first/images/fontAPriwapng.png"
+        },
+        {
+          "id": "geRkulf-gxBI",
+          "name": "main image (1).png",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/mainImage1Png.png"
+        },
+        {
+          "id": "u7JNCqylatb9",
+          "name": "main image.png",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/mainImagepng.png"
+        },
+        {
+          "id": "VlapaXMYK45t",
+          "name": "main image.png 2",
+          "filePath": "../public/plasmic/blank_website_mobile_first/images/mainImagepng2.png"
         }
       ],
       "indirect": false,

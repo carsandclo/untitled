@@ -359,7 +359,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 data-plasmic-override={overrides.apriwa}
                 className={classNames(projectcss.all, projectcss.a, sty.apriwa)}
                 component={Link}
-                href={`/[slug]`}
+                href={`/${"apriwa"}`}
                 platform={"nextjs"}
               >
                 <Stack__

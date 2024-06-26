@@ -24,7 +24,7 @@
     {
       "projectId": "c4FCQiVEmUqfPef3MjSmg8",
       "projectApiToken": "wPFYtpceQXnZxiB2eWdPuwprOMqEv6m3x6EjDC16NeLUqhTI990kqgPsKU8U8F2Mhsa4eDzouaiuUVZI0M4GQ",
-      "projectName": "Blank website (mobile-first)",
+      "projectName": "carsandclo",
       "version": "latest",
       "cssFilePath": "plasmic/blank_website_mobile_first/plasmic.module.css",
       "components": [
@@ -83,6 +83,19 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/new-page"
+        },
+        {
+          "id": "cOK-sZ_QtzrG",
+          "name": "ItemDetails",
+          "type": "managed",
+          "projectId": "c4FCQiVEmUqfPef3MjSmg8",
+          "renderModuleFilePath": "plasmic/carsandclo/PlasmicItemDetails.tsx",
+          "importSpec": {
+            "modulePath": "ItemDetails.tsx"
+          },
+          "cssFilePath": "plasmic/carsandclo/PlasmicItemDetails.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -407,6 +420,86 @@
       ],
       "customFunctions": [],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "9Vr5YWkf3w7jj6SsTcCEta",
+      "projectApiToken": "IvzN3wRogyeRjfeLl1hqzdjIjkVBvUQXxxVMFtbbpBdxfeSyKuR8fwKkECaSQERdZAIiGsh8aXppCCjBiCYyg",
+      "projectName": "loading-boundary",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/loading_boundary/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "u-J0rH0B-4",
+          "name": "LoadingBoundary",
+          "displayName": "hostless-loading-boundary",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "displayName": "hostless-iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "displayName": "hostless-html-video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "displayName": "hostless-embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "K-mWGqrHefEp",
+          "name": "SideEffect",
+          "displayName": "hostless-side-effect",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "SpkzmXJqg27p",
+          "name": "Timer",
+          "displayName": "hostless-timer",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ],
+      "customFunctions": []
     }
   ],
   "globalVariants": {

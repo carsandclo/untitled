@@ -260,6 +260,11 @@
           "id": "VlapaXMYK45t",
           "name": "main image.png 2",
           "filePath": "../public/plasmic/blank_website_mobile_first/images/mainImagepng2.png"
+        },
+        {
+          "id": "KbxvSIpXhPJ2",
+          "name": "fallback.png",
+          "filePath": "../public/plasmic/carsandclo/images/fallbackpng.png"
         }
       ],
       "indirect": false,

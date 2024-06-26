@@ -191,9 +191,9 @@ function PlasmicItemDetails__RenderFunc(props: {
               e?.plasmicType === "PlasmicUndefinedDataError"
             ) {
               return {
-                src: "/plasmic/blank_website_mobile_first/images/heroImagepng.png",
-                fullWidth: 750,
-                fullHeight: 660,
+                src: "/plasmic/carsandclo/images/fallbackpng.png",
+                fullWidth: 120,
+                fullHeight: 120,
                 aspectRatio: undefined
               };
             }
@@ -329,31 +329,12 @@ function PlasmicItemDetails__RenderFunc(props: {
                             e instanceof TypeError ||
                             e?.plasmicType === "PlasmicUndefinedDataError"
                           ) {
-                            return "https://static1.plasmic.app/components/react-slick/slide1.png";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    />
-
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__gx7Ay)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      src={(() => {
-                        try {
-                          return $props.prodProp[0].image2;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return "https://static1.plasmic.app/components/react-slick/slide1.png";
+                            return {
+                              src: "/plasmic/carsandclo/images/fallbackpng.png",
+                              fullWidth: 120,
+                              fullHeight: 120,
+                              aspectRatio: undefined
+                            };
                           }
                           throw e;
                         }

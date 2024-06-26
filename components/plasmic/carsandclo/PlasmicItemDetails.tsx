@@ -281,7 +281,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                               customFunction: async () => {
                                 return (() => {
                                   document.getElementById("main_image").src =
-                                    $props.prodProp[currentIndex].image1;
+                                    $props.prodProp[currentIndex].image2;
                                   document.getElementById("lblname").innerText =
                                     $props.prodProp[currentIndex].prod_name;
                                   document.getElementById(
@@ -348,30 +348,6 @@ function PlasmicItemDetails__RenderFunc(props: {
                       src={(() => {
                         try {
                           return $props.prodProp[0].image2;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return "https://static1.plasmic.app/components/react-slick/slide1.png";
-                          }
-                          throw e;
-                        }
-                      })()}
-                    />
-
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__agagU)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      src={(() => {
-                        try {
-                          return $props.prodProp[0].image1;
                         } catch (e) {
                           if (
                             e instanceof TypeError ||

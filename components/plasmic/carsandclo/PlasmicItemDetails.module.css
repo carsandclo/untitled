@@ -62,13 +62,6 @@
 .img__gx7Ay > picture > img {
   object-fit: cover;
 }
-.img__agagU {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__agagU > picture > img {
-  object-fit: cover;
-}
 .desc {
   display: flex;
   position: relative;

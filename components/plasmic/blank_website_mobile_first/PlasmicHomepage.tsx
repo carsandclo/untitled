@@ -100,13 +100,13 @@ export type PlasmicHomepage__OverridesType = {
   container?: Flex__<"div">;
   apriwa?: Flex__<"a"> & Partial<LinkProps>;
   asc?: Flex__<"a"> & Partial<LinkProps>;
-  citadel?: Flex__<"div">;
-  enginePlus?: Flex__<"div">;
-  jvs?: Flex__<"div">;
-  porsche?: Flex__<"div">;
-  rizqyMotorsport?: Flex__<"div">;
-  semenMerahPutih?: Flex__<"div">;
-  siloMaritime?: Flex__<"div">;
+  citadel?: Flex__<"a"> & Partial<LinkProps>;
+  enginePlus?: Flex__<"a"> & Partial<LinkProps>;
+  jvs?: Flex__<"a"> & Partial<LinkProps>;
+  porsche?: Flex__<"a"> & Partial<LinkProps>;
+  rizqyMotorsport?: Flex__<"a"> & Partial<LinkProps>;
+  semenMerahPutih?: Flex__<"a"> & Partial<LinkProps>;
+  siloMaritime?: Flex__<"a"> & Partial<LinkProps>;
   footer?: Flex__<"div">;
   logo?: Flex__<"div">;
   social?: Flex__<"div">;
@@ -474,10 +474,17 @@ function PlasmicHomepage__RenderFunc(props: {
                   }}
                 />
               </PlasmicLink__>
-              <div
+              <PlasmicLink__
                 data-plasmic-name={"citadel"}
                 data-plasmic-override={overrides.citadel}
-                className={classNames(projectcss.all, sty.citadel)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.citadel
+                )}
+                component={Link}
+                href={`/${"citadel"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -530,11 +537,18 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
-              <div
+              </PlasmicLink__>
+              <PlasmicLink__
                 data-plasmic-name={"enginePlus"}
                 data-plasmic-override={overrides.enginePlus}
-                className={classNames(projectcss.all, sty.enginePlus)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.enginePlus
+                )}
+                component={Link}
+                href={`/${"engineplus"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -587,11 +601,14 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
-              <div
+              </PlasmicLink__>
+              <PlasmicLink__
                 data-plasmic-name={"jvs"}
                 data-plasmic-override={overrides.jvs}
-                className={classNames(projectcss.all, sty.jvs)}
+                className={classNames(projectcss.all, projectcss.a, sty.jvs)}
+                component={Link}
+                href={`/${"jvs"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -644,11 +661,18 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
-              <div
+              </PlasmicLink__>
+              <PlasmicLink__
                 data-plasmic-name={"porsche"}
                 data-plasmic-override={overrides.porsche}
-                className={classNames(projectcss.all, sty.porsche)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.porsche
+                )}
+                component={Link}
+                href={`/${"porsche"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -701,11 +725,18 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
-              <div
+              </PlasmicLink__>
+              <PlasmicLink__
                 data-plasmic-name={"rizqyMotorsport"}
                 data-plasmic-override={overrides.rizqyMotorsport}
-                className={classNames(projectcss.all, sty.rizqyMotorsport)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.rizqyMotorsport
+                )}
+                component={Link}
+                href={`/${"rizqy"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -758,11 +789,18 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
-              <div
+              </PlasmicLink__>
+              <PlasmicLink__
                 data-plasmic-name={"semenMerahPutih"}
                 data-plasmic-override={overrides.semenMerahPutih}
-                className={classNames(projectcss.all, sty.semenMerahPutih)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.semenMerahPutih
+                )}
+                component={Link}
+                href={`/${"smp"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -815,11 +853,18 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
-              <div
+              </PlasmicLink__>
+              <PlasmicLink__
                 data-plasmic-name={"siloMaritime"}
                 data-plasmic-override={overrides.siloMaritime}
-                className={classNames(projectcss.all, sty.siloMaritime)}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.siloMaritime
+                )}
+                component={Link}
+                href={`/${"silo"}`}
+                platform={"nextjs"}
               >
                 <Stack__
                   as={"div"}
@@ -872,7 +917,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     aspectRatio: undefined
                   }}
                 />
-              </div>
+              </PlasmicLink__>
               <Stack__
                 as={"div"}
                 data-plasmic-name={"footer"}
@@ -1274,13 +1319,13 @@ type NodeDefaultElementType = {
   container: "div";
   apriwa: "a";
   asc: "a";
-  citadel: "div";
-  enginePlus: "div";
-  jvs: "div";
-  porsche: "div";
-  rizqyMotorsport: "div";
-  semenMerahPutih: "div";
-  siloMaritime: "div";
+  citadel: "a";
+  enginePlus: "a";
+  jvs: "a";
+  porsche: "a";
+  rizqyMotorsport: "a";
+  semenMerahPutih: "a";
+  siloMaritime: "a";
   footer: "div";
   logo: "div";
   social: "div";

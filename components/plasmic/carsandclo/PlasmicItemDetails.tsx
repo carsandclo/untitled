@@ -334,6 +334,54 @@ function PlasmicItemDetails__RenderFunc(props: {
                         }
                       })()}
                     />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__gx7Ay)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      src={(() => {
+                        try {
+                          return $props.prodProp[0].image1;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return "https://static1.plasmic.app/components/react-slick/slide1.png";
+                          }
+                          throw e;
+                        }
+                      })()}
+                    />
+
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__agagU)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"auto"}
+                      src={(() => {
+                        try {
+                          return $props.prodProp[0].image1;
+                        } catch (e) {
+                          if (
+                            e instanceof TypeError ||
+                            e?.plasmicType === "PlasmicUndefinedDataError"
+                          ) {
+                            return "https://static1.plasmic.app/components/react-slick/slide1.png";
+                          }
+                          throw e;
+                        }
+                      })()}
+                    />
                   </PlasmicLink__>
                 </div>
               );
@@ -456,7 +504,7 @@ function PlasmicItemDetails__RenderFunc(props: {
         </div>
         <Button
           className={classNames("__wab_instance", sty.button___7AXbL)}
-          color={"white"}
+          color={"sand"}
           link={(() => {
             try {
               return $props.prodProp[0].tokopedia_link;
@@ -495,7 +543,7 @@ function PlasmicItemDetails__RenderFunc(props: {
         </Button>
         <Button
           className={classNames("__wab_instance", sty.button__c9ITl)}
-          color={"white"}
+          color={"sand"}
           link={(() => {
             try {
               return $props.prodProp[0].shopee_link;
@@ -515,7 +563,7 @@ function PlasmicItemDetails__RenderFunc(props: {
         </Button>
         <Button
           className={classNames("__wab_instance", sty.button__i1Pi)}
-          color={"white"}
+          color={"sand"}
           link={(() => {
             try {
               return $props.prodProp[0].bigcartel_link;

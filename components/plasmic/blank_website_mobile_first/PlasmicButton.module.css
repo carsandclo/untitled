@@ -61,7 +61,7 @@
   background: #30a46c;
 }
 .rootcolor_yellow {
-  background: #f5d90a;
+  background: #ffffff;
 }
 .rootcolor_red {
   background: #e54d2e;
@@ -113,7 +113,7 @@
   background: #3cb179;
 }
 .rootcolor_yellow:hover {
-  background: #ffef5c;
+  background: #ffffff;
 }
 .rootcolor_red:hover {
   background: #ec5e41;
@@ -163,7 +163,7 @@
   background: #4cc38a;
 }
 .rootcolor_yellow:active {
-  background: #f0c000;
+  background: #ffffff;
 }
 .rootcolor_red:active {
   background: #f16a50;

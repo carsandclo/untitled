@@ -27,6 +27,9 @@
   flex-direction: column;
   object-fit: cover;
   position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 16px;
   min-width: 0;
 }
 .freeBox {
@@ -39,7 +42,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
 .link__eUo0U {
   display: flex;
@@ -50,6 +53,20 @@
   max-width: 100%;
 }
 .img__p1Nft > picture > img {
+  object-fit: cover;
+}
+.img__gx7Ay {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__gx7Ay > picture > img {
+  object-fit: cover;
+}
+.img__agagU {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__agagU > picture > img {
   object-fit: cover;
 }
 .desc {

@@ -362,7 +362,9 @@ function PlasmicDetails__RenderFunc(props: {
                         sty.freeBox___9NJz6
                       )}
                     >
-                      <div
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
                         className={classNames(
                           projectcss.all,
                           sty.freeBox__mdQwA
@@ -375,7 +377,14 @@ function PlasmicDetails__RenderFunc(props: {
                           )}
                           tabKey={"t-shirt"}
                         >
-                          <Button>
+                          <Button
+                            className={classNames(
+                              "__wab_instance",
+                              sty.button__hamTk
+                            )}
+                            color={"white"}
+                            shape={"sharp"}
+                          >
                             <div
                               className={classNames(
                                 projectcss.all,
@@ -395,6 +404,11 @@ function PlasmicDetails__RenderFunc(props: {
                           tabKey={"hoodie"}
                         >
                           <Button
+                            className={classNames(
+                              "__wab_instance",
+                              sty.button__eAwtz
+                            )}
+                            color={"white"}
                             onClick={async event => {
                               const $steps = {};
 
@@ -463,6 +477,7 @@ function PlasmicDetails__RenderFunc(props: {
                                 ];
                               }
                             }}
+                            shape={"sharp"}
                           >
                             <div
                               className={classNames(
@@ -482,7 +497,14 @@ function PlasmicDetails__RenderFunc(props: {
                           )}
                           tabKey={"sweater"}
                         >
-                          <Button>
+                          <Button
+                            className={classNames(
+                              "__wab_instance",
+                              sty.button__nnG0Z
+                            )}
+                            color={"white"}
+                            shape={"sharp"}
+                          >
                             <div
                               className={classNames(
                                 projectcss.all,
@@ -502,7 +524,7 @@ function PlasmicDetails__RenderFunc(props: {
                             sty.tabUnderline
                           )}
                         />
-                      </div>
+                      </Stack__>
                       <div
                         className={classNames(
                           projectcss.all,

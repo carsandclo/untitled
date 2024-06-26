@@ -177,7 +177,7 @@
   margin-top: calc(8px + 16px) !important;
   margin-bottom: 0px;
   min-width: 0;
-  padding: 8px 24px;
+  padding: 8px 24px 0px;
 }
 @media (min-width: 768px) {
   .freeBox__kSgv {
@@ -245,7 +245,7 @@
   max-width: 100%;
   align-self: flex-end;
   min-width: 0;
-  padding: 8px;
+  padding: 4px 16px;
 }
 .freeBox__mdQwA > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -366,6 +366,10 @@
   max-width: 100%;
   object-fit: cover;
   width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: calc(8px + 0px) !important;
+  margin-right: 8px;
   min-width: 0;
 }
 .freeBox__k4Tew {

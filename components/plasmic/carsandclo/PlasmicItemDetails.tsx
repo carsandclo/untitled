@@ -210,6 +210,7 @@ function PlasmicItemDetails__RenderFunc(props: {
             ["sliderCarousel", "currentSlide"],
             SliderWrapper_Helpers
           ),
+          centerMode: false,
           className: classNames("__wab_instance", sty.sliderCarousel),
           initialSlide: generateStateValueProp($state, [
             "sliderCarousel",
@@ -322,7 +323,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                       displayWidth={"auto"}
                       src={(() => {
                         try {
-                          return $props.prodProp[0].image1;
+                          return $props.prodProp[0].image2;
                         } catch (e) {
                           if (
                             e instanceof TypeError ||
@@ -346,7 +347,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                       displayWidth={"auto"}
                       src={(() => {
                         try {
-                          return $props.prodProp[0].image1;
+                          return $props.prodProp[0].image2;
                         } catch (e) {
                           if (
                             e instanceof TypeError ||

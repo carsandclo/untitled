@@ -67,7 +67,8 @@
   background: #e54d2e;
 }
 .rootcolor_sand {
-  background: #717069;
+  background: #ffffff;
+  border: 1px solid #000000;
 }
 .rootcolor_white {
   background: #ffffff;
@@ -275,7 +276,7 @@
   color: #ffffff;
 }
 .slotTargetChildrencolor_sand {
-  color: #ffffff;
+  color: #000000;
 }
 .slotTargetChildrencolor_white {
   color: #000000;

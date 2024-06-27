@@ -273,6 +273,8 @@
 }
 @media (min-width: 768px) {
   .freeBox__mdQwA > :global(.__wab_flex-container) {
+    justify-content: center;
+    align-items: center;
     min-width: 0;
   }
 }
@@ -371,6 +373,12 @@
   margin-left: calc(8px + 0px) !important;
   margin-right: 8px;
   min-width: 0;
+}
+@media (min-width: 768px) {
+  .tabUnderline:global(.__wab_instance) {
+    align-self: auto;
+    margin-left: calc(8px + 0px) !important;
+  }
 }
 .freeBox__k4Tew {
   display: flex;

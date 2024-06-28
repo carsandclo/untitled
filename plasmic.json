@@ -265,6 +265,11 @@
           "id": "KbxvSIpXhPJ2",
           "name": "fallback.png",
           "filePath": "../public/plasmic/carsandclo/images/fallbackpng.png"
+        },
+        {
+          "id": "z9PSARqr8Ro4",
+          "name": "fallback.png 2",
+          "filePath": "../public/plasmic/carsandclo/images/fallbackpng2.png"
         }
       ],
       "indirect": false,

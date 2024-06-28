@@ -191,9 +191,9 @@ function PlasmicItemDetails__RenderFunc(props: {
               e?.plasmicType === "PlasmicUndefinedDataError"
             ) {
               return {
-                src: "/plasmic/carsandclo/images/fallbackpng.png",
-                fullWidth: 120,
-                fullHeight: 120,
+                src: "/plasmic/carsandclo/images/fallbackpng2.png",
+                fullWidth: 600,
+                fullHeight: 600,
                 aspectRatio: undefined
               };
             }
@@ -204,6 +204,9 @@ function PlasmicItemDetails__RenderFunc(props: {
 
       {(() => {
         const child$Props = {
+          arrows: hasVariant(globalVariants, "screen", "desktopOnly")
+            ? false
+            : undefined,
           beforeChange: generateStateOnChangePropForCodeComponents(
             $state,
             "currentSlide",
@@ -330,9 +333,9 @@ function PlasmicItemDetails__RenderFunc(props: {
                             e?.plasmicType === "PlasmicUndefinedDataError"
                           ) {
                             return {
-                              src: "/plasmic/carsandclo/images/fallbackpng.png",
-                              fullWidth: 120,
-                              fullHeight: 120,
+                              src: "/plasmic/carsandclo/images/fallbackpng2.png",
+                              fullWidth: 600,
+                              fullHeight: 600,
                               aspectRatio: undefined
                             };
                           }

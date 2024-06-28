@@ -9,6 +9,11 @@
   position: relative;
   min-width: 0;
 }
+@media (min-width: 768px) {
+  .root {
+    width: 800px;
+  }
+}
 .img__t7LeR {
   object-fit: cover;
   max-width: 100%;

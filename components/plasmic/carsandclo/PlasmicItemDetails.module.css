@@ -110,6 +110,7 @@
   color: #171717;
   font-size: 24px;
   font-weight: 600;
+  line-height: 1.4;
   min-width: 0;
 }
 .text___7EKux {
@@ -118,7 +119,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   min-width: 0;
 }
@@ -189,7 +190,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   min-width: 0;
 }
@@ -199,7 +200,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   min-width: 0;
 }
@@ -298,7 +299,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   min-width: 0;
 }
@@ -308,7 +309,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   min-width: 0;
 }
@@ -358,7 +359,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   min-width: 0;
 }
@@ -368,7 +369,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   min-width: 0;
 }
@@ -418,7 +419,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   min-width: 0;
 }
@@ -428,7 +429,7 @@
   height: auto;
   max-width: 100%;
   color: #171717;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   min-width: 0;
 }
@@ -592,10 +593,10 @@
   text-align: center;
   background: #000000;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   min-width: 0;
   border-radius: 4px;
-  padding: 14px;
+  padding: 16px;
 }
 .link__iE6N7 {
   position: relative;
@@ -606,10 +607,10 @@
   text-align: center;
   background: #000000;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   min-width: 0;
   border-radius: 4px;
-  padding: 14px;
+  padding: 16px;
 }
 .link__jkbAp {
   position: relative;
@@ -620,8 +621,8 @@
   text-align: center;
   background: #000000;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   min-width: 0;
   border-radius: 4px;
-  padding: 14px;
+  padding: 16px;
 }

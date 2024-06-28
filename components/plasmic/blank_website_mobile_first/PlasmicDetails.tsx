@@ -1112,23 +1112,19 @@ function PlasmicDetails__RenderFunc(props: {
               >
                 {"Want to collaborate?"}
               </div>
-              <Button2
-                className={classNames("__wab_instance", sty.button___3Y6D)}
-                link={"mailto:cloandcars@gmail.com"}
-                shape={"sharp"}
-                showEndIcon={true}
-                target={true}
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__ecKbl
+                )}
+                component={Link}
+                href={"mailto:cloandcars@gmail.com"}
+                platform={"nextjs"}
               >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__iJoT
-                  )}
-                >
-                  {"Get in touch with us"}
-                </div>
-              </Button2>
+                {"Get in touch with us"}
+              </PlasmicLink__>
             </Stack__>
             <div
               className={classNames(

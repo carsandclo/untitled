@@ -66,7 +66,6 @@ import {
 } from "@plasmicapp/react-web/lib/data-sources";
 
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
-import Button from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
@@ -77,8 +76,6 @@ import projectcss from "./plasmic.module.css"; // plasmic-import: c4FCQiVEmUqfPe
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: SDagfCRh-2CQ/css
 
 import ArrowRightsvgIcon from "./icons/PlasmicIcon__ArrowRightsvg"; // plasmic-import: YmZHPP8Bqtaf/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
-import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
 
 createPlasmicElementProxy;
 
@@ -107,12 +104,11 @@ export type PlasmicHomepage__OverridesType = {
   rizqyMotorsport?: Flex__<"a"> & Partial<LinkProps>;
   semenMerahPutih?: Flex__<"a"> & Partial<LinkProps>;
   siloMaritime?: Flex__<"a"> & Partial<LinkProps>;
-  footer?: Flex__<"div">;
-  logo?: Flex__<"div">;
-  social?: Flex__<"div">;
-  social2?: Flex__<"div">;
-  social4?: Flex__<"div">;
-  button?: Flex__<typeof Button>;
+  footer2?: Flex__<"div">;
+  logo2?: Flex__<"div">;
+  social7?: Flex__<"div">;
+  social5?: Flex__<"div">;
+  social6?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -918,306 +914,302 @@ function PlasmicHomepage__RenderFunc(props: {
                   }}
                 />
               </PlasmicLink__>
-              <Stack__
-                as={"div"}
-                data-plasmic-name={"footer"}
-                data-plasmic-override={overrides.footer}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.footer)}
-              >
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"logo"}
-                  data-plasmic-override={overrides.logo}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.logo)}
-                >
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__dssr6
-                    )}
-                    component={Link}
-                    href={`/`}
-                    platform={"nextjs"}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__pGtHc)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"178px"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg",
-                        fullWidth: 178,
-                        fullHeight: 40,
-                        aspectRatio: 4.45
-                      }}
-                    />
-                  </PlasmicLink__>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__eGg8
-                    )}
-                  >
-                    {"Official Apparels Partner"}
-                  </div>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"social"}
-                  data-plasmic-override={overrides.social}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.social)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__bEAxg
-                    )}
-                  >
-                    {"Connect with Cars and Clo"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__kiaQh)}
-                  >
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__egJhG
-                      )}
-                      component={Link}
-                      href={"https://www.instagram.com/carsandclo/"}
-                      platform={"nextjs"}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img___1Fhnw)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"32px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/instagramsvg.svg",
-                          fullWidth: 32,
-                          fullHeight: 32,
-                          aspectRatio: 1
-                        }}
-                      />
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__ocLrT
-                      )}
-                      component={Link}
-                      href={
-                        "https://www.tiktok.com/@carsandclo?_t=8nQ5PnLKxmq&_r=1"
-                      }
-                      platform={"nextjs"}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__xYraU)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"32px"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/tiktoksvg.svg",
-                          fullWidth: 32,
-                          fullHeight: 32,
-                          aspectRatio: 1
-                        }}
-                      />
-                    </PlasmicLink__>
-                  </Stack__>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"social2"}
-                  data-plasmic-override={overrides.social2}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.social2)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__bPuBd
-                    )}
-                  >
-                    {"Marketplace"}
-                  </div>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__nsA0T)}
-                  >
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__gtDi3
-                      )}
-                      component={Link}
-                      href={"https://shopee.co.id/carsandcloofficial"}
-                      platform={"nextjs"}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__mpOg2)}
-                        displayHeight={"32px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/shopeesvg.svg",
-                          fullWidth: 84,
-                          fullHeight: 32,
-                          aspectRatio: 2.625
-                        }}
-                      />
-                    </PlasmicLink__>
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link__fI9Rt
-                      )}
-                      component={Link}
-                      href={"https://www.tokopedia.com/carsandcloofficial"}
-                      platform={"nextjs"}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__nmSqO)}
-                        displayHeight={"32px"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/blank_website_mobile_first/images/tokpedsvg.svg",
-                          fullWidth: 99,
-                          fullHeight: 32,
-                          aspectRatio: 3.09375
-                        }}
-                      />
-                    </PlasmicLink__>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__qGjza)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blank_website_mobile_first/images/tShopsvg.svg",
-                        fullWidth: 114,
-                        fullHeight: 32,
-                        aspectRatio: 3.5625
-                      }}
-                    />
-                  </Stack__>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___16749)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__vWnc4)}
-                      displayHeight={"32px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/blank_website_mobile_first/images/bigcartesvg2.svg",
-                        fullWidth: 89,
-                        fullHeight: 32,
-                        aspectRatio: 2.78125
-                      }}
-                    />
-                  </Stack__>
-                </Stack__>
-                <Stack__
-                  as={"div"}
-                  data-plasmic-name={"social4"}
-                  data-plasmic-override={overrides.social4}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.social4)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__qjixm
-                    )}
-                  >
-                    {"Want to collaborate?"}
-                  </div>
-                  <Button
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
-                    className={classNames("__wab_instance", sty.button)}
-                    link={"mailto:cloandcars@gmail.com"}
-                    shape={"sharp"}
-                    showEndIcon={true}
-                    target={true}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__eFEjL
-                      )}
-                    >
-                      {"Get in touch with us"}
-                    </div>
-                  </Button>
-                </Stack__>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__aU1Ez
-                  )}
-                >
-                  {"\u00a9 2024 Cars and Clo"}
-                </div>
-              </Stack__>
             </Stack__>
           </section>
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"footer2"}
+            data-plasmic-override={overrides.footer2}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.footer2)}
+          >
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"logo2"}
+              data-plasmic-override={overrides.logo2}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.logo2)}
+            >
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__cMaJn
+                )}
+                component={Link}
+                href={`/`}
+                platform={"nextjs"}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__xkKhy)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"178px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/cncXPsci1Invertedsvg.svg",
+                    fullWidth: 178,
+                    fullHeight: 40,
+                    aspectRatio: 4.45
+                  }}
+                />
+              </PlasmicLink__>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__zmNi5
+                )}
+              >
+                {"Official Apparels Partner"}
+              </div>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"social7"}
+              data-plasmic-override={overrides.social7}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.social7)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__x6J14
+                )}
+              >
+                {"Connect with Cars and Clo"}
+              </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__zot8Y)}
+              >
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__gfxMr
+                  )}
+                  component={Link}
+                  href={"https://www.instagram.com/carsandclo/"}
+                  platform={"nextjs"}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__aupa2)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"32px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blank_website_mobile_first/images/instagramsvg.svg",
+                      fullWidth: 32,
+                      fullHeight: 32,
+                      aspectRatio: 1
+                    }}
+                  />
+                </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__estDq
+                  )}
+                  component={Link}
+                  href={
+                    "https://www.tiktok.com/@carsandclo?_t=8nQ5PnLKxmq&_r=1"
+                  }
+                  platform={"nextjs"}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__u0U0L)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"32px"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blank_website_mobile_first/images/tiktoksvg.svg",
+                      fullWidth: 32,
+                      fullHeight: 32,
+                      aspectRatio: 1
+                    }}
+                  />
+                </PlasmicLink__>
+              </Stack__>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"social5"}
+              data-plasmic-override={overrides.social5}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.social5)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__vF6Su
+                )}
+              >
+                {"Marketplace"}
+              </div>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__xKlQn)}
+              >
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__rsy93
+                  )}
+                  component={Link}
+                  href={"https://shopee.co.id/carsandcloofficial"}
+                  platform={"nextjs"}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__lvkSo)}
+                    displayHeight={"32px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blank_website_mobile_first/images/shopeesvg.svg",
+                      fullWidth: 84,
+                      fullHeight: 32,
+                      aspectRatio: 2.625
+                    }}
+                  />
+                </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__bs9S
+                  )}
+                  component={Link}
+                  href={"https://www.tokopedia.com/carsandcloofficial"}
+                  platform={"nextjs"}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__t3QYh)}
+                    displayHeight={"32px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/blank_website_mobile_first/images/tokpedsvg.svg",
+                      fullWidth: 99,
+                      fullHeight: 32,
+                      aspectRatio: 3.09375
+                    }}
+                  />
+                </PlasmicLink__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__wx7E)}
+                  displayHeight={"32px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/tShopsvg.svg",
+                    fullWidth: 114,
+                    fullHeight: 32,
+                    aspectRatio: 3.5625
+                  }}
+                />
+              </Stack__>
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__pR7C)}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__lb6V3)}
+                  displayHeight={"32px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/blank_website_mobile_first/images/bigcartesvg2.svg",
+                    fullWidth: 89,
+                    fullHeight: 32,
+                    aspectRatio: 2.78125
+                  }}
+                />
+              </Stack__>
+            </Stack__>
+            <Stack__
+              as={"div"}
+              data-plasmic-name={"social6"}
+              data-plasmic-override={overrides.social6}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.social6)}
+            >
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__bXwdz
+                )}
+              >
+                {"Want to collaborate?"}
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__u4QH)}>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link___89Dc
+                  )}
+                  component={Link}
+                  href={"mailto:cloandcars@gmail.com"}
+                  platform={"nextjs"}
+                >
+                  {"Get in touch with us"}
+                </PlasmicLink__>
+              </div>
+            </Stack__>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__pEr66
+              )}
+            >
+              {"\u00a9 2024 Cars and Clo"}
+            </div>
+          </Stack__>
         </div>
       </div>
     </React.Fragment>
@@ -1241,12 +1233,11 @@ const PlasmicDescendants = {
     "rizqyMotorsport",
     "semenMerahPutih",
     "siloMaritime",
-    "footer",
-    "logo",
-    "social",
-    "social2",
-    "social4",
-    "button"
+    "footer2",
+    "logo2",
+    "social7",
+    "social5",
+    "social6"
   ],
   section: [
     "section",
@@ -1262,13 +1253,7 @@ const PlasmicDescendants = {
     "porsche",
     "rizqyMotorsport",
     "semenMerahPutih",
-    "siloMaritime",
-    "footer",
-    "logo",
-    "social",
-    "social2",
-    "social4",
-    "button"
+    "siloMaritime"
   ],
   navigationBar: ["navigationBar"],
   hero: ["hero"],
@@ -1283,13 +1268,7 @@ const PlasmicDescendants = {
     "porsche",
     "rizqyMotorsport",
     "semenMerahPutih",
-    "siloMaritime",
-    "footer",
-    "logo",
-    "social",
-    "social2",
-    "social4",
-    "button"
+    "siloMaritime"
   ],
   apriwa: ["apriwa"],
   asc: ["asc"],
@@ -1300,12 +1279,11 @@ const PlasmicDescendants = {
   rizqyMotorsport: ["rizqyMotorsport"],
   semenMerahPutih: ["semenMerahPutih"],
   siloMaritime: ["siloMaritime"],
-  footer: ["footer", "logo", "social", "social2", "social4", "button"],
-  logo: ["logo"],
-  social: ["social"],
-  social2: ["social2"],
-  social4: ["social4", "button"],
-  button: ["button"]
+  footer2: ["footer2", "logo2", "social7", "social5", "social6"],
+  logo2: ["logo2"],
+  social7: ["social7"],
+  social5: ["social5"],
+  social6: ["social6"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1326,12 +1304,11 @@ type NodeDefaultElementType = {
   rizqyMotorsport: "a";
   semenMerahPutih: "a";
   siloMaritime: "a";
-  footer: "div";
-  logo: "div";
-  social: "div";
-  social2: "div";
-  social4: "div";
-  button: typeof Button;
+  footer2: "div";
+  logo2: "div";
+  social7: "div";
+  social5: "div";
+  social6: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1408,12 +1385,11 @@ export const PlasmicHomepage = Object.assign(
     rizqyMotorsport: makeNodeComponent("rizqyMotorsport"),
     semenMerahPutih: makeNodeComponent("semenMerahPutih"),
     siloMaritime: makeNodeComponent("siloMaritime"),
-    footer: makeNodeComponent("footer"),
-    logo: makeNodeComponent("logo"),
-    social: makeNodeComponent("social"),
-    social2: makeNodeComponent("social2"),
-    social4: makeNodeComponent("social4"),
-    button: makeNodeComponent("button"),
+    footer2: makeNodeComponent("footer2"),
+    logo2: makeNodeComponent("logo2"),
+    social7: makeNodeComponent("social7"),
+    social5: makeNodeComponent("social5"),
+    social6: makeNodeComponent("social6"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

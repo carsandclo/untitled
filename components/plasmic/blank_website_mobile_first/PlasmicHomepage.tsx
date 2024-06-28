@@ -16,6 +16,7 @@ import * as React from "react";
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
+import Slider from "react-slick";
 
 import {
   Flex as Flex__,

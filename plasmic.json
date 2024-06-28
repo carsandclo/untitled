@@ -123,6 +123,36 @@
           "id": "VOYVMBHHCe1x",
           "name": "WorldsvgIcon",
           "moduleFilePath": "plasmic/blank_website_mobile_first/icons/PlasmicIcon__Worldsvg.tsx"
+        },
+        {
+          "id": "in6WJerUDdTP",
+          "name": "FastDeliverySvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__FastDeliverySvgrepoComsvg.tsx"
+        },
+        {
+          "id": "s4a-67yLiToA",
+          "name": "CheckShieldSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__CheckShieldSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "sfNwiAVmVopy",
+          "name": "ArrowUpRightSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__ArrowUpRightSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "Q0hRG03xqhKN",
+          "name": "LineHorizontal1SvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__LineHorizontal1SvgrepoComsvg.tsx"
+        },
+        {
+          "id": "CMzMFyQAU2zL",
+          "name": "InfoCircleSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__InfoCircleSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "zAgTD6D2FbNQ",
+          "name": "InfoCircleSvgrepoCom2SvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__InfoCircleSvgrepoCom2Svg.tsx"
         }
       ],
       "images": [

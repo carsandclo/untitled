@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: row;
-  background: #232320;
+  background: #000000;
   cursor: pointer;
   transition-property: background;
   transition-duration: 0.1s;
@@ -39,7 +39,7 @@
   padding-left: 20px;
   padding-right: 20px;
   min-width: 100px;
-  border-radius: 999px;
+  border-radius: 4px;
 }
 .rootshape_round {
   border-radius: 50%;

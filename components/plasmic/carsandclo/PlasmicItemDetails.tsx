@@ -70,6 +70,9 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../blank_website_mobile_first/plasmic.module.css"; // plasmic-import: c4FCQiVEmUqfPef3MjSmg8/projectcss
 import sty from "./PlasmicItemDetails.module.css"; // plasmic-import: cOK-sZ_QtzrG/css
 
+import InfoCircleSvgrepoCom2SvgIcon from "./icons/PlasmicIcon__InfoCircleSvgrepoCom2Svg"; // plasmic-import: zAgTD6D2FbNQ/icon
+import CheckShieldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CheckShieldSvgrepoComsvg"; // plasmic-import: s4a-67yLiToA/icon
+import FastDeliverySvgrepoComsvgIcon from "./icons/PlasmicIcon__FastDeliverySvgrepoComsvg"; // plasmic-import: in6WJerUDdTP/icon
 import ChecksvgIcon from "../blank_website_mobile_first/icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
 import IconIcon from "../blank_website_mobile_first/icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
 
@@ -89,9 +92,11 @@ export const PlasmicItemDetails__ArgProps = new Array<ArgPropType>("prodProp");
 export type PlasmicItemDetails__OverridesType = {
   root?: Flex__<"div">;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
-  freeBox?: Flex__<"div">;
   desc?: Flex__<"div">;
   size?: Flex__<"div">;
+  material?: Flex__<"div">;
+  careInstruction?: Flex__<"div">;
+  proof?: Flex__<"div">;
   link?: Flex__<"div">;
 };
 
@@ -263,9 +268,7 @@ function PlasmicItemDetails__RenderFunc(props: {
               const currentIndex = __plasmic_idx_0;
               return (
                 <div
-                  data-plasmic-name={"freeBox"}
-                  data-plasmic-override={overrides.freeBox}
-                  className={classNames(projectcss.all, sty.freeBox)}
+                  className={classNames(projectcss.all, sty.freeBox__kJZuU)}
                   key={currentIndex}
                 >
                   <PlasmicLink__
@@ -350,206 +353,340 @@ function PlasmicItemDetails__RenderFunc(props: {
           </SliderWrapper>
         );
       })()}
-      <Stack__
-        as={"div"}
-        data-plasmic-name={"desc"}
-        data-plasmic-override={overrides.desc}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.desc)}
-      >
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__nDepQ
-          )}
-          id={"lblname"}
+      <div className={classNames(projectcss.all, sty.freeBox__txGkc)}>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"desc"}
+          data-plasmic-override={overrides.desc}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.desc)}
         >
-          <React.Fragment>
-            {(() => {
-              try {
-                return $props.prodProp[0].prod_name;
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return "not found";
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__nDepQ
+            )}
+            id={"lblname"}
+          >
+            <React.Fragment>
+              {(() => {
+                try {
+                  return $props.prodProp[0].prod_name;
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return "Name";
+                  }
+                  throw e;
                 }
-                throw e;
-              }
-            })()}
-          </React.Fragment>
-        </div>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text___7EKux
-          )}
-          id={"lbldescription"}
-        >
-          <React.Fragment>
-            {(() => {
-              try {
-                return $props.prodProp[0].prod_description;
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return "not found";
+              })()}
+            </React.Fragment>
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___7EKux
+            )}
+            id={"lbldescription"}
+          >
+            <React.Fragment>
+              {(() => {
+                try {
+                  return $props.prodProp[0].prod_description;
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return "A special highlight for Porsche fans are our limited Porsche T-shirts with collector's themes. The tasteful and sometimes colorful prints on these T-shirts show different Porsche themes such as cars, model logos or historical themes.";
+                  }
+                  throw e;
                 }
-                throw e;
-              }
-            })()}
-          </React.Fragment>
-        </div>
-      </Stack__>
-      <Stack__
-        as={"div"}
-        data-plasmic-name={"size"}
-        data-plasmic-override={overrides.size}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.size)}
-      >
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text___1H7O4
-          )}
+              })()}
+            </React.Fragment>
+          </div>
+        </Stack__>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"size"}
+          data-plasmic-override={overrides.size}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.size)}
         >
-          {"Size"}
-        </div>
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__hLgmX
-          )}
-          id={"lblsize"}
-        >
-          <React.Fragment>
-            {(() => {
-              try {
-                return $props.prodProp[0].prod_size;
-              } catch (e) {
-                if (
-                  e instanceof TypeError ||
-                  e?.plasmicType === "PlasmicUndefinedDataError"
-                ) {
-                  return "size not found";
-                }
-                throw e;
-              }
-            })()}
-          </React.Fragment>
-        </div>
-      </Stack__>
-      <Stack__
-        as={"div"}
-        data-plasmic-name={"link"}
-        data-plasmic-override={overrides.link}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.link)}
-      >
-        <div
-          className={classNames(
-            projectcss.all,
-            projectcss.__wab_text,
-            sty.text__bmtzi
-          )}
-        >
-          {"Available on"}
-        </div>
-        <Button
-          className={classNames("__wab_instance", sty.button___7AXbL)}
-          link={(() => {
-            try {
-              return $props.prodProp[0].tokopedia_link;
-            } catch (e) {
-              if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
-              ) {
-                return undefined;
-              }
-              throw e;
-            }
-          })()}
-          onClick={async event => {
-            const $steps = {};
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__igDfm)}
+          >
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___1H7O4
+              )}
+            >
+              {"Size"}
+            </div>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__hLgmX
+              )}
+              id={"lblsize"}
+            >
+              <React.Fragment>
+                {(() => {
+                  try {
+                    return $props.prodProp[0].prod_size;
+                  } catch (e) {
+                    if (
+                      e instanceof TypeError ||
+                      e?.plasmicType === "PlasmicUndefinedDataError"
+                    ) {
+                      return "S, M, L, XL";
+                    }
+                    throw e;
+                  }
+                })()}
+              </React.Fragment>
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__lGpPf)}
+          >
+            <InfoCircleSvgrepoCom2SvgIcon
+              className={classNames(projectcss.all, sty.svg__ytTi)}
+              role={"img"}
+            />
 
-            $steps["runCode"] = true
-              ? (() => {
-                  const actionArgs = {};
-                  return (({ customFunction }) => {
-                    return customFunction();
-                  })?.apply(null, [actionArgs]);
-                })()
-              : undefined;
-            if (
-              $steps["runCode"] != null &&
-              typeof $steps["runCode"] === "object" &&
-              typeof $steps["runCode"].then === "function"
-            ) {
-              $steps["runCode"] = await $steps["runCode"];
-            }
-          }}
-          shape={"sharp"}
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__k7D2B
+              )}
+            >
+              {"See Size Chart"}
+            </div>
+          </Stack__>
+        </Stack__>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"material"}
+          data-plasmic-override={overrides.material}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.material)}
         >
-          {"Tokopedia"}
-        </Button>
-        <Button
-          className={classNames("__wab_instance", sty.button__c9ITl)}
-          link={(() => {
-            try {
-              return $props.prodProp[0].shopee_link;
-            } catch (e) {
-              if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
-              ) {
-                return undefined;
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__a6CMg
+            )}
+          >
+            {"Material"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__chSZu
+            )}
+            id={"lblsize"}
+          >
+            {"40% Polyester, 60% Cotton, 270gsm"}
+          </div>
+        </Stack__>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"careInstruction"}
+          data-plasmic-override={overrides.careInstruction}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.careInstruction)}
+        >
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__vzi58
+            )}
+          >
+            {"Care Instruction"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__avaSs
+            )}
+            id={"lblsize"}
+          >
+            {
+              "Machine wash cold. Permanent press cycle. Do not bleach. Do not tumble dry. Drying line dry. Cool iron. Do not dry-clean. Wash with similar colours. Wash and iron inside out. Use detergent for colours. Do not iron on print. Do not wring."
+            }
+          </div>
+        </Stack__>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"proof"}
+          data-plasmic-override={overrides.proof}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.proof)}
+        >
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__z6GfV)}
+          >
+            <CheckShieldSvgrepoComsvgIcon
+              className={classNames(projectcss.all, sty.svg__aWlGh)}
+              role={"img"}
+            />
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__gfd8C
+              )}
+            >
+              {"Porsche Sprint Challenge Official Apparels Partner"}
+            </div>
+          </Stack__>
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__mvYJj)}
+          >
+            <FastDeliverySvgrepoComsvgIcon
+              className={classNames(projectcss.all, sty.svg__vfIrq)}
+              role={"img"}
+            />
+
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__tWyd1
+              )}
+            >
+              {"Shipping within 3 to 4 working days"}
+            </div>
+          </Stack__>
+        </Stack__>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"link"}
+          data-plasmic-override={overrides.link}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.link)}
+        >
+          <Button
+            className={classNames("__wab_instance", sty.button___7AXbL)}
+            link={(() => {
+              try {
+                return $props.prodProp[0].tokopedia_link;
+              } catch (e) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
+                  return undefined;
+                }
+                throw e;
               }
-              throw e;
-            }
-          })()}
-          shape={"sharp"}
-        >
-          {"Shopee"}
-        </Button>
-        <Button
-          className={classNames("__wab_instance", sty.button__i1Pi)}
-          link={(() => {
-            try {
-              return $props.prodProp[0].bigcartel_link;
-            } catch (e) {
+            })()}
+            onClick={async event => {
+              const $steps = {};
+
+              $steps["runCode"] = true
+                ? (() => {
+                    const actionArgs = {};
+                    return (({ customFunction }) => {
+                      return customFunction();
+                    })?.apply(null, [actionArgs]);
+                  })()
+                : undefined;
               if (
-                e instanceof TypeError ||
-                e?.plasmicType === "PlasmicUndefinedDataError"
+                $steps["runCode"] != null &&
+                typeof $steps["runCode"] === "object" &&
+                typeof $steps["runCode"].then === "function"
               ) {
-                return undefined;
+                $steps["runCode"] = await $steps["runCode"];
               }
-              throw e;
-            }
-          })()}
-          shape={"sharp"}
-        >
-          {"International Order"}
-        </Button>
-      </Stack__>
+            }}
+            shape={"rounded"}
+          >
+            {"Tokopedia"}
+          </Button>
+          <Button
+            className={classNames("__wab_instance", sty.button__c9ITl)}
+            link={(() => {
+              try {
+                return $props.prodProp[0].shopee_link;
+              } catch (e) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
+                  return undefined;
+                }
+                throw e;
+              }
+            })()}
+            shape={"rounded"}
+          >
+            {"Shopee"}
+          </Button>
+          <Button
+            className={classNames("__wab_instance", sty.button__i1Pi)}
+            link={(() => {
+              try {
+                return $props.prodProp[0].bigcartel_link;
+              } catch (e) {
+                if (
+                  e instanceof TypeError ||
+                  e?.plasmicType === "PlasmicUndefinedDataError"
+                ) {
+                  return undefined;
+                }
+                throw e;
+              }
+            })()}
+            shape={"rounded"}
+          >
+            {"International Order"}
+          </Button>
+        </Stack__>
+      </div>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "sliderCarousel", "freeBox", "desc", "size", "link"],
-  sliderCarousel: ["sliderCarousel", "freeBox"],
-  freeBox: ["freeBox"],
+  root: [
+    "root",
+    "sliderCarousel",
+    "desc",
+    "size",
+    "material",
+    "careInstruction",
+    "proof",
+    "link"
+  ],
+  sliderCarousel: ["sliderCarousel"],
   desc: ["desc"],
   size: ["size"],
+  material: ["material"],
+  careInstruction: ["careInstruction"],
+  proof: ["proof"],
   link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -558,9 +695,11 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   sliderCarousel: typeof SliderWrapper;
-  freeBox: "div";
   desc: "div";
   size: "div";
+  material: "div";
+  careInstruction: "div";
+  proof: "div";
   link: "div";
 };
 
@@ -625,9 +764,11 @@ export const PlasmicItemDetails = Object.assign(
   {
     // Helper components rendering sub-elements
     sliderCarousel: makeNodeComponent("sliderCarousel"),
-    freeBox: makeNodeComponent("freeBox"),
     desc: makeNodeComponent("desc"),
     size: makeNodeComponent("size"),
+    material: makeNodeComponent("material"),
+    careInstruction: makeNodeComponent("careInstruction"),
+    proof: makeNodeComponent("proof"),
     link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicItemDetails

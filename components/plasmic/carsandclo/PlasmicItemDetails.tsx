@@ -340,35 +340,6 @@ function PlasmicItemDetails__RenderFunc(props: {
                         }
                       })()}
                     />
-
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__e7T9D)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      src={(() => {
-                        try {
-                          return $props.prodProp[0].image1;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return {
-                              src: "/plasmic/carsandclo/images/fallbackpng.png",
-                              fullWidth: 120,
-                              fullHeight: 120,
-                              aspectRatio: undefined
-                            };
-                          }
-                          throw e;
-                        }
-                      })()}
-                    />
                   </PlasmicLink__>
                 </div>
               );

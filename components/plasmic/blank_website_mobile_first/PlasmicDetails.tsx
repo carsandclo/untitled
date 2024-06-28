@@ -107,6 +107,7 @@ export type PlasmicDetails__OverridesType = {
   tabUnderline?: Flex__<typeof TabUnderline>;
   dataFetcher?: Flex__<typeof Fetcher>;
   dataFetcher2?: Flex__<typeof Fetcher>;
+  dataFetcher3?: Flex__<typeof Fetcher>;
   footer2?: Flex__<"div">;
   logo2?: Flex__<"div">;
   social4?: Flex__<"div">;
@@ -737,6 +738,94 @@ function PlasmicDetails__RenderFunc(props: {
                             </LoadingBoundary>
                           </div>
                         </TabContent>
+                        <TabContent
+                          className={classNames(
+                            "__wab_instance",
+                            sty.tabContent__r2OaB
+                          )}
+                          tabKey={"sweater"}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__aDvml
+                            )}
+                          >
+                            <LoadingBoundary
+                              className={classNames(
+                                "__wab_instance",
+                                sty.loadingBoundary__ucTp6
+                              )}
+                              loadingState={
+                                <DataCtxReader__>
+                                  {$ctx => (
+                                    <div
+                                      className={classNames(
+                                        projectcss.all,
+                                        projectcss.__wab_text,
+                                        sty.text__m4CgQ
+                                      )}
+                                    >
+                                      {"Loading..."}
+                                    </div>
+                                  )}
+                                </DataCtxReader__>
+                              }
+                            >
+                              <DataCtxReader__>
+                                {$ctx => (
+                                  <Fetcher
+                                    data-plasmic-name={"dataFetcher3"}
+                                    data-plasmic-override={
+                                      overrides.dataFetcher3
+                                    }
+                                    className={classNames(
+                                      "__wab_instance",
+                                      sty.dataFetcher3
+                                    )}
+                                    dataOp={{
+                                      sourceId: "eA7ZA8G1r1sNAkLZ6fF4gN",
+                                      opId: "36786f75-8c77-4b93-963a-4f58cea5da1b",
+                                      userArgs: {
+                                        filters: [
+                                          $ctx.params.slug,
+                                          $ctx.currentTabKey
+                                        ]
+                                      },
+                                      cacheKey: `plasmic.$.fxO_CMr5gGIM.$.36786f75-8c77-4b93-963a-4f58cea5da1b.$.`,
+                                      invalidatedKeys: null,
+                                      roleId: null
+                                    }}
+                                    queries={{}}
+                                  >
+                                    {($queries: any) => (
+                                      <ItemDetails
+                                        className={classNames(
+                                          "__wab_instance",
+                                          sty.itemDetails__ysLcW
+                                        )}
+                                        prodProp={(() => {
+                                          try {
+                                            return $queries.data.data;
+                                          } catch (e) {
+                                            if (
+                                              e instanceof TypeError ||
+                                              e?.plasmicType ===
+                                                "PlasmicUndefinedDataError"
+                                            ) {
+                                              return undefined;
+                                            }
+                                            throw e;
+                                          }
+                                        })()}
+                                      />
+                                    )}
+                                  </Fetcher>
+                                )}
+                              </DataCtxReader__>
+                            </LoadingBoundary>
+                          </div>
+                        </TabContent>
                       </div>
                     </div>
                   )}
@@ -1054,6 +1143,7 @@ const PlasmicDescendants = {
     "tabUnderline",
     "dataFetcher",
     "dataFetcher2",
+    "dataFetcher3",
     "footer2",
     "logo2",
     "social4",
@@ -1065,11 +1155,13 @@ const PlasmicDescendants = {
     "tabsContainer",
     "tabUnderline",
     "dataFetcher",
-    "dataFetcher2"
+    "dataFetcher2",
+    "dataFetcher3"
   ],
   tabUnderline: ["tabUnderline"],
   dataFetcher: ["dataFetcher"],
   dataFetcher2: ["dataFetcher2"],
+  dataFetcher3: ["dataFetcher3"],
   footer2: ["footer2", "logo2", "social4", "social5", "social6"],
   logo2: ["logo2"],
   social4: ["social4"],
@@ -1086,6 +1178,7 @@ type NodeDefaultElementType = {
   tabUnderline: typeof TabUnderline;
   dataFetcher: typeof Fetcher;
   dataFetcher2: typeof Fetcher;
+  dataFetcher3: typeof Fetcher;
   footer2: "div";
   logo2: "div";
   social4: "div";
@@ -1158,6 +1251,7 @@ export const PlasmicDetails = Object.assign(
     tabUnderline: makeNodeComponent("tabUnderline"),
     dataFetcher: makeNodeComponent("dataFetcher"),
     dataFetcher2: makeNodeComponent("dataFetcher2"),
+    dataFetcher3: makeNodeComponent("dataFetcher3"),
     footer2: makeNodeComponent("footer2"),
     logo2: makeNodeComponent("logo2"),
     social4: makeNodeComponent("social4"),

@@ -55,13 +55,6 @@
 .img__p1Nft > picture > img {
   object-fit: cover;
 }
-.img__e7T9D {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__e7T9D > picture > img {
-  object-fit: cover;
-}
 .desc {
   display: flex;
   position: relative;

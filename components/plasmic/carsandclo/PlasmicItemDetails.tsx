@@ -61,7 +61,6 @@ import {
 
 import { SliderWrapper } from "@plasmicpkgs/react-slick";
 import { sliderHelpers as SliderWrapper_Helpers } from "@plasmicpkgs/react-slick";
-import Button from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
 
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "../blank_website_mobile_first/PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
 
@@ -73,8 +72,6 @@ import sty from "./PlasmicItemDetails.module.css"; // plasmic-import: cOK-sZ_Qtz
 import InfoCircleSvgrepoCom2SvgIcon from "./icons/PlasmicIcon__InfoCircleSvgrepoCom2Svg"; // plasmic-import: zAgTD6D2FbNQ/icon
 import CheckShieldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CheckShieldSvgrepoComsvg"; // plasmic-import: s4a-67yLiToA/icon
 import FastDeliverySvgrepoComsvgIcon from "./icons/PlasmicIcon__FastDeliverySvgrepoComsvg"; // plasmic-import: in6WJerUDdTP/icon
-import ChecksvgIcon from "../blank_website_mobile_first/icons/PlasmicIcon__Checksvg"; // plasmic-import: wSb16lybm7DS/icon
-import IconIcon from "../blank_website_mobile_first/icons/PlasmicIcon__Icon"; // plasmic-import: m3IaC3t3OSQT/icon
 
 createPlasmicElementProxy;
 
@@ -616,9 +613,15 @@ function PlasmicItemDetails__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.link)}
         >
-          <Button
-            className={classNames("__wab_instance", sty.button___7AXbL)}
-            link={(() => {
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__jw0OQ
+            )}
+            component={Link}
+            href={(() => {
               try {
                 return $props.prodProp[0].tokopedia_link;
               } catch (e) {
@@ -631,34 +634,21 @@ function PlasmicItemDetails__RenderFunc(props: {
                 throw e;
               }
             })()}
-            onClick={async event => {
-              const $steps = {};
-
-              $steps["runCode"] = true
-                ? (() => {
-                    const actionArgs = {};
-                    return (({ customFunction }) => {
-                      return customFunction();
-                    })?.apply(null, [actionArgs]);
-                  })()
-                : undefined;
-              if (
-                $steps["runCode"] != null &&
-                typeof $steps["runCode"] === "object" &&
-                typeof $steps["runCode"].then === "function"
-              ) {
-                $steps["runCode"] = await $steps["runCode"];
-              }
-            }}
-            shape={"rounded"}
+            platform={"nextjs"}
           >
             {"Tokopedia"}
-          </Button>
-          <Button
-            className={classNames("__wab_instance", sty.button__c9ITl)}
-            link={(() => {
+          </PlasmicLink__>
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__iE6N7
+            )}
+            component={Link}
+            href={(() => {
               try {
-                return $props.prodProp[0].shopee_link;
+                return $props.prodProp[0].tokopedia_link;
               } catch (e) {
                 if (
                   e instanceof TypeError ||
@@ -669,13 +659,19 @@ function PlasmicItemDetails__RenderFunc(props: {
                 throw e;
               }
             })()}
-            shape={"rounded"}
+            platform={"nextjs"}
           >
             {"Shopee"}
-          </Button>
-          <Button
-            className={classNames("__wab_instance", sty.button__i1Pi)}
-            link={(() => {
+          </PlasmicLink__>
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__jkbAp
+            )}
+            component={Link}
+            href={(() => {
               try {
                 return $props.prodProp[0].bigcartel_link;
               } catch (e) {
@@ -688,10 +684,10 @@ function PlasmicItemDetails__RenderFunc(props: {
                 throw e;
               }
             })()}
-            shape={"rounded"}
+            platform={"nextjs"}
           >
             {"International Order"}
-          </Button>
+          </PlasmicLink__>
         </Stack__>
       </div>
     </div>

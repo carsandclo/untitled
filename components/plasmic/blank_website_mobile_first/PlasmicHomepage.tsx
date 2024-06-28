@@ -16,7 +16,6 @@ import * as React from "react";
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
-import Slider from "react-slick";
 
 
 
@@ -72,6 +71,7 @@ import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import Button from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 
+import Slider from "react-slick";
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";

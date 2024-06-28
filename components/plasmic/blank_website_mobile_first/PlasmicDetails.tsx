@@ -328,19 +328,25 @@ function PlasmicDetails__RenderFunc(props: {
             className={classNames(projectcss.all, sty.freeBox__k1JgD)}
           >
             <div className={classNames(projectcss.all, sty.freeBox__kSgv)}>
-              <PlasmicLink__
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  projectcss.__wab_text,
-                  sty.link__nsTku
-                )}
-                component={Link}
-                href={`/`}
-                platform={"nextjs"}
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__to1Si)}
               >
-                {"Back to Collections /"}
-              </PlasmicLink__>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link__nsTku
+                  )}
+                  component={Link}
+                  href={`/`}
+                  platform={"nextjs"}
+                >
+                  {"Back to Collections /"}
+                </PlasmicLink__>
+              </Stack__>
               <div
                 className={classNames(
                   projectcss.all,
@@ -375,7 +381,7 @@ function PlasmicDetails__RenderFunc(props: {
                         e instanceof TypeError ||
                         e?.plasmicType === "PlasmicUndefinedDataError"
                       ) {
-                        return "Apriwa Motorsport";
+                        return "Porsche Motorsport";
                       }
                       throw e;
                     }

@@ -376,7 +376,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                     e instanceof TypeError ||
                     e?.plasmicType === "PlasmicUndefinedDataError"
                   ) {
-                    return "Name";
+                    return "Product Name";
                   }
                   throw e;
                 }

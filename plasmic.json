@@ -139,6 +139,11 @@
           "id": "zAgTD6D2FbNQ",
           "name": "InfoCircleSvgrepoCom2SvgIcon",
           "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__InfoCircleSvgrepoCom2Svg.tsx"
+        },
+        {
+          "id": "vID2EYJV2vDv",
+          "name": "ArrowSmLeftSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__ArrowSmLeftSvgrepoComsvg.tsx"
         }
       ],
       "images": [

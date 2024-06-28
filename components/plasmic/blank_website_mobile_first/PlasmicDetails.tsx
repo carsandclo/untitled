@@ -343,7 +343,37 @@ function PlasmicDetails__RenderFunc(props: {
                   sty.text__vXyyw
                 )}
               >
-                {"Apriwa Motorsport"}
+                <React.Fragment>
+                  {(() => {
+                    try {
+                      return $ctx.params.slug === "asc"
+                        ? "ASC"
+                        : $ctx.params.slug === "apriwa"
+                        ? "Apriwa Motorsport"
+                        : $ctx.params.slug === "apriwa"
+                        ? "Apriwa Motorsport"
+                        : $ctx.params.slug === "apriwa"
+                        ? "Apriwa Motorsport"
+                        : $ctx.params.slug === "apriwa"
+                        ? "Apriwa Motorsport"
+                        : $ctx.params.slug === "apriwa"
+                        ? "Apriwa Motorsport"
+                        : $ctx.params.slug === "apriwa"
+                        ? "Apriwa Motorsport"
+                        : $ctx.params.slug === "apriwa"
+                        ? "Apriwa Motorsport"
+                        : "";
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return "Apriwa Motorsport";
+                      }
+                      throw e;
+                    }
+                  })()}
+                </React.Fragment>
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.freeBox__vZ66I)}>

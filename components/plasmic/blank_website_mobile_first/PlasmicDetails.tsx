@@ -104,9 +104,13 @@ export type PlasmicDetails__OverridesType = {
   details?: Flex__<"div">;
   navigationBar?: Flex__<typeof NavigationBar>;
   tabsContainer?: Flex__<typeof TabsContainer>;
+  tabButton?: Flex__<typeof Button>;
   tabUnderline?: Flex__<typeof TabUnderline>;
+  tShirt?: Flex__<typeof TabContent>;
   dataFetcher?: Flex__<typeof Fetcher>;
+  hoodie?: Flex__<typeof TabContent>;
   dataFetcher2?: Flex__<typeof Fetcher>;
+  sweater?: Flex__<typeof TabContent>;
   dataFetcher3?: Flex__<typeof Fetcher>;
   footer2?: Flex__<"div">;
   logo2?: Flex__<"div">;
@@ -415,7 +419,7 @@ function PlasmicDetails__RenderFunc(props: {
                               "__wab_instance",
                               sty.button__hamTk
                             )}
-                            color={"white"}
+                            color={"clear"}
                             shape={"sharp"}
                           >
                             <div
@@ -437,11 +441,13 @@ function PlasmicDetails__RenderFunc(props: {
                           tabKey={"hoodie"}
                         >
                           <Button
+                            data-plasmic-name={"tabButton"}
+                            data-plasmic-override={overrides.tabButton}
                             className={classNames(
                               "__wab_instance",
-                              sty.button__eAwtz
+                              sty.tabButton
                             )}
-                            color={"white"}
+                            color={"clear"}
                             onClick={async event => {
                               const $steps = {};
 
@@ -535,7 +541,7 @@ function PlasmicDetails__RenderFunc(props: {
                               "__wab_instance",
                               sty.button__nnG0Z
                             )}
-                            color={"white"}
+                            color={"clear"}
                             shape={"sharp"}
                           >
                             <div
@@ -565,10 +571,9 @@ function PlasmicDetails__RenderFunc(props: {
                         )}
                       >
                         <TabContent
-                          className={classNames(
-                            "__wab_instance",
-                            sty.tabContent__fy1H
-                          )}
+                          data-plasmic-name={"tShirt"}
+                          data-plasmic-override={overrides.tShirt}
+                          className={classNames("__wab_instance", sty.tShirt)}
                           tabKey={"t-shirt"}
                         >
                           <div
@@ -653,10 +658,9 @@ function PlasmicDetails__RenderFunc(props: {
                           </div>
                         </TabContent>
                         <TabContent
-                          className={classNames(
-                            "__wab_instance",
-                            sty.tabContent__qd6TH
-                          )}
+                          data-plasmic-name={"hoodie"}
+                          data-plasmic-override={overrides.hoodie}
+                          className={classNames("__wab_instance", sty.hoodie)}
                           tabKey={"hoodie"}
                         >
                           <div
@@ -741,10 +745,9 @@ function PlasmicDetails__RenderFunc(props: {
                           </div>
                         </TabContent>
                         <TabContent
-                          className={classNames(
-                            "__wab_instance",
-                            sty.tabContent__r2OaB
-                          )}
+                          data-plasmic-name={"sweater"}
+                          data-plasmic-override={overrides.sweater}
+                          className={classNames("__wab_instance", sty.sweater)}
                           tabKey={"sweater"}
                         >
                           <div
@@ -1142,9 +1145,13 @@ const PlasmicDescendants = {
     "details",
     "navigationBar",
     "tabsContainer",
+    "tabButton",
     "tabUnderline",
+    "tShirt",
     "dataFetcher",
+    "hoodie",
     "dataFetcher2",
+    "sweater",
     "dataFetcher3",
     "footer2",
     "logo2",
@@ -1155,14 +1162,22 @@ const PlasmicDescendants = {
   navigationBar: ["navigationBar"],
   tabsContainer: [
     "tabsContainer",
+    "tabButton",
     "tabUnderline",
+    "tShirt",
     "dataFetcher",
+    "hoodie",
     "dataFetcher2",
+    "sweater",
     "dataFetcher3"
   ],
+  tabButton: ["tabButton"],
   tabUnderline: ["tabUnderline"],
+  tShirt: ["tShirt", "dataFetcher"],
   dataFetcher: ["dataFetcher"],
+  hoodie: ["hoodie", "dataFetcher2"],
   dataFetcher2: ["dataFetcher2"],
+  sweater: ["sweater", "dataFetcher3"],
   dataFetcher3: ["dataFetcher3"],
   footer2: ["footer2", "logo2", "social4", "social5", "social6"],
   logo2: ["logo2"],
@@ -1177,9 +1192,13 @@ type NodeDefaultElementType = {
   details: "div";
   navigationBar: typeof NavigationBar;
   tabsContainer: typeof TabsContainer;
+  tabButton: typeof Button;
   tabUnderline: typeof TabUnderline;
+  tShirt: typeof TabContent;
   dataFetcher: typeof Fetcher;
+  hoodie: typeof TabContent;
   dataFetcher2: typeof Fetcher;
+  sweater: typeof TabContent;
   dataFetcher3: typeof Fetcher;
   footer2: "div";
   logo2: "div";
@@ -1250,9 +1269,13 @@ export const PlasmicDetails = Object.assign(
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
     tabsContainer: makeNodeComponent("tabsContainer"),
+    tabButton: makeNodeComponent("tabButton"),
     tabUnderline: makeNodeComponent("tabUnderline"),
+    tShirt: makeNodeComponent("tShirt"),
     dataFetcher: makeNodeComponent("dataFetcher"),
+    hoodie: makeNodeComponent("hoodie"),
     dataFetcher2: makeNodeComponent("dataFetcher2"),
+    sweater: makeNodeComponent("sweater"),
     dataFetcher3: makeNodeComponent("dataFetcher3"),
     footer2: makeNodeComponent("footer2"),
     logo2: makeNodeComponent("logo2"),

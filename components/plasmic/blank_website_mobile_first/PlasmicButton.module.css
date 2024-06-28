@@ -81,7 +81,7 @@
   background: #e9f9ee;
 }
 .rootcolor_softYellow {
-  background: #fffbd1;
+  background: #ffffff;
 }
 .rootcolor_softRed {
   background: #fff0ee;
@@ -94,6 +94,8 @@
 }
 .rootcolor_link {
   background: #ffffff00;
+  border-radius: 0px;
+  border: 1px solid #000000;
 }
 .rootshowStartIcon_shape_rounded {
   padding-left: 16px;
@@ -132,7 +134,7 @@
   background: #ddf3e4;
 }
 .rootcolor_softYellow:hover {
-  background: #fff8bb;
+  background: #ffffff;
 }
 .rootcolor_softRed:hover {
   background: #ffe6e2;
@@ -141,7 +143,7 @@
   background: #e9e9e6;
 }
 .rootcolor_clear:hover {
-  background: #e9e9e6;
+  background: #ffffff;
 }
 .rootcolor_link:hover {
   background: #ffffff00;
@@ -182,7 +184,7 @@
   background: #ccebd7;
 }
 .rootcolor_softYellow:active {
-  background: #fef2a4;
+  background: #ffffff;
 }
 .rootcolor_softRed:active {
   background: #fdd8d3;
@@ -191,17 +193,17 @@
   background: #e3e3e0;
 }
 .rootcolor_clear:active {
-  background: #e3e3e0;
+  background: #ffffff;
 }
 .rootcolor_link:active {
   background: #ffffff00;
 }
 .startIconContainer {
-  display: flex;
   position: relative;
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  display: none;
 }
 .startIconContainershowStartIcon {
   display: flex;
@@ -288,7 +290,7 @@
   color: #18794e;
 }
 .slotTargetChildrencolor_softYellow {
-  color: #946800;
+  color: #000000;
 }
 .slotTargetChildrencolor_softRed {
   color: #ca3214;
@@ -300,10 +302,10 @@
   color: #1b1b18;
 }
 .slotTargetChildrencolor_link {
-  color: #0091ff;
+  color: #000000;
 }
 .rootcolor_link:hover .slotTargetChildrencolor_link {
-  color: #0081f1;
+  color: #000000;
 }
 .rootcolor_link:hover .slotTargetChildrencolor_link > :global(.__wab_text),
 .rootcolor_link:hover
@@ -357,7 +359,7 @@
   > :global(.__wab_slot)
   > :global(.__wab_slot)
   > :global(.__wab_slot-string-wrapper) {
-  text-decoration-line: underline;
+  text-decoration-line: none;
 }
 .root:focus-within .slotTargetChildren > *,
 .root:focus-within .slotTargetChildren > :global(.__wab_slot) > *,
@@ -424,7 +426,7 @@
   outline: none;
 }
 .rootcolor_link:active .slotTargetChildrencolor_link {
-  color: #006adc;
+  color: #000000;
 }
 .endIconContainer {
   display: flex;

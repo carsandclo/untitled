@@ -292,6 +292,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  color: #000000;
   min-width: 0;
 }
 .svg__dphU {
@@ -311,7 +312,7 @@
   max-width: 100%;
   object-fit: cover;
 }
-.button__eAwtz:global(.__wab_instance) {
+.tabButton:global(.__wab_instance) {
   width: 100%;
   min-width: 0;
 }
@@ -370,14 +371,16 @@
   width: 100%;
   padding-left: 0px;
   padding-right: 0px;
-  margin-left: calc(8px + 0px) !important;
-  margin-right: 8px;
+  margin-left: calc(0px + 0px) !important;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   min-width: 0;
 }
 @media (min-width: 768px) {
   .tabUnderline:global(.__wab_instance) {
     align-self: auto;
-    margin-left: calc(8px + 0px) !important;
+    margin-left: calc(0px + 0px) !important;
   }
 }
 .freeBox__k4Tew {
@@ -392,7 +395,7 @@
   min-width: 0;
   padding: 0px;
 }
-.tabContent__fy1H:global(.__wab_instance) {
+.tShirt:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
 }
@@ -428,7 +431,7 @@
   position: relative;
   margin: 0px;
 }
-.tabContent__qd6TH:global(.__wab_instance) {
+.hoodie:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
 }
@@ -442,7 +445,7 @@
   justify-content: flex-start;
   align-items: center;
   min-width: 0;
-  padding: 8px;
+  padding: 0px;
 }
 .loadingBoundary__oq3Xh:global(.__wab_instance) {
   max-width: 100%;
@@ -464,7 +467,7 @@
   position: relative;
   margin: 0px;
 }
-.tabContent__r2OaB:global(.__wab_instance) {
+.sweater:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
 }

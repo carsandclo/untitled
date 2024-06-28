@@ -504,7 +504,6 @@ function PlasmicItemDetails__RenderFunc(props: {
         </Button>
         <Button
           className={classNames("__wab_instance", sty.button__iRtat)}
-          color={"white"}
           shape={"sharp"}
         />
 

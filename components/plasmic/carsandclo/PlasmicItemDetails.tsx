@@ -95,6 +95,7 @@ export type PlasmicItemDetails__OverridesType = {
   desc?: Flex__<"div">;
   size?: Flex__<"div">;
   material?: Flex__<"div">;
+  material2?: Flex__<"div">;
   careInstruction?: Flex__<"div">;
   proof?: Flex__<"div">;
   link?: Flex__<"div">;
@@ -506,6 +507,33 @@ function PlasmicItemDetails__RenderFunc(props: {
         </Stack__>
         <Stack__
           as={"div"}
+          data-plasmic-name={"material2"}
+          data-plasmic-override={overrides.material2}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.material2)}
+        >
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__gat5N
+            )}
+          >
+            {"Cutting Style"}
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___6UhKf
+            )}
+            id={"lblsize"}
+          >
+            {"Oversized Tee"}
+          </div>
+        </Stack__>
+        <Stack__
+          as={"div"}
           data-plasmic-name={"careInstruction"}
           data-plasmic-override={overrides.careInstruction}
           hasGap={true}
@@ -557,7 +585,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                 sty.text__gfd8C
               )}
             >
-              {"Porsche Sprint Challenge Official Apparels Partner"}
+              {"Porsche Sprint Challenge Indonesia Official Apparels Partner"}
             </div>
           </Stack__>
           <Stack__
@@ -677,6 +705,7 @@ const PlasmicDescendants = {
     "desc",
     "size",
     "material",
+    "material2",
     "careInstruction",
     "proof",
     "link"
@@ -685,6 +714,7 @@ const PlasmicDescendants = {
   desc: ["desc"],
   size: ["size"],
   material: ["material"],
+  material2: ["material2"],
   careInstruction: ["careInstruction"],
   proof: ["proof"],
   link: ["link"]
@@ -698,6 +728,7 @@ type NodeDefaultElementType = {
   desc: "div";
   size: "div";
   material: "div";
+  material2: "div";
   careInstruction: "div";
   proof: "div";
   link: "div";
@@ -767,6 +798,7 @@ export const PlasmicItemDetails = Object.assign(
     desc: makeNodeComponent("desc"),
     size: makeNodeComponent("size"),
     material: makeNodeComponent("material"),
+    material2: makeNodeComponent("material2"),
     careInstruction: makeNodeComponent("careInstruction"),
     proof: makeNodeComponent("proof"),
     link: makeNodeComponent("link"),

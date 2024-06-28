@@ -71,20 +71,6 @@
           "path": "/details"
         },
         {
-          "id": "93mjmyH2CNk2",
-          "name": "Bridge",
-          "type": "managed",
-          "projectId": "c4FCQiVEmUqfPef3MjSmg8",
-          "renderModuleFilePath": "plasmic/blank_website_mobile_first/PlasmicBridge.tsx",
-          "importSpec": {
-            "modulePath": "../pages/new-page.tsx"
-          },
-          "cssFilePath": "plasmic/blank_website_mobile_first/PlasmicBridge.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/new-page"
-        },
-        {
           "id": "cOK-sZ_QtzrG",
           "name": "ItemDetails",
           "type": "managed",

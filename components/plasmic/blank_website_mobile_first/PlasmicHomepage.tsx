@@ -400,7 +400,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"auto"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/apriwa2Xpng2.png",
@@ -460,7 +460,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/asc2X2Xpng2.png",
@@ -524,7 +524,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"auto"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/citadel2Xpng.png",
@@ -588,7 +588,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/enginePlus2X2X2Xpng.png",
@@ -648,7 +648,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"auto"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/jvs2X1Png.png",
@@ -712,7 +712,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/baseBlue2Xpng.png",
@@ -776,7 +776,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"auto"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/rizqyMotorsport2Xpng.png",
@@ -840,7 +840,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/semenMerahPutih2X2Xpng.png",
@@ -904,7 +904,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayMaxWidth={"auto"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"160px"}
+                  displayWidth={"140px"}
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/blank_website_mobile_first/images/btpn2X2Xpng.png",

@@ -144,6 +144,11 @@
           "id": "vID2EYJV2vDv",
           "name": "ArrowSmLeftSvgrepoComsvgIcon",
           "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__ArrowSmLeftSvgrepoComsvg.tsx"
+        },
+        {
+          "id": "dW6yKXuCsOFn",
+          "name": "RulerSvgrepoComsvgIcon",
+          "moduleFilePath": "plasmic/carsandclo/icons/PlasmicIcon__RulerSvgrepoComsvg.tsx"
         }
       ],
       "images": [

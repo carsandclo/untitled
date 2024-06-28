@@ -69,7 +69,7 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "../blank_website_mobile_first/plasmic.module.css"; // plasmic-import: c4FCQiVEmUqfPef3MjSmg8/projectcss
 import sty from "./PlasmicItemDetails.module.css"; // plasmic-import: cOK-sZ_QtzrG/css
 
-import InfoCircleSvgrepoCom2SvgIcon from "./icons/PlasmicIcon__InfoCircleSvgrepoCom2Svg"; // plasmic-import: zAgTD6D2FbNQ/icon
+import RulerSvgrepoComsvgIcon from "./icons/PlasmicIcon__RulerSvgrepoComsvg"; // plasmic-import: dW6yKXuCsOFn/icon
 import CheckShieldSvgrepoComsvgIcon from "./icons/PlasmicIcon__CheckShieldSvgrepoComsvg"; // plasmic-import: s4a-67yLiToA/icon
 import FastDeliverySvgrepoComsvgIcon from "./icons/PlasmicIcon__FastDeliverySvgrepoComsvg"; // plasmic-import: in6WJerUDdTP/icon
 
@@ -459,7 +459,7 @@ function PlasmicItemDetails__RenderFunc(props: {
             hasGap={true}
             className={classNames(projectcss.all, sty.freeBox__lGpPf)}
           >
-            <InfoCircleSvgrepoCom2SvgIcon
+            <RulerSvgrepoComsvgIcon
               className={classNames(projectcss.all, sty.svg__ytTi)}
               role={"img"}
             />
@@ -471,7 +471,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                 sty.text__k7D2B
               )}
             >
-              {"See Size Chart"}
+              {"Size Guide"}
             </div>
           </Stack__>
         </Stack__>

@@ -54,9 +54,14 @@
 }
 @media (min-width: 768px) {
   .navigationBar:global(.__wab_instance) {
-    top: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
+    top: auto;
+    right: auto;
+    left: auto;
+    position: relative;
+    margin-bottom: 0px;
+    grid-column-start: 1 !important;
+    grid-column-end: -1 !important;
   }
 }
 .link__kRbuf {
@@ -156,6 +161,11 @@
   > picture
   > img {
   margin-top: 8px;
+}
+@media (min-width: 768px) {
+  .freeBox__k1JgD {
+    padding-top: 16px;
+  }
 }
 @media (min-width: 768px) {
   .freeBox__k1JgD > :global(.__wab_flex-container) {
@@ -579,7 +589,9 @@
 }
 @media (min-width: 768px) {
   .footer2 {
-    width: 800px;
+    width: 100%;
+    grid-column-start: 1 !important;
+    grid-column-end: -1 !important;
   }
 }
 .logo2 {

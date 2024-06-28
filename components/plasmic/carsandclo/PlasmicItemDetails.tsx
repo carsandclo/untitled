@@ -465,7 +465,6 @@ function PlasmicItemDetails__RenderFunc(props: {
         </div>
         <Button
           className={classNames("__wab_instance", sty.button___7AXbL)}
-          color={"link"}
           link={(() => {
             try {
               return $props.prodProp[0].tokopedia_link;
@@ -503,13 +502,7 @@ function PlasmicItemDetails__RenderFunc(props: {
           {"Tokopedia"}
         </Button>
         <Button
-          className={classNames("__wab_instance", sty.button__iRtat)}
-          shape={"sharp"}
-        />
-
-        <Button
           className={classNames("__wab_instance", sty.button__c9ITl)}
-          color={"link"}
           link={(() => {
             try {
               return $props.prodProp[0].shopee_link;
@@ -529,7 +522,6 @@ function PlasmicItemDetails__RenderFunc(props: {
         </Button>
         <Button
           className={classNames("__wab_instance", sty.button__i1Pi)}
-          color={"link"}
           link={(() => {
             try {
               return $props.prodProp[0].bigcartel_link;

@@ -503,6 +503,12 @@ function PlasmicItemDetails__RenderFunc(props: {
           {"Tokopedia"}
         </Button>
         <Button
+          className={classNames("__wab_instance", sty.button__iRtat)}
+          color={"white"}
+          shape={"sharp"}
+        />
+
+        <Button
           className={classNames("__wab_instance", sty.button__c9ITl)}
           color={"link"}
           link={(() => {

@@ -70,12 +70,12 @@ import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import { TabsContainer } from "@plasmicpkgs/plasmic-tabs";
 import { TabButton } from "@plasmicpkgs/plasmic-tabs";
 import Button from "../../Button"; // plasmic-import: lBHNzts6tFyj/component
+import Button2 from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
 import { TabUnderline } from "@plasmicpkgs/plasmic-tabs";
 import { TabContent } from "@plasmicpkgs/plasmic-tabs";
 import { LoadingBoundary } from "@plasmicpkgs/plasmic-basic-components";
 import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 import ItemDetails from "../../ItemDetails"; // plasmic-import: cOK-sZ_QtzrG/component
-import Button2 from "../../Button"; // plasmic-import: WoUXpKFRVp6X/component
 
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
 
@@ -528,6 +528,12 @@ function PlasmicDetails__RenderFunc(props: {
                               {"Hoodie"}
                             </div>
                           </Button>
+                          <Button2
+                            className={classNames(
+                              "__wab_instance",
+                              sty.button__t5Yh1
+                            )}
+                          />
                         </TabButton>
                         <TabButton
                           className={classNames(

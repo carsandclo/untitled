@@ -18,8 +18,7 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
 import Slider from "react-slick";
 
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 
 import {
   Flex as Flex__,
@@ -76,6 +75,8 @@ import { Fetcher } from "@plasmicapp/react-web/lib/data-sources";
 import { useScreenVariants as useScreenVariantsqExrow76Zrl } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: QExrow-76Zrl/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import projectcss from "./plasmic.module.css"; // plasmic-import: c4FCQiVEmUqfPef3MjSmg8/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: SDagfCRh-2CQ/css

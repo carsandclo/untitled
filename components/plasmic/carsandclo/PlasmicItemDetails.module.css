@@ -170,20 +170,17 @@
   position: relative;
   min-width: 0;
 }
-.freeBox__ba7RM {
+.link___1V4Up {
   display: flex;
-  flex-direction: column;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
   height: auto;
   max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
   min-width: 0;
   padding: 8px;
-}
-.link___465Cy {
-  display: flex;
 }
 .img__ieAti {
   object-fit: cover;

@@ -484,44 +484,40 @@ function PlasmicItemDetails__RenderFunc(props: {
                   const currentItem = __plasmic_item_0;
                   const currentIndex = __plasmic_idx_0;
                   return (
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ba7RM)}
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.link___1V4Up
+                      )}
+                      component={Link}
                       key={currentIndex}
+                      platform={"nextjs"}
                     >
-                      <PlasmicLink__
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.a,
-                          sty.link___465Cy
-                        )}
-                        component={Link}
-                        platform={"nextjs"}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__ieAti)}
-                          displayHeight={"auto"}
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"auto"}
-                          src={(() => {
-                            try {
-                              return currentItem.image1;
-                            } catch (e) {
-                              if (
-                                e instanceof TypeError ||
-                                e?.plasmicType === "PlasmicUndefinedDataError"
-                              ) {
-                                return "https://static1.plasmic.app/components/react-slick/slide1.png";
-                              }
-                              throw e;
+                      <PlasmicImg__
+                        alt={""}
+                        className={classNames(sty.img__ieAti)}
+                        displayHeight={"auto"}
+                        displayMaxHeight={"none"}
+                        displayMaxWidth={"100%"}
+                        displayMinHeight={"0"}
+                        displayMinWidth={"0"}
+                        displayWidth={"auto"}
+                        src={(() => {
+                          try {
+                            return $props.prodProp[0].image1;
+                          } catch (e) {
+                            if (
+                              e instanceof TypeError ||
+                              e?.plasmicType === "PlasmicUndefinedDataError"
+                            ) {
+                              return "https://static1.plasmic.app/components/react-slick/slide1.png";
                             }
-                          })()}
-                        />
-                      </PlasmicLink__>
-                    </div>
+                            throw e;
+                          }
+                        })()}
+                      />
+                    </PlasmicLink__>
                   );
                 })}
               </SliderWrapper>

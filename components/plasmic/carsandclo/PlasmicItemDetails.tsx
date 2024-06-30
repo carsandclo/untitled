@@ -476,9 +476,19 @@ function PlasmicItemDetails__RenderFunc(props: {
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"auto"}
-                    src={
-                      "https://static1.plasmic.app/components/react-slick/slide1.png"
-                    }
+                    src={(() => {
+                      try {
+                        return $props.prodProp[0].image1;
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "https://static1.plasmic.app/components/react-slick/slide1.png";
+                        }
+                        throw e;
+                      }
+                    })()}
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__oQdHl)}>
@@ -491,9 +501,19 @@ function PlasmicItemDetails__RenderFunc(props: {
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"auto"}
-                    src={
-                      "https://static1.plasmic.app/components/react-slick/slide2.png"
-                    }
+                    src={(() => {
+                      try {
+                        return $props.prodProp[1].image1;
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "https://static1.plasmic.app/components/react-slick/slide2.png";
+                        }
+                        throw e;
+                      }
+                    })()}
                   />
                 </div>
                 <div className={classNames(projectcss.all, sty.freeBox__vxb1S)}>
@@ -506,9 +526,19 @@ function PlasmicItemDetails__RenderFunc(props: {
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"auto"}
-                    src={
-                      "https://static1.plasmic.app/components/react-slick/slide3.png"
-                    }
+                    src={(() => {
+                      try {
+                        return $props.prodProp[2].image1;
+                      } catch (e) {
+                        if (
+                          e instanceof TypeError ||
+                          e?.plasmicType === "PlasmicUndefinedDataError"
+                        ) {
+                          return "https://static1.plasmic.app/components/react-slick/slide3.png";
+                        }
+                        throw e;
+                      }
+                    })()}
                   />
                 </div>
               </SliderWrapper>

@@ -773,7 +773,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(sty.img__icsh)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"auto"}
+                  displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"160px"}
@@ -901,7 +901,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(sty.img__fr51O)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"auto"}
+                  displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={"160px"}

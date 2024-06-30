@@ -924,7 +924,7 @@
 .img__icsh {
   position: relative;
   object-fit: contain;
-  max-width: auto;
+  max-width: 100%;
   width: 160px;
   flex-shrink: 0;
 }
@@ -1130,7 +1130,7 @@
 .img__fr51O {
   position: relative;
   object-fit: contain;
-  max-width: auto;
+  max-width: 100%;
   width: 160px;
   flex-shrink: 0;
 }

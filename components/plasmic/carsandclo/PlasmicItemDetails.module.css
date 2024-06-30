@@ -124,6 +124,109 @@
   font-weight: 400;
   min-width: 0;
 }
+.slider {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  transform: none;
+  min-width: 0;
+  padding: 0px 0px 24px;
+  margin: 16px 0px 24px;
+  border-bottom: 1px solid #bdbdbd;
+}
+.slider > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  min-width: 0;
+  margin-top: calc(0px - 12px);
+  height: calc(100% + 12px);
+}
+.slider > :global(.__wab_flex-container) > *,
+.slider > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.slider > :global(.__wab_flex-container) > picture > img,
+.slider
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 12px;
+}
+@media (min-width: 768px) {
+  .slider {
+    width: 800px;
+  }
+}
+.sliderCarousel2:global(.__wab_instance) {
+  width: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  object-fit: cover;
+  position: relative;
+  min-width: 0;
+}
+.freeBox__ba7RM {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img__ieAti {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__ieAti > picture > img {
+  object-fit: cover;
+}
+.freeBox__oQdHl {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img__pgbt8 {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__pgbt8 > picture > img {
+  object-fit: cover;
+}
+.freeBox__vxb1S {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  padding: 8px;
+}
+.img__ve1C5 {
+  object-fit: cover;
+  max-width: 100%;
+}
+.img__ve1C5 > picture > img {
+  object-fit: cover;
+}
 .size {
   display: flex;
   position: relative;
@@ -526,7 +629,7 @@
 }
 .freeBox__mvYJj > :global(.__wab_flex-container) {
   flex-direction: row;
-  align-items: stretch;
+  align-items: center;
   justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 12px);

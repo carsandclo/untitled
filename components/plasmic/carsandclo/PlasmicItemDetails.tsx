@@ -90,6 +90,8 @@ export type PlasmicItemDetails__OverridesType = {
   root?: Flex__<"div">;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
   desc?: Flex__<"div">;
+  slider?: Flex__<"div">;
+  sliderCarousel2?: Flex__<typeof SliderWrapper>;
   size?: Flex__<"div">;
   material?: Flex__<"div">;
   material2?: Flex__<"div">;
@@ -141,6 +143,15 @@ function PlasmicItemDetails__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => 0,
 
         refName: "sliderCarousel",
+        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
+      },
+      {
+        path: "sliderCarousel2.currentSlide",
+        type: "private",
+        variableType: "number",
+        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
+
+        refName: "sliderCarousel2",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
@@ -376,7 +387,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                     e instanceof TypeError ||
                     e?.plasmicType === "PlasmicUndefinedDataError"
                   ) {
-                    return "Product Name";
+                    return "911 GT3 Cup";
                   }
                   throw e;
                 }
@@ -407,6 +418,102 @@ function PlasmicItemDetails__RenderFunc(props: {
               })()}
             </React.Fragment>
           </div>
+        </Stack__>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"slider"}
+          data-plasmic-override={overrides.slider}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.slider)}
+        >
+          {(() => {
+            const child$Props = {
+              arrows: false,
+              beforeChange: generateStateOnChangePropForCodeComponents(
+                $state,
+                "currentSlide",
+                ["sliderCarousel2", "currentSlide"],
+                SliderWrapper_Helpers
+              ),
+              className: classNames("__wab_instance", sty.sliderCarousel2),
+              dots: false,
+              initialSlide: generateStateValueProp($state, [
+                "sliderCarousel2",
+                "currentSlide"
+              ]),
+              ref: ref => {
+                $refs["sliderCarousel2"] = ref;
+              },
+              sliderScopeClassName: sty["sliderCarousel2__slider"],
+              slidesPerRow: 4
+            };
+            initializeCodeComponentStates(
+              $state,
+              [
+                {
+                  name: "currentSlide",
+                  plasmicStateName: "sliderCarousel2.currentSlide"
+                }
+              ],
+              [],
+              SliderWrapper_Helpers ?? {},
+              child$Props
+            );
+
+            return (
+              <SliderWrapper
+                data-plasmic-name={"sliderCarousel2"}
+                data-plasmic-override={overrides.sliderCarousel2}
+                {...child$Props}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__ba7RM)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__ieAti)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={
+                      "https://static1.plasmic.app/components/react-slick/slide1.png"
+                    }
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__oQdHl)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__pgbt8)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={
+                      "https://static1.plasmic.app/components/react-slick/slide2.png"
+                    }
+                  />
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__vxb1S)}>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__ve1C5)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    src={
+                      "https://static1.plasmic.app/components/react-slick/slide3.png"
+                    }
+                  />
+                </div>
+              </SliderWrapper>
+            );
+          })()}
         </Stack__>
         <Stack__
           as={"div"}
@@ -699,6 +806,8 @@ const PlasmicDescendants = {
     "root",
     "sliderCarousel",
     "desc",
+    "slider",
+    "sliderCarousel2",
     "size",
     "material",
     "material2",
@@ -708,6 +817,8 @@ const PlasmicDescendants = {
   ],
   sliderCarousel: ["sliderCarousel"],
   desc: ["desc"],
+  slider: ["slider", "sliderCarousel2"],
+  sliderCarousel2: ["sliderCarousel2"],
   size: ["size"],
   material: ["material"],
   material2: ["material2"],
@@ -722,6 +833,8 @@ type NodeDefaultElementType = {
   root: "div";
   sliderCarousel: typeof SliderWrapper;
   desc: "div";
+  slider: "div";
+  sliderCarousel2: typeof SliderWrapper;
   size: "div";
   material: "div";
   material2: "div";
@@ -792,6 +905,8 @@ export const PlasmicItemDetails = Object.assign(
     // Helper components rendering sub-elements
     sliderCarousel: makeNodeComponent("sliderCarousel"),
     desc: makeNodeComponent("desc"),
+    slider: makeNodeComponent("slider"),
+    sliderCarousel2: makeNodeComponent("sliderCarousel2"),
     size: makeNodeComponent("size"),
     material: makeNodeComponent("material"),
     material2: makeNodeComponent("material2"),

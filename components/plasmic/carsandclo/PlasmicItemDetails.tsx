@@ -88,9 +88,9 @@ export const PlasmicItemDetails__ArgProps = new Array<ArgPropType>("prodProp");
 
 export type PlasmicItemDetails__OverridesType = {
   root?: Flex__<"div">;
-  desc?: Flex__<"div">;
   slider?: Flex__<"div">;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
+  desc?: Flex__<"div">;
   size?: Flex__<"div">;
   material?: Flex__<"div">;
   material2?: Flex__<"div">;
@@ -209,62 +209,6 @@ function PlasmicItemDetails__RenderFunc(props: {
       <div className={classNames(projectcss.all, sty.freeBox__txGkc)}>
         <Stack__
           as={"div"}
-          data-plasmic-name={"desc"}
-          data-plasmic-override={overrides.desc}
-          hasGap={true}
-          className={classNames(projectcss.all, sty.desc)}
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__nDepQ
-            )}
-            id={"lblname"}
-          >
-            <React.Fragment>
-              {(() => {
-                try {
-                  return $props.prodProp[0].prod_name;
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return "911 GT3 Cup";
-                  }
-                  throw e;
-                }
-              })()}
-            </React.Fragment>
-          </div>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text___7EKux
-            )}
-            id={"lbldescription"}
-          >
-            <React.Fragment>
-              {(() => {
-                try {
-                  return $props.prodProp[0].prod_description;
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return "A special highlight for Porsche fans are our limited Porsche T-shirts with collector's themes. The tasteful and sometimes colorful prints on these T-shirts show different Porsche themes such as cars, model logos or historical themes.";
-                  }
-                  throw e;
-                }
-              })()}
-            </React.Fragment>
-          </div>
-        </Stack__>
-        <Stack__
-          as={"div"}
           data-plasmic-name={"slider"}
           data-plasmic-override={overrides.slider}
           hasGap={true}
@@ -274,7 +218,7 @@ function PlasmicItemDetails__RenderFunc(props: {
             const child$Props = {
               arrows: hasVariant(globalVariants, "screen", "desktopOnly")
                 ? false
-                : undefined,
+                : false,
               beforeChange: generateStateOnChangePropForCodeComponents(
                 $state,
                 "currentSlide",
@@ -422,6 +366,62 @@ function PlasmicItemDetails__RenderFunc(props: {
               </SliderWrapper>
             );
           })()}
+        </Stack__>
+        <Stack__
+          as={"div"}
+          data-plasmic-name={"desc"}
+          data-plasmic-override={overrides.desc}
+          hasGap={true}
+          className={classNames(projectcss.all, sty.desc)}
+        >
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__nDepQ
+            )}
+            id={"lblname"}
+          >
+            <React.Fragment>
+              {(() => {
+                try {
+                  return $props.prodProp[0].prod_name;
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return "911 GT3 Cup";
+                  }
+                  throw e;
+                }
+              })()}
+            </React.Fragment>
+          </div>
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text___7EKux
+            )}
+            id={"lbldescription"}
+          >
+            <React.Fragment>
+              {(() => {
+                try {
+                  return $props.prodProp[0].prod_description;
+                } catch (e) {
+                  if (
+                    e instanceof TypeError ||
+                    e?.plasmicType === "PlasmicUndefinedDataError"
+                  ) {
+                    return "A special highlight for Porsche fans are our limited Porsche T-shirts with collector's themes. The tasteful and sometimes colorful prints on these T-shirts show different Porsche themes such as cars, model logos or historical themes.";
+                  }
+                  throw e;
+                }
+              })()}
+            </React.Fragment>
+          </div>
         </Stack__>
         <Stack__
           as={"div"}
@@ -712,9 +712,9 @@ function PlasmicItemDetails__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "desc",
     "slider",
     "sliderCarousel",
+    "desc",
     "size",
     "material",
     "material2",
@@ -722,9 +722,9 @@ const PlasmicDescendants = {
     "proof",
     "link"
   ],
-  desc: ["desc"],
   slider: ["slider", "sliderCarousel"],
   sliderCarousel: ["sliderCarousel"],
+  desc: ["desc"],
   size: ["size"],
   material: ["material"],
   material2: ["material2"],
@@ -737,9 +737,9 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  desc: "div";
   slider: "div";
   sliderCarousel: typeof SliderWrapper;
+  desc: "div";
   size: "div";
   material: "div";
   material2: "div";
@@ -808,9 +808,9 @@ export const PlasmicItemDetails = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    desc: makeNodeComponent("desc"),
     slider: makeNodeComponent("slider"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
+    desc: makeNodeComponent("desc"),
     size: makeNodeComponent("size"),
     material: makeNodeComponent("material"),
     material2: makeNodeComponent("material2"),

@@ -182,49 +182,14 @@
   min-width: 0;
   padding: 8px;
 }
+.link___465Cy {
+  display: flex;
+}
 .img__ieAti {
   object-fit: cover;
   max-width: 100%;
 }
 .img__ieAti > picture > img {
-  object-fit: cover;
-}
-.freeBox__oQdHl {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.img__pgbt8 {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__pgbt8 > picture > img {
-  object-fit: cover;
-}
-.freeBox__vxb1S {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.img__ve1C5 {
-  object-fit: cover;
-  max-width: 100%;
-}
-.img__ve1C5 > picture > img {
   object-fit: cover;
 }
 .size {

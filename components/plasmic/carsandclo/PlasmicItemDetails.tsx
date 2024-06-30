@@ -91,7 +91,6 @@ export type PlasmicItemDetails__OverridesType = {
   desc?: Flex__<"div">;
   slider?: Flex__<"div">;
   sliderCarousel?: Flex__<typeof SliderWrapper>;
-  sliderCarousel2?: Flex__<typeof SliderWrapper>;
   size?: Flex__<"div">;
   material?: Flex__<"div">;
   material2?: Flex__<"div">;
@@ -143,15 +142,6 @@ function PlasmicItemDetails__RenderFunc(props: {
         initFunc: ({ $props, $state, $queries, $ctx }) => 0,
 
         refName: "sliderCarousel",
-        onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
-      },
-      {
-        path: "sliderCarousel2.currentSlide",
-        type: "private",
-        variableType: "number",
-        initFunc: ({ $props, $state, $queries, $ctx }) => 0,
-
-        refName: "sliderCarousel2",
         onMutate: generateOnMutateForSpec("currentSlide", SliderWrapper_Helpers)
       }
     ],
@@ -362,7 +352,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                                       document.getElementById(
                                         "main_image"
                                       ).src =
-                                        $props.prodProp[currentIndex].image2;
+                                        $props.prodProp[currentIndex].image1;
                                       document.getElementById(
                                         "lblname"
                                       ).innerText =
@@ -408,7 +398,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                           displayWidth={"auto"}
                           src={(() => {
                             try {
-                              return $props.prodProp[0].image1;
+                              return currentItem.image1;
                             } catch (e) {
                               if (
                                 e instanceof TypeError ||
@@ -427,104 +417,6 @@ function PlasmicItemDetails__RenderFunc(props: {
                         />
                       </PlasmicLink__>
                     </div>
-                  );
-                })}
-              </SliderWrapper>
-            );
-          })()}
-          {(() => {
-            const child$Props = {
-              arrows: false,
-              beforeChange: generateStateOnChangePropForCodeComponents(
-                $state,
-                "currentSlide",
-                ["sliderCarousel2", "currentSlide"],
-                SliderWrapper_Helpers
-              ),
-              className: classNames("__wab_instance", sty.sliderCarousel2),
-              dots: false,
-              initialSlide: generateStateValueProp($state, [
-                "sliderCarousel2",
-                "currentSlide"
-              ]),
-              ref: ref => {
-                $refs["sliderCarousel2"] = ref;
-              },
-              sliderScopeClassName: sty["sliderCarousel2__slider"],
-              slidesPerRow: 4
-            };
-            initializeCodeComponentStates(
-              $state,
-              [
-                {
-                  name: "currentSlide",
-                  plasmicStateName: "sliderCarousel2.currentSlide"
-                }
-              ],
-              [],
-              SliderWrapper_Helpers ?? {},
-              child$Props
-            );
-
-            return (
-              <SliderWrapper
-                data-plasmic-name={"sliderCarousel2"}
-                data-plasmic-override={overrides.sliderCarousel2}
-                {...child$Props}
-              >
-                {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-                  (() => {
-                    try {
-                      return $props.prodProp;
-                    } catch (e) {
-                      if (
-                        e instanceof TypeError ||
-                        e?.plasmicType === "PlasmicUndefinedDataError"
-                      ) {
-                        return [];
-                      }
-                      throw e;
-                    }
-                  })()
-                ).map((__plasmic_item_0, __plasmic_idx_0) => {
-                  const currentItem = __plasmic_item_0;
-                  const currentIndex = __plasmic_idx_0;
-                  return (
-                    <PlasmicLink__
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.a,
-                        sty.link___1V4Up
-                      )}
-                      component={Link}
-                      key={currentIndex}
-                      platform={"nextjs"}
-                    >
-                      <PlasmicImg__
-                        alt={""}
-                        className={classNames(sty.img__ieAti)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"100px"}
-                        src={(() => {
-                          try {
-                            return $props.prodProp[0].image1;
-                          } catch (e) {
-                            if (
-                              e instanceof TypeError ||
-                              e?.plasmicType === "PlasmicUndefinedDataError"
-                            ) {
-                              return "https://static1.plasmic.app/components/react-slick/slide1.png";
-                            }
-                            throw e;
-                          }
-                        })()}
-                        width={"100"}
-                      />
-                    </PlasmicLink__>
                   );
                 })}
               </SliderWrapper>
@@ -823,7 +715,6 @@ const PlasmicDescendants = {
     "desc",
     "slider",
     "sliderCarousel",
-    "sliderCarousel2",
     "size",
     "material",
     "material2",
@@ -832,9 +723,8 @@ const PlasmicDescendants = {
     "link"
   ],
   desc: ["desc"],
-  slider: ["slider", "sliderCarousel", "sliderCarousel2"],
+  slider: ["slider", "sliderCarousel"],
   sliderCarousel: ["sliderCarousel"],
-  sliderCarousel2: ["sliderCarousel2"],
   size: ["size"],
   material: ["material"],
   material2: ["material2"],
@@ -850,7 +740,6 @@ type NodeDefaultElementType = {
   desc: "div";
   slider: "div";
   sliderCarousel: typeof SliderWrapper;
-  sliderCarousel2: typeof SliderWrapper;
   size: "div";
   material: "div";
   material2: "div";
@@ -922,7 +811,6 @@ export const PlasmicItemDetails = Object.assign(
     desc: makeNodeComponent("desc"),
     slider: makeNodeComponent("slider"),
     sliderCarousel: makeNodeComponent("sliderCarousel"),
-    sliderCarousel2: makeNodeComponent("sliderCarousel2"),
     size: makeNodeComponent("size"),
     material: makeNodeComponent("material"),
     material2: makeNodeComponent("material2"),

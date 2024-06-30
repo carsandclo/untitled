@@ -166,33 +166,6 @@
 .img__p1Nft > picture > img {
   object-fit: cover;
 }
-.sliderCarousel2:global(.__wab_instance) {
-  width: 100%;
-  max-width: 100%;
-  flex-direction: column;
-  object-fit: cover;
-  position: relative;
-  min-width: 0;
-}
-.link___1V4Up {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100px;
-  height: auto;
-  max-width: 100%;
-  padding: 8px;
-}
-.img__ieAti {
-  object-fit: cover;
-  max-width: 100%;
-  width: 100px;
-}
-.img__ieAti > picture > img {
-  object-fit: cover;
-}
 .size {
   display: flex;
   position: relative;

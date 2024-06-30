@@ -88,9 +88,9 @@ export const PlasmicItemDetails__ArgProps = new Array<ArgPropType>("prodProp");
 
 export type PlasmicItemDetails__OverridesType = {
   root?: Flex__<"div">;
-  sliderCarousel?: Flex__<typeof SliderWrapper>;
   desc?: Flex__<"div">;
   slider?: Flex__<"div">;
+  sliderCarousel?: Flex__<typeof SliderWrapper>;
   sliderCarousel2?: Flex__<typeof SliderWrapper>;
   size?: Flex__<"div">;
   material?: Flex__<"div">;
@@ -216,152 +216,6 @@ function PlasmicItemDetails__RenderFunc(props: {
         })()}
       />
 
-      {(() => {
-        const child$Props = {
-          arrows: hasVariant(globalVariants, "screen", "desktopOnly")
-            ? false
-            : undefined,
-          beforeChange: generateStateOnChangePropForCodeComponents(
-            $state,
-            "currentSlide",
-            ["sliderCarousel", "currentSlide"],
-            SliderWrapper_Helpers
-          ),
-          centerMode: false,
-          className: classNames("__wab_instance", sty.sliderCarousel),
-          initialSlide: generateStateValueProp($state, [
-            "sliderCarousel",
-            "currentSlide"
-          ]),
-          ref: ref => {
-            $refs["sliderCarousel"] = ref;
-          },
-          sliderScopeClassName: sty["sliderCarousel__slider"],
-          slidesPerRow: 4
-        };
-        initializeCodeComponentStates(
-          $state,
-          [
-            {
-              name: "currentSlide",
-              plasmicStateName: "sliderCarousel.currentSlide"
-            }
-          ],
-          [],
-          SliderWrapper_Helpers ?? {},
-          child$Props
-        );
-
-        return (
-          <SliderWrapper
-            data-plasmic-name={"sliderCarousel"}
-            data-plasmic-override={overrides.sliderCarousel}
-            {...child$Props}
-          >
-            {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
-              (() => {
-                try {
-                  return $props.prodProp;
-                } catch (e) {
-                  if (
-                    e instanceof TypeError ||
-                    e?.plasmicType === "PlasmicUndefinedDataError"
-                  ) {
-                    return [];
-                  }
-                  throw e;
-                }
-              })()
-            ).map((__plasmic_item_0, __plasmic_idx_0) => {
-              const currentItem = __plasmic_item_0;
-              const currentIndex = __plasmic_idx_0;
-              return (
-                <div
-                  className={classNames(projectcss.all, sty.freeBox__kJZuU)}
-                  key={currentIndex}
-                >
-                  <PlasmicLink__
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__eUo0U
-                    )}
-                    component={Link}
-                    onClick={async event => {
-                      const $steps = {};
-
-                      $steps["runCode"] = true
-                        ? (() => {
-                            const actionArgs = {
-                              customFunction: async () => {
-                                return (() => {
-                                  document.getElementById("main_image").src =
-                                    $props.prodProp[currentIndex].image2;
-                                  document.getElementById("lblname").innerText =
-                                    $props.prodProp[currentIndex].prod_name;
-                                  document.getElementById(
-                                    "lbldescription"
-                                  ).innerText =
-                                    $props.prodProp[
-                                      currentIndex
-                                    ].prod_description;
-                                  return (document.getElementById(
-                                    "lblsize"
-                                  ).innerText =
-                                    $props.prodProp[currentIndex].prod_size);
-                                })();
-                              }
-                            };
-                            return (({ customFunction }) => {
-                              return customFunction();
-                            })?.apply(null, [actionArgs]);
-                          })()
-                        : undefined;
-                      if (
-                        $steps["runCode"] != null &&
-                        typeof $steps["runCode"] === "object" &&
-                        typeof $steps["runCode"].then === "function"
-                      ) {
-                        $steps["runCode"] = await $steps["runCode"];
-                      }
-                    }}
-                    platform={"nextjs"}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__p1Nft)}
-                      displayHeight={"auto"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"100%"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      src={(() => {
-                        try {
-                          return $props.prodProp[0].image1;
-                        } catch (e) {
-                          if (
-                            e instanceof TypeError ||
-                            e?.plasmicType === "PlasmicUndefinedDataError"
-                          ) {
-                            return {
-                              src: "/plasmic/carsandclo/images/fallbackpng2.png",
-                              fullWidth: 600,
-                              fullHeight: 600,
-                              aspectRatio: undefined
-                            };
-                          }
-                          throw e;
-                        }
-                      })()}
-                    />
-                  </PlasmicLink__>
-                </div>
-              );
-            })}
-          </SliderWrapper>
-        );
-      })()}
       <div className={classNames(projectcss.all, sty.freeBox__txGkc)}>
         <Stack__
           as={"div"}
@@ -426,6 +280,158 @@ function PlasmicItemDetails__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.slider)}
         >
+          {(() => {
+            const child$Props = {
+              arrows: hasVariant(globalVariants, "screen", "desktopOnly")
+                ? false
+                : undefined,
+              beforeChange: generateStateOnChangePropForCodeComponents(
+                $state,
+                "currentSlide",
+                ["sliderCarousel", "currentSlide"],
+                SliderWrapper_Helpers
+              ),
+              centerMode: false,
+              className: classNames("__wab_instance", sty.sliderCarousel),
+              initialSlide: generateStateValueProp($state, [
+                "sliderCarousel",
+                "currentSlide"
+              ]),
+              ref: ref => {
+                $refs["sliderCarousel"] = ref;
+              },
+              sliderScopeClassName: sty["sliderCarousel__slider"],
+              slidesPerRow: 4
+            };
+            initializeCodeComponentStates(
+              $state,
+              [
+                {
+                  name: "currentSlide",
+                  plasmicStateName: "sliderCarousel.currentSlide"
+                }
+              ],
+              [],
+              SliderWrapper_Helpers ?? {},
+              child$Props
+            );
+
+            return (
+              <SliderWrapper
+                data-plasmic-name={"sliderCarousel"}
+                data-plasmic-override={overrides.sliderCarousel}
+                {...child$Props}
+              >
+                {(_par => (!_par ? [] : Array.isArray(_par) ? _par : [_par]))(
+                  (() => {
+                    try {
+                      return $props.prodProp;
+                    } catch (e) {
+                      if (
+                        e instanceof TypeError ||
+                        e?.plasmicType === "PlasmicUndefinedDataError"
+                      ) {
+                        return [];
+                      }
+                      throw e;
+                    }
+                  })()
+                ).map((__plasmic_item_0, __plasmic_idx_0) => {
+                  const currentItem = __plasmic_item_0;
+                  const currentIndex = __plasmic_idx_0;
+                  return (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kJZuU)}
+                      key={currentIndex}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__eUo0U
+                        )}
+                        component={Link}
+                        onClick={async event => {
+                          const $steps = {};
+
+                          $steps["runCode"] = true
+                            ? (() => {
+                                const actionArgs = {
+                                  customFunction: async () => {
+                                    return (() => {
+                                      document.getElementById(
+                                        "main_image"
+                                      ).src =
+                                        $props.prodProp[currentIndex].image2;
+                                      document.getElementById(
+                                        "lblname"
+                                      ).innerText =
+                                        $props.prodProp[currentIndex].prod_name;
+                                      document.getElementById(
+                                        "lbldescription"
+                                      ).innerText =
+                                        $props.prodProp[
+                                          currentIndex
+                                        ].prod_description;
+                                      return (document.getElementById(
+                                        "lblsize"
+                                      ).innerText =
+                                        $props.prodProp[
+                                          currentIndex
+                                        ].prod_size);
+                                    })();
+                                  }
+                                };
+                                return (({ customFunction }) => {
+                                  return customFunction();
+                                })?.apply(null, [actionArgs]);
+                              })()
+                            : undefined;
+                          if (
+                            $steps["runCode"] != null &&
+                            typeof $steps["runCode"] === "object" &&
+                            typeof $steps["runCode"].then === "function"
+                          ) {
+                            $steps["runCode"] = await $steps["runCode"];
+                          }
+                        }}
+                        platform={"nextjs"}
+                      >
+                        <PlasmicImg__
+                          alt={""}
+                          className={classNames(sty.img__p1Nft)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          src={(() => {
+                            try {
+                              return $props.prodProp[0].image1;
+                            } catch (e) {
+                              if (
+                                e instanceof TypeError ||
+                                e?.plasmicType === "PlasmicUndefinedDataError"
+                              ) {
+                                return {
+                                  src: "/plasmic/carsandclo/images/fallbackpng2.png",
+                                  fullWidth: 600,
+                                  fullHeight: 600,
+                                  aspectRatio: undefined
+                                };
+                              }
+                              throw e;
+                            }
+                          })()}
+                        />
+                      </PlasmicLink__>
+                    </div>
+                  );
+                })}
+              </SliderWrapper>
+            );
+          })()}
           {(() => {
             const child$Props = {
               arrows: false,
@@ -814,9 +820,9 @@ function PlasmicItemDetails__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "sliderCarousel",
     "desc",
     "slider",
+    "sliderCarousel",
     "sliderCarousel2",
     "size",
     "material",
@@ -825,9 +831,9 @@ const PlasmicDescendants = {
     "proof",
     "link"
   ],
-  sliderCarousel: ["sliderCarousel"],
   desc: ["desc"],
-  slider: ["slider", "sliderCarousel2"],
+  slider: ["slider", "sliderCarousel", "sliderCarousel2"],
+  sliderCarousel: ["sliderCarousel"],
   sliderCarousel2: ["sliderCarousel2"],
   size: ["size"],
   material: ["material"],
@@ -841,9 +847,9 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  sliderCarousel: typeof SliderWrapper;
   desc: "div";
   slider: "div";
+  sliderCarousel: typeof SliderWrapper;
   sliderCarousel2: typeof SliderWrapper;
   size: "div";
   material: "div";
@@ -913,9 +919,9 @@ export const PlasmicItemDetails = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    sliderCarousel: makeNodeComponent("sliderCarousel"),
     desc: makeNodeComponent("desc"),
     slider: makeNodeComponent("slider"),
+    sliderCarousel: makeNodeComponent("sliderCarousel"),
     sliderCarousel2: makeNodeComponent("sliderCarousel2"),
     size: makeNodeComponent("size"),
     material: makeNodeComponent("material"),

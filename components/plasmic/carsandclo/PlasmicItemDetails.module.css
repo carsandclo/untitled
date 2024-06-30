@@ -176,15 +176,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 100px;
   height: auto;
   max-width: 100%;
-  min-width: 0;
   padding: 8px;
 }
 .img__ieAti {
   object-fit: cover;
   max-width: 100%;
+  width: 100px;
 }
 .img__ieAti > picture > img {
   object-fit: cover;

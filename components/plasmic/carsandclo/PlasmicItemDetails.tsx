@@ -502,7 +502,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                         displayMaxWidth={"100%"}
                         displayMinHeight={"0"}
                         displayMinWidth={"0"}
-                        displayWidth={"auto"}
+                        displayWidth={"100px"}
                         src={(() => {
                           try {
                             return $props.prodProp[0].image1;
@@ -516,6 +516,7 @@ function PlasmicItemDetails__RenderFunc(props: {
                             throw e;
                           }
                         })()}
+                        width={"100"}
                       />
                     </PlasmicLink__>
                   );
